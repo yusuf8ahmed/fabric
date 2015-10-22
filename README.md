@@ -67,3 +67,5 @@ Example below. Note: for Sprockets-based compilation, you'll want to replace `ur
 ## Credits
 
 Boilerplate for this repository was heavily reused from GitHub's own CSS toolkit: https://github.com/primer/primer
+
+Icon made by <a href="http://www.freepik.com">Freepik</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>.
