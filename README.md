@@ -6,12 +6,22 @@ Palette is the CSS toolkit that powers Wealthsimple's front-end design. It's pur
 
 ## Install
 
-Using [bower](http://bower.io/):
+Use [bower](http://bower.io/) to install the latest version of Palette on a project:
 
 ```
 $ bower install --save git@github.com:wealthsimple/palette.git
 ```
 
-## Building locally
+### Usage
 
-TODO
+Once installed, simply `@import` either the master SCSS file, or the individual files as you need them.
+
+```scss
+// Example: All of Palette
+@import "wealthsimple-palette/scss/palette";
+
+// Example: Individual files
+@import "wealthsimple-palette/scss/variables";
+@import "wealthsimple-palette/scss/mixins";
+@import "wealthsimple-palette/scss/base";
+```
