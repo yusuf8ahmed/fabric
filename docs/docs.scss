@@ -167,15 +167,16 @@ body {
 // Layout
 //
 
+a {
+  color: $color-gray;
+  &:hover {
+    color: darken($color-gray, 15%);
+  }
+}
+
 .docs-layout {
   ul, ol, li {
     list-style: square;
-  }
-  a {
-    color: $color-gray;
-    &:hover {
-      color: darken($color-gray, 15%);
-    }
   }
   h1 {
     @include h3;

@@ -1,7 +1,7 @@
 .button {
   @include font-sans(16px);
   background: white;
-  color: black;
+  color: $color-black;
   padding: 13px 13px;
   line-height: 1;
   border-radius: 40px;
@@ -12,6 +12,11 @@
   // Remove blue border that appears for type=submit
   &:focus {
     outline: 0;
+  }
+
+  &:hover {
+    color: $color-black;
+    background-color: $color-light-gray;
   }
 
   @include medium {
@@ -34,6 +39,11 @@
 .button-yellow {
   background: $color-yellow;
   color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-yellow-darker;
+  }
 }
 .button[disabled] {
   opacity: 0.8;
@@ -44,6 +54,7 @@
   color: $color-white-rgba;
 
   &:hover {
+    color: $color-white-rgba;
     background-color: $color-black-semitransparent-darker;
   }
 }
