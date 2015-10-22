@@ -1,0 +1,31 @@
+* {
+  box-sizing:border-box;
+  &:before, &:after {
+    box-sizing:border-box;
+  }
+}
+html, body {
+  position: relative;
+  margin:0;
+  padding:0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+input {
+  @include font-sans(18px);
+}
+a {
+  color: $color-blue;
+  text-decoration: none;
+}
+p {
+  margin: 0 0 1em 0;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+}

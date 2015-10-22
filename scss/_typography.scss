@@ -1,0 +1,82 @@
+@mixin font-sans($font-size:inherit) {
+  font: $font-size 'FuturaBT-Book', sans-serif;
+  font-weight: 300;
+}
+@mixin font-sans-bold($font-size:inherit) {
+  font: $font-size 'FuturaBT-Heavy', sans-serif;
+  font-weight: 100;
+}
+@mixin font-serif($font-size:inherit) {
+  font-family: 'CaslonGraD', serif;
+  font-size: $font-size;
+  font-weight: 100;
+}
+
+@mixin h1 {
+  @include font-serif(50px);
+
+  @include medium {
+    font-size: 70px;
+  }
+
+  @include large {
+    font-size: 90px;
+  }
+}
+
+@mixin h2 {
+  @include font-serif(30px);
+
+  @include medium {
+    font-size: 60px;
+    font-weight: 300;
+  }
+}
+
+@mixin h3 {
+  @include font-serif(30px);
+
+  @include medium {
+    font-size: 40px;
+  }
+}
+
+@mixin h4 {
+  @include font-sans(21px);
+
+  @include large { @include font-sans(28px); }
+}
+
+@mixin h5 {
+  @include font-sans-bold(15px);
+  text-transform: uppercase;
+}
+
+@mixin p1 {
+  @include font-sans(16px);
+  line-height: 1.5;
+
+  @include medium {
+    font-size: 22px;
+  }
+}
+
+@mixin p2 {
+  @include font-sans(18px);
+  line-height: 1.5;
+}
+
+h1 { @include h1; }
+h2 { @include h2; }
+h3 { @include h3; }
+h4 { @include h4; }
+h5 { @include h5; }
+
+.h1 { @include h1; }
+.h2 { @include h2; }
+.h3 { @include h3; }
+.h4 { @include h4; }
+.h5 { @include h5; }
+
+.p1 { @include p1; }
+.p2 { @include p2; }

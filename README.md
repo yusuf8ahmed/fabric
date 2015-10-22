@@ -32,6 +32,25 @@ Once installed, simply `@import` either the master SCSS file, or the individual 
 @import "wealthsimple-palette/scss/base";
 ```
 
+## Fonts
+
+Since font installation may vary based on the asset compilation framework you're using (e.g. Sprockets for Rails, Grunt for Ghost.org), you must define font-face URLs separately.
+
+Example:
+
+```scss
+@font-face {font-family: 'FuturaBT-Light';src: url('/fonts/2F4FAE_0_0.eot');src: url('/fonts/2F4FAE_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F4FAE_0_0.woff2') format('woff2'),url('/fonts/2F4FAE_0_0.woff') format('woff'),url('/fonts/2F4FAE_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'FuturaBT-Book';src: url('/fonts/2F4FAE_1_0.eot');src: url('/fonts/2F4FAE_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F4FAE_1_0.woff2') format('woff2'),url('/fonts/2F4FAE_1_0.woff') format('woff'),url('/fonts/2F4FAE_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'FuturaBT-Heavy';src: url('/fonts/2F4FAE_2_0.eot');src: url('/fonts/2F4FAE_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F4FAE_2_0.woff2') format('woff2'),url('/fonts/2F4FAE_2_0.woff') format('woff'),url('/fonts/2F4FAE_2_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'CaslonGraD';src: url('/fonts/2F4FAE_3_0.eot');src: url('/fonts/2F4FAE_3_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F4FAE_3_0.woff2') format('woff2'),url('/fonts/2F4FAE_3_0.woff') format('woff'),url('/fonts/2F4FAE_3_0.ttf') format('truetype');}
+```
+
 ## Credits
 
 Boilerplate for this repository was heavily reused from GitHub's own CSS toolkit: https://github.com/primer/primer

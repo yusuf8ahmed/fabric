@@ -10,6 +10,7 @@
 @import "../scss/palette";
 @import "css/anchor";
 @import "css/syntax";
+@import "css/fonts";
 
 
 //
@@ -22,7 +23,6 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
   font-size: 1rem;
 }
 
@@ -178,6 +178,7 @@ body {
   }
 
   h2 {
+    @include h4;
     font-weight: normal;
   }
 }
