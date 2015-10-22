@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Forms &middot; Palette</title>
+
+    <link rel="stylesheet" href="/docs.css">
+  </head>
+  <body>
+
+    <header class="masthead">
+      <div class="container">
+        <a href="/" class="masthead-logo">
+          <img src="/img/palette.png" class="logo-icon">
+          Palette
+        </a>
+
+        <nav class="masthead-nav">
+          <a  href="/scaffolding">Docs</a>
+          <a href="https://github.com/wealthsimple/palette" target="_blank">GitHub</a>
+          <a href="https://github.com/wealthsimple/palette/blob/master/README.md#install" target="_blank">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <div class="container">
+      <div class="row-md docs-layout">
+  <div class="col-3">
+    <nav class="menu docs-menu">
+  <a class="menu-item " href="/scaffolding/">
+    Scaffolding
+  </a>
+  <a class="menu-item " href="/layout/">
+    Layout
+  </a>
+  <a class="menu-item " href="/typography/">
+    Typography
+  </a>
+  <a class="menu-item " href="/buttons/">
+    Buttons
+  </a>
+  <a class="menu-item selected" href="/forms/">
+    Forms
+  </a>
+  <a class="menu-item " href="/utilities/">
+    Utilities
+  </a>
+</nav>
+
+<nav class="menu docs-menu">
+  <a class="menu-item " href="/guidelines/">
+    Code guidelines
+  </a>
+  <a class="menu-item " href="/colors/">
+    Colors
+  </a>
+</nav>
+
+  </div>
+  <div class="col-9 markdown-body">
+    <h1 class="page-title">Forms</h1>
+    <div class="markdown-body">
+      <p>Style individual form controls and utilize common layouts.</p>
+
+<div class="flash">
+  <strong>Heads up!</strong> Forms need some reworking to clean up the specificity and required markup. We'll get to that soon!
+</div>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#example-form" id="markdown-toc-example-form">Example form</a></li>
+  <li><a href="#colors" id="markdown-toc-colors">Colors</a></li>
+  <li><a href="#sizes" id="markdown-toc-sizes">Sizes</a></li>
+  <li><a href="#selects" id="markdown-toc-selects">Selects</a></li>
+  <li><a href="#checkboxes-and-radios" id="markdown-toc-checkboxes-and-radios">Checkboxes and radios</a></li>
+  <li><a href="#form-groups" id="markdown-toc-form-groups">Form groups</a></li>
+  <li><a href="#form-validation" id="markdown-toc-form-validation">Form validation</a></li>
+</ul>
+
+<h2 id="example-form">Example form</h2>
+
+<p>Form elements in Palette currently have no basic layout specified (this is by design). You’ll need to use <code>&lt;fieldset&gt;</code>s, <code>&lt;div&gt;</code>s, or other elements and styles to rearrange them.</p>
+
+<div class="docs-example clearfix"><form>
+  <input type="text" class="form-element form-element-white" placeholder="Name" />
+  <input type="email" class="form-element form-element-white" placeholder="Email address" />
+
+  <label>
+    <input type="checkbox" /> Remember me
+  </label>
+
+  <label>
+    <input type="radio" id="herp" name="herpderp" checked="" /> Herp
+  </label>
+  <label>
+    <input type="radio" id="derp" name="herpderp" /> Derp
+  </label>
+
+  <button class="button button-yellow" type="submit">Submit</button>
+</form></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-element form-element-white"</span> <span class="na">placeholder=</span><span class="s">"Name"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-element form-element-white"</span> <span class="na">placeholder=</span><span class="s">"Email address"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Remember me
+  <span class="nt">&lt;/label&gt;</span>
+
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"herp"</span> <span class="na">name=</span><span class="s">"herpderp"</span> <span class="na">checked</span><span class="nt">&gt;</span> Herp
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"derp"</span> <span class="na">name=</span><span class="s">"herpderp"</span><span class="nt">&gt;</span> Derp
+  <span class="nt">&lt;/label&gt;</span>
+
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-yellow"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<h2 id="colors">Colors</h2>
+
+<p>Text inputs can have a white or beige background, depending on the class you use.</p>
+
+<div class="docs-example clearfix"><form>
+  <input class="form-element form-element-white" type="text" placeholder=".form-element-white" />
+  <input class="form-element form-element-beige" type="text" placeholder=".form-element-beige" />
+</form></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-element form-element-white"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".form-element-white"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-element form-element-beige"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".form-element-beige"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<p>TODO - why are these different sizes?</p>
+
+<h2 id="sizes">Sizes</h2>
+
+<p>TODO - multiple sizes: small, medium, large</p>
+
+<h2 id="selects">Selects</h2>
+
+<p>TODO</p>
+
+<h2 id="checkboxes-and-radios">Checkboxes and radios</h2>
+
+<p>TODO - use iCheck plugin</p>
+
+<h2 id="form-groups">Form groups</h2>
+
+<p>TODO</p>
+
+<h2 id="form-validation">Form validation</h2>
+
+<p>TODO</p>
+
+    </div>
+  </div>
+</div>
+
+
+      <footer class="footer">
+        Copyright Wealthsimple 2015.<br>
+        Created and maintained by the CSS team at Wealthsimple.
+      </footer>
+    </div>
+
+    <script src="/js/anchor.min.js"></script>
+    <script>
+      var selector = '.markdown-body h2, .markdown-body h3';
+      anchors.options = {
+        placement: 'left',
+        class: 'anchor-link'
+      };
+      anchors.add(selector);
+    </script>
+  </body>
+</html>
