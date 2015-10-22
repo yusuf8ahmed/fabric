@@ -352,8 +352,14 @@ body {
 //
 
 // Hide the first child li because it's always going to be "Contents".
-#markdown-toc > li:first-child {
-  display: none;
+#markdown-toc {
+ list-style: square;
+ li {
+   list-style: square;
+ }
+ > li:first-child {
+    display: none;
+  }
 }
 
 
