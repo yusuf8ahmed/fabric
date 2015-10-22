@@ -1,0 +1,70 @@
+.form-element {
+  display: block;
+  width: 100%;
+  &:focus {
+    outline: 0;
+  }
+}
+
+input.form-element-beige {
+  @include font-sans(18px);
+  padding: 10px 15px;
+  color: #969493;
+  background: $color-light-beige;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+
+  &:focus {
+    border-color: darken(#ddd, 5%);
+  }
+}
+
+input.form-element-white {
+  @include font-sans(16px);
+  color: #000;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  padding: 13px 15px;
+  margin-bottom: 10px;
+
+  &:focus {
+    border-color: #7cb7b6;
+  }
+
+  @include medium {
+    font-size: 18px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.form-row-horizontal-legend {
+  text-align: center;
+  color: $color-gray;
+  display: block;
+  margin-bottom: 10px;
+
+  @include medium {
+    text-align: left;
+  }
+}
+
+.form-row-horizontal-md {
+  text-align: center;
+  margin: 0 20px;
+  @include medium {
+    margin: 0;
+    text-align: left;
+
+    .form-element {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+      margin-bottom: 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
