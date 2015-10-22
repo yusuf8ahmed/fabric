@@ -15,27 +15,6 @@
 .text-right { text-align: right; }
 .no-transition { transition: none !important; }
 
-/* WS specifics */
-.bg-yellow {
-  color: $color-white;
-  background: $color-yellow;
-}
-.bg-green {
-  color: $color-white;
-  background: $color-green;
-}
-.underline-yellow {
-  border-bottom: 2px solid $color-yellow;
-  @include large {
-    border-bottom: 4px solid $color-yellow;
-  }
-}
-.border-top { border-top: 1px solid $color-light-gray; }
-.border-right-md {
-  @include medium { border-right: 1px solid rgba(255, 255, 255, 0.3); }
-}
-
-
 /* Base-margin and base-padding */
 .base-margin { margin: $base-unit; }
 .base-margin-top { margin-top: $base-unit; }
