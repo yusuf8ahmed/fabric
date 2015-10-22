@@ -42,4 +42,8 @@
 .button-semitransparent {
   background-color: $color-black-semitransparent;
   color: $color-white-rgba;
+
+  &:hover {
+    background-color: $color-black-semitransparent-darker;
+  }
 }

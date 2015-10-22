@@ -166,13 +166,27 @@ body {
 // Layout
 //
 
-// Override the default layout to make it stack
 .docs-layout {
-  @media (max-width: 34em) {
-    > .column {
-      float: none;
-      width: 100%;
+  a {
+    color: $color-gray;
+    &:hover {
+      color: darken($color-gray, 15%);
     }
+  }
+  h1 {
+    @include h3;
+    margin: 30px 0 10px;
+  }
+
+  h2 {
+    @include h4;
+
+    margin: 35px 0 15px;
+  }
+
+  h3 {
+    @include h5;
+    margin: 15px 0 5px;
   }
 }
 
@@ -199,8 +213,44 @@ body {
 //
 
 .docs-menu {
+  border-radius: 3px;
+  border: 1px solid $color-offwhite;
   margin-bottom: 1.5rem;
-  font-size: 14px;
+  font-size: 15px;
+
+  .menu-item {
+    position: relative;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid $color-light-gray;
+  }
+
+  .menu-item.selected {
+    color: $color-black;
+    cursor: default;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 2px;
+      content: "";
+      background-color: $color-red;
+    }
+  }
+
+
+  .menu-item:first-child {
+    border-top: 0;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+
+  .menu-item:last-child {
+    border-bottom: 0;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
 
   @media (min-width: 34em) {
     margin-right: 1rem;
@@ -317,7 +367,14 @@ body {
   border-radius: .25rem;
 }
 
-.swatch-blue { background-color: $color-blue; }
 .swatch-green { background-color: $color-green; }
 .swatch-red { background-color: $color-red; }
+
 .swatch-yellow { background-color: $color-yellow; }
+.swatch-faded-yellow { background-color: $color-faded-yellow; }
+.swatch-translucent-yellow { background-color: $color-translucent-yellow; }
+
+.swatch-light-gray { background-color: $color-light-gray; }
+.swatch-gray { background-color: $color-gray; }
+.swatch-offwhite { background-color: $color-offwhite; }
+.swatch-light-beige { background-color: $color-light-beige; }
