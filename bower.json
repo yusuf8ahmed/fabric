@@ -1,0 +1,16 @@
+{
+  "name": "wealthsimple-palette",
+  "ignore": [
+    "docs/",
+    ".gitignore",
+    ".hound.yml",
+    ".scss-lint.yml",
+    "_config.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gruntfile.js"
+  ],
+  "main": [
+    "scss/palette.scss"
+  ]
+}

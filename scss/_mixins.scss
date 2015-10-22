@@ -1,0 +1,38 @@
+/* Media query mixins */
+/* ------------------------ */
+
+
+@mixin medium {
+  @media (min-width: #{$bp-medium}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: #{$bp-large}) {
+    @content;
+  }
+}
+
+@mixin site-max-width {
+  @media (min-width: #{$bp-site-max-width}) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+}
