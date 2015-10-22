@@ -64,8 +64,23 @@
 }
 
 @mixin p2 {
-  @include font-sans(18px);
+  @include font-sans(16px);
   line-height: 1.5;
+
+  @include medium {
+    font-size: 18px;
+  }
+}
+
+@mixin blockquote {
+  @include font-sans-bold(30px);
+  color: $color-green;
+  line-height: 40px;
+
+  @include medium {
+   font-size: 40px;
+   line-height: 52px;
+  }
 }
 
 h1 { @include h1; }
@@ -73,12 +88,14 @@ h2 { @include h2; }
 h3 { @include h3; }
 h4 { @include h4; }
 h5 { @include h5; }
+blockquote { @include blockquote; }
 
 .h1 { @include h1; }
 .h2 { @include h2; }
 .h3 { @include h3; }
 .h4 { @include h4; }
 .h5 { @include h5; }
+.blockquote { @include blockquote; }
 
 .p1 { @include p1; }
 .p2 { @include p2; }
