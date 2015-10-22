@@ -6,7 +6,7 @@ kramdown:
 
 permalink: pretty
 source: docs
-baseurl: "https://wealthsimple.github.io/palette"
+baseurl: "/palette"
 
 sass:
   sass_dir: ../
