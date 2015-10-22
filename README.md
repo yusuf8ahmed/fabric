@@ -34,9 +34,9 @@ Once installed, simply `@import` either the master SCSS file, or the individual 
 
 ## Fonts
 
-Since font installation may vary based on the asset compilation framework you're using (e.g. Sprockets for Rails, Grunt for Ghost.org), you must define font-face URLs separately.
+Since font installation may vary based on the asset compilation framework you're using (e.g. Sprockets for Rails, Grunt for Ghost.org), Palette does not include `@font-face` definitions. You must include these yourself.
 
-Example:
+Example below. Note: for Sprockets-based compilation, you'll want to replace `url` with `font-url`.
 
 ```scss
 @font-face {
@@ -63,8 +63,6 @@ Example:
   src: url('/fonts/2F4FAE_3_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F4FAE_3_0.woff2') format('woff2'),url('/fonts/2F4FAE_3_0.woff') format('woff'),url('/fonts/2F4FAE_3_0.ttf') format('truetype');
 }
 ```
-
-Note: for Sprockets-based compilation, you'll want to replace `url` with `font-url`.
 
 ## Credits
 
