@@ -1,7 +1,7 @@
 {
   "name": "wealthsimple-palette",
   "version": "0.0.1",
-  "homepage": "http://wealthsimple.github.io/palette",
+  "homepage": "http://palette.wealthsimple.com",
   "author": "Wealthsimple",
   "scss": "./scss/palette.scss",
   "license": "MIT",
