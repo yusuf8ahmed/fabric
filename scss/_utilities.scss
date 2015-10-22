@@ -15,6 +15,18 @@
 .text-right { text-align: right; }
 .no-transition { transition: none !important; }
 
+.show-md {
+  display: none;
+  @include medium {
+    display: block;
+  }
+}
+.hide-md {
+  @include medium {
+    display: none;
+  }
+}
+
 /* Base-margin and base-padding */
 .base-margin { margin: $base-unit; }
 .base-margin-top { margin-top: $base-unit; }

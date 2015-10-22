@@ -53,14 +53,3 @@ $grid-col-padding: 15px;
 .row-lg {
   @include large { display: flex; }
 }
-.show-md {
-  display: none;
-  @include medium {
-    display: block;
-  }
-}
-.hide-md {
-  @include medium {
-    display: none;
-  }
-}

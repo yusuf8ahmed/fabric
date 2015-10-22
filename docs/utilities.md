@@ -43,6 +43,13 @@ Easily add a standard amount of margin or padding based on the base-unit.
 
 `.base-padding` behaves the same as above.
 
+## Hiding/showing content based on screen size
+
+Use the following classes if you wish for only certain content to be visible at certain screensize breakpoints:
+
+- `.show-md`: Only show this at medium-size screens or larger. Hide for mobile.
+- `.hide-md`: Only hide this at medium-size screens or larger. Show for mobile.
+
 ## Miscellaneous
 
 - `.no-transition` disables all CSS transitions
