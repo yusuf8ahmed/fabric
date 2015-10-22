@@ -3,9 +3,7 @@ layout: page
 title: Layout
 ---
 
-Palette's layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it's just containers, rows, and columns.
-
-You can find all the below styles in `_grid.scss`.
+The layout includes basic page containers and a responsive, 12-column grid system.
 
 ## Contents
 
