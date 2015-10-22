@@ -31,3 +31,7 @@ Once installed, simply `@import` either the master SCSS file, or the individual 
 @import "wealthsimple-palette/scss/mixins";
 @import "wealthsimple-palette/scss/base";
 ```
+
+## Credits
+
+Boilerplate for this repository was heavily reused from GitHub's own CSS toolkit: https://github.com/primer/primer
