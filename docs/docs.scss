@@ -295,14 +295,14 @@ a {
     padding-left: $grid-col-padding;
     padding-right: $grid-col-padding;
   }
-  .columns + .columns {
+  .row-md + .row-md {
     margin-top: 10px;
   }
-  .column {
+  .row-md > div {
     padding: $grid-col-padding;
     font-family: monospace;
-    background-color: lighten($color-green, 40%);
-    border: 1px solid lighten($color-green, 30%);
+    background-color: lighten($color-green, 30%);
+    border: 1px solid lighten($color-green, 10%);
   }
 
   // Override Markdown styles to restore values from `_type.scss`
