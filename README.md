@@ -4,7 +4,7 @@ Palette is the CSS toolkit that powers Wealthsimple's front-end design. It's pur
 
 [**Read the Palette documentation**](http://palette.wealthsimple.com/) to learn more.
 
-## Install and update
+## Install
 
 Use [bower](http://bower.io/) to install the latest version of Palette on a project:
 
