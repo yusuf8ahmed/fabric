@@ -40,29 +40,11 @@ body {
 
 
 //
-// Custom button
-//
-
-.btn-reverse {
-  color: #fff;
-  background: none;
-  border: 1px solid #fff;
-
-  &:hover,
-  &:active {
-    color: $color-blue;
-    background: #fff;
-    border-color: #fff;
-    box-shadow: none;
-  }
-}
-
-
-//
 // Site header
 //
 
 .masthead {
+  @include clearfix;
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
@@ -70,7 +52,7 @@ body {
   background-color: $color-yellow;
 
   a {
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,.7);
 
     &:hover {
       color: #fff;
@@ -82,11 +64,6 @@ body {
     display: inline-block;
     font-size: 1.5rem;
     color: #fff;
-
-    .mega-octicon {
-      float: left;
-      margin-right: .5rem;
-    }
   }
 
   @media (min-width: 34em) {
@@ -110,11 +87,6 @@ body {
     }
   }
 
-  .active {
-    color: #fff;
-    font-weight: 500;
-  }
-
   @media (max-width: 34em) {
     padding-top: 1rem;
     border-top: .075rem solid rgba(255, 255, 255, 0.25);
@@ -122,7 +94,7 @@ body {
 
   @media (min-width: 34em) {
     float: right;
-    margin-top: .5rem;
+    margin-top: .45rem;
   }
 }
 
@@ -314,7 +286,7 @@ body {
 }
 
 .page-title + .markdown-body > p:first-child {
-  @extend .lead !optional;
+  @extend .p1;
 }
 
 

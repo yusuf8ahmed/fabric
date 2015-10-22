@@ -1,0 +1,45 @@
+.button {
+  @include font-sans(16px);
+  background: white;
+  color: black;
+  padding: 13px 13px;
+  line-height: 1;
+  border-radius: 40px;
+  cursor: pointer;
+  display:inline-block;
+  border: 0;
+
+  // Remove blue border that appears for type=submit
+  &:focus {
+    outline: 0;
+  }
+
+  @include medium {
+    font-size: 18px;
+    padding: 13px 25px;
+  }
+}
+.button-medium {
+  padding: 16px 40px;
+}
+.button-large {
+  font-size: 18px;
+  padding: 16px 30px;
+
+  @include medium {
+    font-size: 22px;
+    padding: 30px;
+  }
+}
+.button-yellow {
+  background: $color-yellow;
+  color: $color-white;
+}
+.button[disabled] {
+  opacity: 0.8;
+}
+
+.button-semitransparent {
+  background-color: $color-black-semitransparent;
+  color: $color-white-rgba;
+}

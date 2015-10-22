@@ -2,10 +2,12 @@
   font: $font-size 'FuturaBT-Book', sans-serif;
   font-weight: 300;
 }
+
 @mixin font-sans-bold($font-size:inherit) {
   font: $font-size 'FuturaBT-Heavy', sans-serif;
   font-weight: 100;
 }
+
 @mixin font-serif($font-size:inherit) {
   font-family: 'CaslonGraD', serif;
   font-size: $font-size;
