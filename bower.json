@@ -2,13 +2,17 @@
   "name": "wealthsimple-fabric",
   "ignore": [
     "docs/",
+    ".editorconfig",
+    ".fabric-stats.md",
     ".gitignore",
     ".hound.yml",
+    ".ruby-version",
     ".scss-lint.yml",
     "_config.yml",
     "Gemfile",
     "Gemfile.lock",
-    "Gruntfile.js"
+    "Gruntfile.js",
+    "README.md"
   ],
   "main": [
     "scss/fabric.scss"
