@@ -17,7 +17,7 @@ Use the `.button` for form actions and primary page actions. These are used exte
 When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
 
 {% example html %}
-<p style="background-color: #7cb7b6; padding: 25px;">
+<p class="button-example">
   <button class="button" type="button">Button button</button>
   <a class="button" href="#" role="button">Link button</a>
 </p>
@@ -26,7 +26,7 @@ When using a `<button>` element, **always specify a `type`**. When using a `<a>`
 You can find them in three sizes: the default `.button`, `.buttom-medium`, and  `.buttom-large`.
 
 {% example html %}
-<p style="background-color: #7cb7b6; padding: 25px;">
+<p class="button-example">
   <button class="button" type="button">Button</button>
   <button class="button button-medium" type="button">Medium button</button>
   <button class="button button-large" type="button">Large button</button>
@@ -38,7 +38,7 @@ You can find them in three sizes: the default `.button`, `.buttom-medium`, and  
 Buttons come in several colors. The default is a white background with black text.
 
 {% example html %}
-<p style="background-color: #7cb7b6; padding: 25px;">
+<p class="button-example">
   <button class="button" type="button">Default button</button>
   <button class="button button-yellow" type="button">Yellow button</button>
   <button class="button button-semitransparent" type="button">Semitransparent button</button>
