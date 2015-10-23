@@ -88,58 +88,79 @@
 <p>Form elements in Fabric currently have no basic layout specified (this is by design). You’ll need to use <code>&lt;fieldset&gt;</code>s, <code>&lt;div&gt;</code>s, or other elements and styles to rearrange them.</p>
 
 <div class="docs-example clearfix"><form>
-  <input type="text" class="form-element form-element-white" placeholder="Name" />
-  <input type="email" class="form-element form-element-white" placeholder="Email address" />
+  <input type="text" class="form-input-text" placeholder="Name" />
+  <input type="email" class="form-input-text" placeholder="Email address" />
 
-  <label>
-    <input type="checkbox" /> Remember me
-  </label>
+  <p>
+    <label>
+      <input type="checkbox" /> Remember me
+    </label>
+  </p>
 
-  <label>
-    <input type="radio" id="herp" name="herpderp" checked="" /> Herp
-  </label>
-  <label>
-    <input type="radio" id="derp" name="herpderp" /> Derp
-  </label>
+  <p>
+    <label>
+      <input type="radio" id="herp" name="herpderp" checked="" /> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp" /> Derp
+    </label>
+  </p>
 
-  <button class="button button-yellow" type="submit">Submit</button>
+  <p>
+    <button class="button button-yellow" type="submit">Submit</button>
+  </p>
 </form></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-element form-element-white"</span> <span class="na">placeholder=</span><span class="s">"Name"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-element form-element-white"</span> <span class="na">placeholder=</span><span class="s">"Email address"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-input-text"</span> <span class="na">placeholder=</span><span class="s">"Name"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-input-text"</span> <span class="na">placeholder=</span><span class="s">"Email address"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Remember me
-  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Remember me
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
 
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"herp"</span> <span class="na">name=</span><span class="s">"herpderp"</span> <span class="na">checked</span><span class="nt">&gt;</span> Herp
-  <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"derp"</span> <span class="na">name=</span><span class="s">"herpderp"</span><span class="nt">&gt;</span> Derp
-  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"herp"</span> <span class="na">name=</span><span class="s">"herpderp"</span> <span class="na">checked</span><span class="nt">&gt;</span> Herp
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"derp"</span> <span class="na">name=</span><span class="s">"herpderp"</span><span class="nt">&gt;</span> Derp
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
 
-  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-yellow"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-yellow"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></div>
 
 <h2 id="colors">Colors</h2>
 
-<p>Text inputs can have a white or beige background, depending on the class you use.</p>
+<p>The default text inputs has a white background, but you can append the <code>.color-beige</code> class to make it beige.</p>
 
 <div class="docs-example clearfix"><form>
-  <input class="form-element form-element-white" type="text" placeholder=".form-element-white" />
-  <input class="form-element form-element-beige" type="text" placeholder=".form-element-beige" />
+  <input class="form-input-text" type="text" placeholder=".form-input-text (default)" />
+  <input class="form-input-text color-beige" type="text" placeholder=".form-input-text .color-beige" />
 </form></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-element form-element-white"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".form-element-white"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-element form-element-beige"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".form-element-beige"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input-text"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".form-input-text (default)"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input-text color-beige"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".form-input-text .color-beige"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></div>
-
-<p>TODO - why are these different sizes?</p>
 
 <h2 id="sizes">Sizes</h2>
 
-<p>TODO - multiple sizes: small, medium, large</p>
+<p>There are two input sizes: medium and small. (TODO: consider adding more sizes as necessary).</p>
+
+<p>Medium is the default size, but you can apply the <code>.size-sm</code> class to make it small.</p>
+
+<div class="docs-example clearfix"><form>
+  <input class="form-input-text" type="text" placeholder="medium (default)" />
+  <input class="form-input-text size-sm" type="text" placeholder=".size-sm" />
+</form></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input-text"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"medium (default)"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input-text size-sm"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".size-sm"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
 
 <h2 id="selects">Selects</h2>
 
