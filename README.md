@@ -1,21 +1,21 @@
-# Brick
+# Fabric
 
-Brick is the CSS toolkit that powers Wealthsimple's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.
+Fabric is the CSS toolkit that powers Wealthsimple's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.
 
-[**Read the Brick documentation**](http://brick.wealthsimple.com/) to learn more.
+[**Read the Fabric documentation**](http://fabric.wealthsimple.com/) to learn more.
 
 ## Install
 
-Use [bower](http://bower.io/) to install the latest version of Brick on a project:
+Use [bower](http://bower.io/) to install the latest version of Fabric on a project:
 
 ```
-$ bower install --save git@github.com:wealthsimple/brick.git
+$ bower install --save git@github.com:wealthsimple/fabric.git
 ```
 
 To update the package once installed:
 
 ```
-$ bower update wealthsimple-brick
+$ bower update wealthsimple-fabric
 ```
 
 ## Usage
@@ -23,18 +23,18 @@ $ bower update wealthsimple-brick
 Once installed, simply `@import` either the master SCSS file, or the individual files as you need them.
 
 ```scss
-// Example: All of Brick
-@import "wealthsimple-brick/scss/brick";
+// Example: All of Fabric
+@import "wealthsimple-fabric/scss/fabric";
 
 // Example: Individual files
-@import "wealthsimple-brick/scss/variables";
-@import "wealthsimple-brick/scss/mixins";
-@import "wealthsimple-brick/scss/base";
+@import "wealthsimple-fabric/scss/variables";
+@import "wealthsimple-fabric/scss/mixins";
+@import "wealthsimple-fabric/scss/base";
 ```
 
 ## Fonts
 
-Since font installation may vary based on the asset compilation framework you're using (e.g. Sprockets for Rails, Grunt for Ghost.org), Brick does not include `@font-face` definitions. You must include these yourself.
+Since font installation may vary based on the asset compilation framework you're using (e.g. Sprockets for Rails, Grunt for Ghost.org), Fabric does not include `@font-face` definitions. You must include these yourself.
 
 Example below. Note: for Sprockets-based compilation, you'll want to replace `url` with `font-url`.
 

@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/brick.css': 'scss/brick.scss'
+          'css/fabric.css': 'scss/fabric.scss'
         }
       }
     },
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
           'TotalImportantKeywords',
           'TotalMediaQueries'
         ],
-        file: "css/.brick-stats.md",
+        file: "css/.fabric-stats.md",
         usePackage: true
       },
       src: [
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:wealthsimple/brick.git',
+          remote: 'git@github.com:wealthsimple/fabric.git',
           branch: 'gh-pages'
         }
       }

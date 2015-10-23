@@ -1,13 +1,13 @@
 {
-  "name": "wealthsimple-brick",
+  "name": "wealthsimple-fabric",
   "version": "0.0.1",
-  "homepage": "http://brick.wealthsimple.com",
+  "homepage": "http://fabric.wealthsimple.com",
   "author": "Wealthsimple",
-  "scss": "./scss/brick.scss",
+  "scss": "./scss/fabric.scss",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wealthsimple/brick.git"
+    "url": "git+https://github.com/wealthsimple/fabric.git"
   },
   "devDependencies": {
     "autoprefixer-core": "~5.2.1",
@@ -20,11 +20,11 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-postcss": "~0.5.1"
   },
-  "description": "Brick is the CSS toolkit that powers Wealthsimple's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.",
+  "description": "Fabric is the CSS toolkit that powers Wealthsimple's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.",
   "bugs": {
-    "url": "https://github.com/wealthsimple/brick/issues"
+    "url": "https://github.com/wealthsimple/fabric/issues"
   },
-  "main": "css/brick.css",
+  "main": "css/fabric.css",
   "directories": {
     "doc": "docs"
   },
