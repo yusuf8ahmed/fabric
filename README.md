@@ -91,6 +91,15 @@ Example below. Note: for Sprockets-based compilation, you'll want to replace `ur
 }
 ```
 
+## Running locally and making changes
+
+- Grunt is used for SCSS compliation, vendor prefixing, CSS reporting, and publishing the documentation to GitHub Pages.
+- The docs are written in Markdown and compiled to HTML by [Jekyll](https://jekyllrb.com/), a static site generator. 
+
+To get this setup working locally, you must first have Node.JS and Ruby installed.
+
+TODO: write further instructions here
+
 ## Credits
 
 Boilerplate for this repository was heavily reused from GitHub's own CSS toolkit: https://github.com/primer/primer
