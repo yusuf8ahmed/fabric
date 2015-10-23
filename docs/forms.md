@@ -39,7 +39,7 @@ Form elements in Fabric currently have no basic layout specified (this is by des
   </p>
 
   <p>
-    <button class="button button-yellow" type="submit">Submit</button>
+    <button class="button color-yellow" type="submit">Submit</button>
   </p>
 </form>
 {% endexample %}

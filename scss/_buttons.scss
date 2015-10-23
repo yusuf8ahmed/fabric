@@ -24,10 +24,12 @@
     padding: 13px 25px;
   }
 }
-.button-medium {
+
+.button.size-md {
   padding: 16px 40px;
 }
-.button-large {
+
+.button.size-lg {
   font-size: 18px;
   padding: 16px 30px;
 
@@ -36,7 +38,8 @@
     padding: 30px;
   }
 }
-.button-yellow {
+
+.button.color-yellow {
   background: $color-yellow;
   color: $color-white;
 
@@ -45,11 +48,12 @@
     background-color: $color-yellow-darker;
   }
 }
+
 .button[disabled] {
   opacity: 0.8;
 }
 
-.button-semitransparent {
+.button.color-semitransparent {
   background-color: $color-black-semitransparent;
   color: $color-white-rgba;
 
