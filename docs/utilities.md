@@ -3,7 +3,7 @@ layout: page
 title: Utilities
 ---
 
-There are a handful of utilities in Palette for quick behaviors, floats, alignment, and more.
+There are a handful of utilities in Brick for quick behaviors, floats, alignment, and more.
 
 ## Contents
 

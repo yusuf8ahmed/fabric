@@ -1,5 +1,5 @@
 {
-  "name": "wealthsimple-palette",
+  "name": "wealthsimple-brick",
   "ignore": [
     "docs/",
     ".gitignore",
@@ -11,6 +11,6 @@
     "Gruntfile.js"
   ],
   "main": [
-    "scss/palette.scss"
+    "scss/brick.scss"
   ]
 }

@@ -1,21 +1,21 @@
-# Palette
+# Brick
 
-Palette is the CSS toolkit that powers Wealthsimple's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.
+Brick is the CSS toolkit that powers Wealthsimple's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.
 
-[**Read the Palette documentation**](http://palette.wealthsimple.com/) to learn more.
+[**Read the Brick documentation**](http://brick.wealthsimple.com/) to learn more.
 
 ## Install
 
-Use [bower](http://bower.io/) to install the latest version of Palette on a project:
+Use [bower](http://bower.io/) to install the latest version of Brick on a project:
 
 ```
-$ bower install --save git@github.com:wealthsimple/palette.git
+$ bower install --save git@github.com:wealthsimple/brick.git
 ```
 
 To update the package once installed:
 
 ```
-$ bower update wealthsimple-palette
+$ bower update wealthsimple-brick
 ```
 
 ## Usage
@@ -23,18 +23,18 @@ $ bower update wealthsimple-palette
 Once installed, simply `@import` either the master SCSS file, or the individual files as you need them.
 
 ```scss
-// Example: All of Palette
-@import "wealthsimple-palette/scss/palette";
+// Example: All of Brick
+@import "wealthsimple-brick/scss/brick";
 
 // Example: Individual files
-@import "wealthsimple-palette/scss/variables";
-@import "wealthsimple-palette/scss/mixins";
-@import "wealthsimple-palette/scss/base";
+@import "wealthsimple-brick/scss/variables";
+@import "wealthsimple-brick/scss/mixins";
+@import "wealthsimple-brick/scss/base";
 ```
 
 ## Fonts
 
-Since font installation may vary based on the asset compilation framework you're using (e.g. Sprockets for Rails, Grunt for Ghost.org), Palette does not include `@font-face` definitions. You must include these yourself.
+Since font installation may vary based on the asset compilation framework you're using (e.g. Sprockets for Rails, Grunt for Ghost.org), Brick does not include `@font-face` definitions. You must include these yourself.
 
 Example below. Note: for Sprockets-based compilation, you'll want to replace `url` with `font-url`.
 
@@ -67,5 +67,3 @@ Example below. Note: for Sprockets-based compilation, you'll want to replace `ur
 ## Credits
 
 Boilerplate for this repository was heavily reused from GitHub's own CSS toolkit: https://github.com/primer/primer
-
-Icon made by <a href="http://www.freepik.com">Freepik</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>.

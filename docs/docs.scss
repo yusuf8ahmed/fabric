@@ -4,10 +4,10 @@
 ---
 
 //
-// Import Palette itself
+// Import Brick itself
 //
 
-@import "../scss/palette";
+@import "../scss/brick";
 @import "css/anchor";
 @import "css/syntax";
 @import "css/github_flavored_markdown";
@@ -65,12 +65,6 @@ body {
     display: inline-block;
     font-size: 1.5rem;
     color: #fff;
-  }
-
-  .logo-icon {
-    width: 29px;
-    float: left;
-    margin-right: 8px;
   }
 
   @media (min-width: 34em) {

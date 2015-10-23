@@ -1,13 +1,13 @@
 {
-  "name": "wealthsimple-palette",
+  "name": "wealthsimple-brick",
   "version": "0.0.1",
-  "homepage": "http://palette.wealthsimple.com",
+  "homepage": "http://brick.wealthsimple.com",
   "author": "Wealthsimple",
-  "scss": "./scss/palette.scss",
+  "scss": "./scss/brick.scss",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wealthsimple/palette.git"
+    "url": "git+https://github.com/wealthsimple/brick.git"
   },
   "devDependencies": {
     "autoprefixer-core": "~5.2.1",
@@ -20,11 +20,11 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-postcss": "~0.5.1"
   },
-  "description": "Palette is the CSS toolkit that powers Wealthsimple's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.",
+  "description": "Brick is the CSS toolkit that powers Wealthsimple's front-end design. It's purposefully limited to common components to provide our developers with the most flexibility. It's built with SCSS and available via Bower, so it's easy to include all or part of it within your own project.",
   "bugs": {
-    "url": "https://github.com/wealthsimple/palette/issues"
+    "url": "https://github.com/wealthsimple/brick/issues"
   },
-  "main": "css/palette.css",
+  "main": "css/brick.css",
   "directories": {
     "doc": "docs"
   },

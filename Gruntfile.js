@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/palette.css': 'scss/palette.scss'
+          'css/brick.css': 'scss/brick.scss'
         }
       }
     },
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
           'TotalImportantKeywords',
           'TotalMediaQueries'
         ],
-        file: "css/.palette-stats.md",
+        file: "css/.brick-stats.md",
         usePackage: true
       },
       src: [
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:wealthsimple/palette.git',
+          remote: 'git@github.com:wealthsimple/brick.git',
           branch: 'gh-pages'
         }
       }

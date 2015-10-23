@@ -16,7 +16,7 @@ Style individual form controls and utilize common layouts.
 
 ## Example form
 
-Form elements in Palette currently have no basic layout specified (this is by design). You'll need to use `<fieldset>`s, `<div>`s, or other elements and styles to rearrange them.
+Form elements in Brick currently have no basic layout specified (this is by design). You'll need to use `<fieldset>`s, `<div>`s, or other elements and styles to rearrange them.
 
 {% example html %}
 <form>
