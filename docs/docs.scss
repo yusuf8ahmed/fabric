@@ -172,12 +172,18 @@ a {
   ul, ol, li {
     list-style: square;
   }
+  li {
+    line-height: 1.5;
+  }
   > h1 {
     @include h3-serif;
   }
 
   > h2 {
     @include h4-sans;
+  }
+  p {
+    line-height: 1.5;
   }
 }
 
@@ -332,6 +338,7 @@ a {
 
 .page-title + .markdown-body > p:first-child {
   @extend .p1;
+  line-height: 1.2;
 }
 
 
