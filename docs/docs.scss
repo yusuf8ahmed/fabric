@@ -161,13 +161,6 @@ body {
 // Layout
 //
 
-a {
-  color: $color-gray;
-  &:hover {
-    color: darken($color-gray, 15%);
-  }
-}
-
 .docs-layout > .markdown-body {
   ul, ol, li {
     list-style: square;
@@ -214,6 +207,13 @@ a {
   border: 1px solid $color-offwhite;
   margin-bottom: 1.5rem;
   font-size: 15px;
+  
+  a {
+    color: $color-gray;
+    &:hover {
+      color: darken($color-gray, 15%);
+    }
+  }
 
   .menu-item {
     position: relative;

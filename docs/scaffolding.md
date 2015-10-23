@@ -5,8 +5,12 @@ title: Scaffolding
 
 Scaffolding refers to the global resets and dependencies that Fabric is built upon.
 
+## Contents
 
-## Recommended HTML boilerplate
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+## HTML boilerplate
 
 If you're starting a new project, we recommend using the following boilerplate.
 
@@ -32,3 +36,13 @@ Fabric makes use of certain HTML elements and CSS properties that **require** th
 ## Box-sizing
 
 We reset `box-sizing` to `border-box` for every element in Fabric. This allows us to more easily assign widths to elements that also have `padding` and `border`s.
+
+## Links
+
+Links have a default color and hover styling:
+
+{% example html %}
+
+Here is what <a href="http://www.wealthsimple.com">an example link</a> looks like.
+
+{% endexample %}

@@ -48,3 +48,7 @@ Buttons come in several colors. The default is a white background with black tex
 ## Disabled state
 
 Unimplemented (TODO).
+
+## Block buttons
+
+Unimplemented (TODO). Are these needed?
