@@ -71,27 +71,45 @@
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#headings" id="markdown-toc-headings">Headings</a></li>
+  <li><a href="#headers" id="markdown-toc-headers">Headers</a></li>
   <li><a href="#body-text" id="markdown-toc-body-text">Body text</a></li>
   <li><a href="#lead" id="markdown-toc-lead">Lead</a></li>
   <li><a href="#inline-text-elements" id="markdown-toc-inline-text-elements">Inline text elements</a></li>
   <li><a href="#blockquotes" id="markdown-toc-blockquotes">Blockquotes</a></li>
 </ul>
 
-<h2 id="headings">Headings</h2>
+<h2 id="headers">Headers</h2>
 
-<div class="docs-example clearfix"><h1>h1. heading</h1>
-<h2>h2. heading</h2>
-<h3>h3. heading</h3>
-<h4>h4. heading</h4>
-<h5>h5. heading</h5>
-<h6>h6. heading</h6></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1. heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>h2. heading<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>h3. heading<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>h4. heading<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>h5. heading<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>h6. heading<span class="nt">&lt;/h6&gt;</span></code></pre></div>
+<p>The default <code>&lt;h1&gt;</code> through <code>&lt;h4&gt;</code> tags are bold sans-serif headers.</p>
+
+<p>You can optionally specify the <code>.h1-sans</code> through <code>.h4-sans</code> classes to apply header styling to any element.</p>
+
+<div class="docs-example clearfix"><h1>h1 Header</h1>
+<h2>h2 Header</h2>
+<h3>h3 Header</h3>
+<h4>h4 Header</h4>
+
+<h1 class="h1-sans-normal">h1 Header normal</h1>
+<h2 class="h2-sans-normal">h2 Header normal</h2>
+<h3 class="h3-sans-normal">h3 Header normal</h3>
+<h4 class="h4-sans-normal">h4 Header normal</h4>
+
+<h1 class="h1-serif">h1-serif Header</h1>
+<h2 class="h2-serif">h2-serif Header</h2>
+<h3 class="h3-serif">h3-serif Header</h3></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Header<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2 Header<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3 Header<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4 Header<span class="nt">&lt;/h4&gt;</span>
+
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1-sans-normal"</span><span class="nt">&gt;</span>h1 Header normal<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h2-sans-normal"</span><span class="nt">&gt;</span>h2 Header normal<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h3-sans-normal"</span><span class="nt">&gt;</span>h3 Header normal<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h4-sans-normal"</span><span class="nt">&gt;</span>h4 Header normal<span class="nt">&lt;/h4&gt;</span>
+
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1-serif"</span><span class="nt">&gt;</span>h1-serif Header<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h2-serif"</span><span class="nt">&gt;</span>h2-serif Header<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h3-serif"</span><span class="nt">&gt;</span>h3-serif Header<span class="nt">&lt;/h3&gt;</span></code></pre></div>
 
 <h2 id="body-text">Body text</h2>
 
