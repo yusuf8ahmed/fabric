@@ -45,10 +45,6 @@
   }
 }
 
-@mixin h5-sans-normal {
-  @include font-sans-bold(18px);
-}
-
 @mixin h1-sans-normal {
   @include font-sans(50px);
   line-height: 50px;
@@ -78,10 +74,6 @@
   @include large {
     font-size: 28px;
   }
-}
-
-@mixin h5-sans-normal {
-  @include font-sans(18px);
 }
 
 @mixin h1-serif {

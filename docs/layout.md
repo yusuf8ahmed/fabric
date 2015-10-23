@@ -3,7 +3,7 @@ layout: page
 title: Layout
 ---
 
-The layout includes basic page containers and a responsive, 12-column grid system.
+The layout includes page containers and a responsive, 12-column grid system.
 
 ## Contents
 

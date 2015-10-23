@@ -14,22 +14,26 @@ Headings, paragraphs, blockquotes, and more have some global resets.
 
 The default `<h1>` through `<h4>` tags are bold sans-serif headers.
 
-You can optionally specify the `.h1-sans` through `.h4-sans` classes to apply header styling to any element.
+Optionally use CSS classes to customize the header:
+
+- `.h1-sans` through `.h4-sans` use the sans-serif with bold font-weight.
+- `.h1-sans-normal` through `.h4-sans-normal` use the sans-serif with normal font-weight.
+- `.h1-serif` through `.h3-serif` use the serif with light font-weight.
 
 {% example html %}
-<h1>h1 Header</h1>
-<h2>h2 Header</h2>
-<h3>h3 Header</h3>
-<h4>h4 Header</h4>
+<h1>h1 Header (bold)</h1>
+<h2>h2 Header (bold)</h2>
+<h3>h3 Header (bold)</h3>
+<h4>h4 Header (bold)</h4>
 
-<h1 class="h1-sans-normal">h1 Header normal</h1>
-<h2 class="h2-sans-normal">h2 Header normal</h2>
-<h3 class="h3-sans-normal">h3 Header normal</h3>
-<h4 class="h4-sans-normal">h4 Header normal</h4>
+<h1 class="h1-sans-normal">h1 Header (normal)</h1>
+<h2 class="h2-sans-normal">h2 Header (normal)</h2>
+<h3 class="h3-sans-normal">h3 Header (normal)</h3>
+<h4 class="h4-sans-normal">h4 Header (normal)</h4>
 
-<h1 class="h1-serif">h1-serif Header</h1>
-<h2 class="h2-serif">h2-serif Header</h2>
-<h3 class="h3-serif">h3-serif Header</h3>
+<h1 class="h1-serif">h1 Header (serif)</h1>
+<h2 class="h2-serif">h2 Header (serif)</h2>
+<h3 class="h3-serif">h3 Header (serif)</h3>
 {% endexample %}
 
 ## Body text
