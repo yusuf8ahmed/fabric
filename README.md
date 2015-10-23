@@ -6,7 +6,7 @@ Fabric is the CSS toolkit that powers Wealthsimple's front-end design. It's purp
 
 ## Install
 
-There are two options for installing Fabric into your own project.
+There are two options for installing Fabric on your own project.
 
 ### Option 1. Install with Bower
 
