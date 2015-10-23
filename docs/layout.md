@@ -26,7 +26,7 @@ The container applies `width: 1240px;` and uses horizontal `margin`s to center i
 
 ### How it works
 
-The grid is pretty standard—you create rows with `.columns` and individual columns with a column class and fraction class. Here's how it works:
+The grid is pretty standard — you create rows with `.row-md` or `.row-lg` and individual columns with a `.col-*` class. Here's how it works:
 
 - Add a `.container` to encapsulate everything and provide ample horizontal gutter space.
 - Create your outer row to clear the floated columns with `<div class="row-md">` or `<div class="row-lg">`.
