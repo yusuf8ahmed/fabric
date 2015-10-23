@@ -157,7 +157,7 @@ body {
   }
 
   h2 {
-    @include h4;
+    @include h4-sans;
     font-weight: normal;
   }
 }
@@ -174,21 +174,16 @@ a {
   }
 }
 
-.docs-layout {
+.docs-layout > .markdown-body {
   ul, ol, li {
     list-style: square;
   }
-  h1 {
-    @include h3;
+  > h1 {
+    @include h3-serif;
   }
 
-  h2 {
-    @include h4;
-  }
-
-  h3 {
-    @include h5;
-    margin: 35px 0 12px;
+  > h2 {
+    @include h4-sans;
   }
 }
 

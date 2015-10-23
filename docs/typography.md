@@ -10,15 +10,26 @@ Headings, paragraphs, blockquotes, and more have some global resets.
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Headings
+## Headers
+
+The default `<h1>` through `<h4>` tags are bold sans-serif headers.
+
+You can optionally specify the `.h1-sans` through `.h4-sans` classes to apply header styling to any element.
 
 {% example html %}
-<h1>h1. heading</h1>
-<h2>h2. heading</h2>
-<h3>h3. heading</h3>
-<h4>h4. heading</h4>
-<h5>h5. heading</h5>
-<h6>h6. heading</h6>
+<h1>h1 Header</h1>
+<h2>h2 Header</h2>
+<h3>h3 Header</h3>
+<h4>h4 Header</h4>
+
+<h1 class="h1-sans-normal">h1 Header normal</h1>
+<h2 class="h2-sans-normal">h2 Header normal</h2>
+<h3 class="h3-sans-normal">h3 Header normal</h3>
+<h4 class="h4-sans-normal">h4 Header normal</h4>
+
+<h1 class="h1-serif">h1-serif Header</h1>
+<h2 class="h2-serif">h2-serif Header</h2>
+<h3 class="h3-serif">h3-serif Header</h3>
 {% endexample %}
 
 ## Body text
