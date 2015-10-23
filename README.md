@@ -6,7 +6,18 @@ Fabric is the CSS toolkit that powers Wealthsimple's front-end design. It's purp
 
 ## Install
 
-Use [bower](http://bower.io/) to install the latest version of Fabric on a project:
+### Option 1. Bower
+
+We recomend using [bower](http://bower.io/) for frontend package management. First, create a `bower.json` in your project root directory if you dont have one yet:
+
+```json
+{
+  "name": "your-project-name",
+  "private": true
+}
+```
+
+Then, to install the latest version of Fabric, run:
 
 ```
 $ bower install --save git@github.com:wealthsimple/fabric.git
@@ -18,9 +29,15 @@ To update the package once installed:
 $ bower update wealthsimple-fabric
 ```
 
+### Option 2. Minified CSS
+
+The concatenated and minified CSS is available in https://github.com/wealthsimple/fabric/blob/master/css/fabric.css
+
+Note: this is recommended against, as you won't have access to any of the SCSS variables or mixins.
+
 ## Usage
 
-Once installed, simply `@import` either the master SCSS file, or the individual files as you need them.
+Once installed with bower, simply `@import` either the master SCSS file, or the individual files as you need them.
 
 ```scss
 // Example: All of Fabric
