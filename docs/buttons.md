@@ -23,13 +23,13 @@ When using a `<button>` element, **always specify a `type`**. When using a `<a>`
 </p>
 {% endexample %}
 
-You can find them in three sizes: the default `.button` (no class needed), `.size-md`, and  `.size-lg`.
+You can find them in three sizes: the default `.button`, `.size-md`, and  `.size-lg`.
 
 {% example html %}
 <p class="button-example">
-  <button class="button" type="button">Button</button>
-  <button class="button size-md" type="button">Medium button</button>
-  <button class="button size-lg" type="button">Large button</button>
+  <button class="button" type="button">.button</button>
+  <button class="button size-md" type="button">.button .size-md</button>
+  <button class="button size-lg" type="button">.button .size-lg</button>
 </p>
 {% endexample %}
 
@@ -39,9 +39,9 @@ Buttons come in several colors. The default is a white background with black tex
 
 {% example html %}
 <p class="button-example">
-  <button class="button" type="button">Default button</button>
-  <button class="button color-yellow" type="button">Yellow button</button>
-  <button class="button color-semitransparent" type="button">Semitransparent button</button>
+  <button class="button" type="button">.button</button>
+  <button class="button color-yellow" type="button">.button .color-yellow</button>
+  <button class="button color-semitransparent" type="button">.button .color-semitransparent</button>
 </p>
 {% endexample %}
 
