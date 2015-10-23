@@ -12,6 +12,7 @@
     "Gemfile",
     "Gemfile.lock",
     "Gruntfile.js",
+    "package.json",
     "README.md"
   ],
   "main": [
