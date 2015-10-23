@@ -20,40 +20,53 @@ Form elements in Fabric currently have no basic layout specified (this is by des
 
 {% example html %}
 <form>
-  <input type="text" class="form-element form-element-white" placeholder="Name">
-  <input type="email" class="form-element form-element-white" placeholder="Email address">
+  <input type="text" class="form-input-text" placeholder="Name">
+  <input type="email" class="form-input-text" placeholder="Email address">
 
-  <label>
-    <input type="checkbox"> Remember me
-  </label>
+  <p>
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </p>
 
-  <label>
-    <input type="radio" id="herp" name="herpderp" checked> Herp
-  </label>
-  <label>
-    <input type="radio" id="derp" name="herpderp"> Derp
-  </label>
+  <p>
+    <label>
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+  </p>
 
-  <button class="button button-yellow" type="submit">Submit</button>
+  <p>
+    <button class="button button-yellow" type="submit">Submit</button>
+  </p>
 </form>
 {% endexample %}
 
 ## Colors
 
-Text inputs can have a white or beige background, depending on the class you use.
+The default text inputs has a white background, but you can append the `.color-beige` class to make it beige.
 
 {% example html %}
 <form>
-  <input class="form-element form-element-white" type="text" placeholder=".form-element-white">
-  <input class="form-element form-element-beige" type="text" placeholder=".form-element-beige">
+  <input class="form-input-text" type="text" placeholder=".form-input-text (default)">
+  <input class="form-input-text color-beige" type="text" placeholder=".form-input-text .color-beige">
 </form>
 {% endexample %}
 
-TODO - why are these different sizes?
-
 ## Sizes
 
-TODO - multiple sizes: small, medium, large
+There are two input sizes: medium and small. (TODO: consider adding more sizes as necessary).
+
+Medium is the default size, but you can apply the `.size-sm` class to make it small.
+
+{% example html %}
+<form>
+  <input class="form-input-text" type="text" placeholder="medium (default)">
+  <input class="form-input-text size-sm" type="text" placeholder=".size-sm">
+</form>
+{% endexample %}
 
 ## Selects
 

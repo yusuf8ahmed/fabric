@@ -1,26 +1,7 @@
-.form-element {
+.form-input-text {
+  @include font-sans(16px);
   display: block;
   width: 100%;
-  &:focus {
-    outline: 0;
-  }
-}
-
-input.form-element-beige {
-  @include font-sans(18px);
-  padding: 10px 15px;
-  color: #969493;
-  background: $color-light-beige;
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
-
-  &:focus {
-    border-color: darken(#ddd, 5%);
-  }
-}
-
-input.form-element-white {
-  @include font-sans(16px);
   color: #000;
   background: #fff;
   border: 1px solid #cfcfcf;
@@ -28,6 +9,7 @@ input.form-element-white {
   margin-bottom: 10px;
 
   &:focus {
+    outline: 0;
     border-color: #7cb7b6;
   }
 
@@ -35,6 +17,26 @@ input.form-element-white {
     font-size: 18px;
     padding: 18px 20px;
     margin-bottom: 20px;
+  }
+}
+
+.form-input-text.color-beige {
+  color: $color-gray-2;
+  background-color: $color-light-beige;
+  border-color: $color-gray-3;
+
+  &:focus {
+    border-color: darken($color-gray-3, 10%);
+  }
+}
+
+.form-input-text.size-sm {
+  @include font-sans(16px);
+  padding: 8px 12px;
+
+  @include medium {
+    font-size: 18px;
+    padding: 10px 15px;
   }
 }
 
