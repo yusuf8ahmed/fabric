@@ -94,11 +94,39 @@ Example below. Note: for Sprockets-based compilation, you'll want to replace `ur
 ## Running locally and making changes
 
 - Grunt is used for SCSS compliation, vendor prefixing, CSS reporting, and publishing the documentation to GitHub Pages.
-- The docs are written in Markdown and compiled to HTML by [Jekyll](https://jekyllrb.com/), a static site generator. 
+- The docs are written in Markdown and compiled to HTML by [Jekyll](https://jekyllrb.com/), a static site generator.
+
+### First-time setup
 
 To get this setup working locally, you must first have Node.JS and Ruby installed.
 
-TODO: write further instructions here
+Next, install dependencies with the following two commands:
+
+    bundle install
+    npm install
+    sudo npm install -g grunt-cli
+
+Then, you may have to open a new Terminal window or run `source ~/.bash_profile` to have access to the new `grunt` and `jekyll` binaries.
+
+### Running locally
+
+You can boot up a Jekyll server with the following command:
+
+    jekyll server
+
+Then go to http://localhost:4000 to view the documentation locally.
+
+### Publishing changes
+
+The public documentation is hosted on GitHub pages. To push new changes, first compile the CSS:
+
+    grunt
+
+Next, push the changes to `gh-pages` branch with:
+
+    grunt publish
+
+Changes should be live in around 30 seconds.
 
 ## Credits
 
