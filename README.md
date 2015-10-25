@@ -114,7 +114,7 @@ You can boot up a Jekyll server with the following command:
 
     jekyll server
 
-Then go to http://localhost:4000 to view the documentation locally.
+Then go to [http://localhost:4000](http://localhost:4000) to view the documentation locally.
 
 ### Publishing changes
 
@@ -122,7 +122,7 @@ The public documentation is hosted on GitHub pages. To push new changes, first c
 
     grunt
 
-Next, push the changes to `gh-pages` branch with:
+Commit all changes, then push the changes to `gh-pages` branch with:
 
     grunt publish
 
