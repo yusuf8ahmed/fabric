@@ -34,7 +34,7 @@ You can find them in three sizes: the default `.button`, `.size-md`, and  `.size
 Buttons come in two colors. `.primary-action` is yellow, and `.secondary-action` is white.
 
 - `.primary-action` should be used for actions such form submission and "Next".
-- `.secondary-action` should be used to actions such as "Cancel" and "Back".
+- `.secondary-action` should be used for actions such as "Cancel" and "Back".
 
 {% example html %}
 <button class="button primary-action" type="button">.button.primary-action</button>
