@@ -26,7 +26,7 @@
     "grunt-parker": "^0.1.3",
     "grunt": "^0.4.5",
     "grunt-cli": "*",
-    "grunt-build-control": "^0.2.2",
+    "grunt-build-control": "^0.6.1",
     "grunt-postcss": "~0.5.1"
   },
   "scripts": {
