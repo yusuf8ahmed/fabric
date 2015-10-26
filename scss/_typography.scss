@@ -36,7 +36,7 @@
 
 @mixin h3-sans {
   @include font-sans-bold(20px);
-  line-height: 1;
+  line-height: 22px;
 
   @include medium {
     font-size: 30px;
@@ -46,19 +46,21 @@
 
 @mixin h4-sans {
   @include font-sans-bold(18px);
-  line-height: 1;
+  line-height: 19px;
 
   @include medium {
     font-size: 25px;
+    line-height: 27px;
   }
 }
 
 @mixin h5-sans {
   @include font-sans-bold(16px);
-  line-height: 1;
+  line-height: 17px;
 
   @include medium {
     font-size: 20px;
+    line-height: 22px;
   }
 }
 
@@ -84,7 +86,7 @@
 
 @mixin h3-sans-normal {
   @include font-sans(20px);
-  line-height: 1;
+  line-height: 22px;
 
   @include medium {
     font-size: 30px;
