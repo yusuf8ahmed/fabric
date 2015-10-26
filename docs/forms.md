@@ -19,7 +19,7 @@ Style individual form controls and utilize common layouts.
 Form elements in Fabric currently have no basic layout specified (this is by design). You'll need to use `<fieldset>`s, `<div>`s, or other elements and styles to rearrange them.
 
 {% example html %}
-<form class="container-white">
+<form>
   <input type="text" class="form-input-text" placeholder="Name">
   <input type="email" class="form-input-text" placeholder="Email address">
 
