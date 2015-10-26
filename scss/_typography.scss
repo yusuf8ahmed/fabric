@@ -150,9 +150,9 @@
 }
 
 @mixin blockquote {
-  @include font-sans-bold(30px);
+  @include font-sans-bold(20px);
+  line-height: 26px;
   color: $color-green;
-  line-height: 40px;
 
   @include medium {
    font-size: 40px;
