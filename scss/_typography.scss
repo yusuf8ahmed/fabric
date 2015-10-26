@@ -25,16 +25,18 @@
 }
 
 @mixin h2-sans {
-  @include font-sans-bold(25px);
+  @include font-sans-bold(27px);
+  line-height: 31px;
 
   @include medium {
     font-size: 40px;
+    line-height: 44px;
   }
 }
 
 @mixin h3-sans {
-  @include font-sans-bold(20px);
-  line-height: 20px;
+  @include font-sans-bold(24px);
+  line-height: 28px;
 
   @include medium {
     font-size: 30px;
@@ -43,7 +45,7 @@
 }
 
 @mixin h4-sans {
-  @include font-sans-bold(18px);
+  @include font-sans-bold(20px);
 
   @include medium {
     font-size: 25px;
@@ -51,7 +53,7 @@
 }
 
 @mixin h5-sans {
-  @include font-sans-bold(16px);
+  @include font-sans-bold(18px);
 
   @include medium {
     font-size: 20px;
@@ -69,16 +71,18 @@
 }
 
 @mixin h2-sans-normal {
-  @include font-sans(25px);
+  @include font-sans(27px);
+  line-height: 31px;
 
   @include medium {
     font-size: 40px;
+    line-height: 44px;
   }
 }
 
 @mixin h3-sans-normal {
-  @include font-sans(20px);
-  line-height: 20px;
+  @include font-sans(24px);
+  line-height: 28px;
 
   @include medium {
     font-size: 30px;
@@ -87,7 +91,7 @@
 }
 
 @mixin h4-sans-normal {
-  @include font-sans(18px);
+  @include font-sans(20px);
 
   @include medium {
     font-size: 25px;
@@ -95,7 +99,7 @@
 }
 
 @mixin h5-sans-normal {
-  @include font-sans(16px);
+  @include font-sans(18px);
 
   @include medium {
     font-size: 20px;
@@ -104,6 +108,7 @@
 
 @mixin h1-serif {
   @include font-serif(50px);
+  line-height: 1;
 
   @include medium {
     font-size: 70px;
@@ -116,6 +121,7 @@
 
 @mixin h2-serif {
   @include font-serif(30px);
+  line-height: 1;
 
   @include medium {
     font-size: 60px;
@@ -125,6 +131,7 @@
 
 @mixin h3-serif {
   @include font-serif(30px);
+  line-height: 1;
 
   @include medium {
     font-size: 40px;
