@@ -17,33 +17,31 @@ Use the `.button` for form actions and primary page actions. These are used exte
 When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
 
 {% example html %}
-<p class="button-example">
-  <button class="button" type="button">Button button</button>
-  <a class="button" href="#" role="button">Link button</a>
-</p>
+<button class="button primary-action" type="button">Button button</button>
+<a class="button primary-action" href="#" role="button">Link button</a>
 {% endexample %}
 
 You can find them in three sizes: the default `.button`, `.size-md`, and  `.size-lg`.
 
 {% example html %}
-<p class="button-example">
-  <button class="button" type="button">.button</button>
-  <button class="button size-md" type="button">.button .size-md</button>
-  <button class="button size-lg" type="button">.button .size-lg</button>
-</p>
+<button class="button primary-action" type="button">.button</button>
+<button class="button primary-action size-md" type="button">.button .size-md</button>
+<button class="button primary-action size-lg" type="button">.button .size-lg</button>
 {% endexample %}
 
 ## Colors
 
-Buttons come in several colors. The default is a white background with black text.
+Buttons come in two colors. `.primary-action` is yellow, and `.secondary-action` is white.
+
+- `.primary-action` should be used for actions such form submission and "Next".
+- `.secondary-action` should be used for actions such as "Cancel" and "Back".
 
 {% example html %}
-<p class="button-example">
-  <button class="button" type="button">.button</button>
-  <button class="button color-yellow" type="button">.button .color-yellow</button>
-  <button class="button color-semitransparent" type="button">.button .color-semitransparent</button>
-</p>
+<button class="button primary-action" type="button">.button.primary-action</button>
+<button class="button secondary-action" type="button">.button.secondary-action</button>
 {% endexample %}
+
+In rare cases where the container's background color is not white, you can manually override the color in SCSS by using `@include white-button` for the primary action.
 
 ## Disabled state
 
