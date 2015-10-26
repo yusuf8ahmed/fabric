@@ -1,3 +1,28 @@
+@mixin yellow-button {
+  background: $color-yellow;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-yellow-darker;
+  }
+}
+
+@mixin white-button {
+  color: $color-black;
+  background: white;
+
+  &:hover {
+    color: $color-black;
+    background-color: $color-light-gray;
+  }
+}
+
+@mixin bordered-white-button {
+  @include white-button;
+  border: 1px solid $color-gray-3;
+}
+
 .button {
   @include font-sans(16px);
   background-color: gray;
@@ -33,52 +58,12 @@
     padding: 30px;
   }
 }
-
-@mixin yellow-button {
-  background: $color-yellow;
-  color: $color-white;
-
-  &:hover {
-    color: $color-white;
-    background-color: $color-yellow-darker;
-  }
+.button.primary-action {
+  @include yellow-button;
 }
 
-@mixin white-button {
-  color: $color-black;
-  background: white;
-
-  &:hover {
-    color: $color-black;
-    background-color: $color-light-gray;
-  }
-}
-
-.container-white, .container-beige {
-  .container-red, .container-yellow, .container-green & {
-    .container-white, .container-beige & {
-      .button.primary-action {
-        @include yellow-button;
-      }
-      .button.secondary-action {
-        @include white-button;
-        border: 1px solid #eee; // TODO - confirm this border with Rudy
-      }
-    }
-  }
-}
-
-.container-red, .container-yellow, .container-green {
-  .container-white, .container-beige & {
-    .container-red, .container-yellow, .container-green & {
-      .button.primary-action {
-        @include white-button;
-      }
-      .button.secondary-action {
-        @include yellow-button;
-      }
-    }
-  }
+.button.secondary-action {
+  @include bordered-white-button;
 }
 
 .button[disabled] {

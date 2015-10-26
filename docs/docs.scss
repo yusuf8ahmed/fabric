@@ -119,11 +119,8 @@ body {
     font-weight: normal;
   }
 
-  .btn {
-    padding: .75em 1.15em;
-    font-size: inherit;
-    font-weight: normal;
-    line-height: 1;
+  .primary-action {
+    @include white-button;
   }
 
   @media (min-width: 34em) {
@@ -378,5 +375,6 @@ body {
 .swatch-light-beige { background-color: $color-light-beige; }
 
 .button-example {
+  background-color: $color-green;
   padding: 25px;
 }
