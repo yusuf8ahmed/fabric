@@ -17,16 +17,16 @@ Use the `.button` for form actions and primary page actions. These are used exte
 When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
 
 {% example html %}
-<p class="button-example">
-  <button class="button" type="button">Button button</button>
-  <a class="button" href="#" role="button">Link button</a>
+<p class="container-green button-example">
+  <button class="button primary-action" type="button">Button button</button>
+  <a class="button secondary-action" href="#" role="button">Link button</a>
 </p>
 {% endexample %}
 
 You can find them in three sizes: the default `.button`, `.size-md`, and  `.size-lg`.
 
 {% example html %}
-<p class="button-example">
+<p class="container-green button-example">
   <button class="button" type="button">.button</button>
   <button class="button size-md" type="button">.button .size-md</button>
   <button class="button size-lg" type="button">.button .size-lg</button>
@@ -35,10 +35,15 @@ You can find them in three sizes: the default `.button`, `.size-md`, and  `.size
 
 ## Colors
 
-Buttons come in several colors. The default is a white background with black text.
+Buttons come in several colors.
 
 {% example html %}
-<p class="button-example">
+<p class="container-green button-example">
+  <button class="button" type="button">.button</button>
+  <button class="button color-yellow" type="button">.button .color-yellow</button>
+  <button class="button semitransparent" type="button">.button .color-semitransparent</button>
+</p>
+<p class="container-green button-example">
   <button class="button" type="button">.button</button>
   <button class="button color-yellow" type="button">.button .color-yellow</button>
   <button class="button color-semitransparent" type="button">.button .color-semitransparent</button>

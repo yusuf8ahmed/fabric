@@ -1,7 +1,7 @@
 .button {
   @include font-sans(16px);
-  background: white;
-  color: $color-black;
+  background-color: gray;
+
   padding: 13px 13px;
   line-height: 1;
   border-radius: 40px;
@@ -12,11 +12,6 @@
   // Remove blue border that appears for type=submit
   &:focus {
     outline: 0;
-  }
-
-  &:hover {
-    color: $color-black;
-    background-color: $color-light-gray;
   }
 
   @include medium {
@@ -39,7 +34,7 @@
   }
 }
 
-.button.color-yellow {
+@mixin yellow-button {
   background: $color-yellow;
   color: $color-white;
 
@@ -49,16 +44,43 @@
   }
 }
 
-.button[disabled] {
-  opacity: 0.8;
-}
-
-.button.color-semitransparent {
-  background-color: $color-black-semitransparent;
-  color: $color-white-rgba;
+@mixin white-button {
+  color: $color-black;
+  background: white;
 
   &:hover {
-    color: $color-white-rgba;
-    background-color: $color-black-semitransparent-darker;
+    color: $color-black;
+    background-color: $color-light-gray;
   }
+}
+
+.container-white, .container-beige {
+  .container-red, .container-yellow, .container-green & {
+    .container-white, .container-beige & {
+      .button.primary-action {
+        @include yellow-button;
+      }
+      .button.secondary-action {
+        @include white-button;
+        border: 1px solid #eee; // TODO - confirm this border with Rudy
+      }
+    }
+  }
+}
+
+.container-red, .container-yellow, .container-green {
+  .container-white, .container-beige & {
+    .container-red, .container-yellow, .container-green & {
+      .button.primary-action {
+        @include white-button;
+      }
+      .button.secondary-action {
+        @include yellow-button;
+      }
+    }
+  }
+}
+
+.button[disabled] {
+  opacity: 0.8;
 }
