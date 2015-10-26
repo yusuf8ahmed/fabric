@@ -79,3 +79,5 @@ Wrap `<blockquote>` around any HTML as the quote.
   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.”
 </blockquote>
 {% endexample %}
+
+## Social icons
