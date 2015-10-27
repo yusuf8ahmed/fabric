@@ -18,12 +18,12 @@
 .show-md {
   display: none;
   @include medium {
-    display: block;
+    display: block !important;
   }
 }
 .hide-md {
   @include medium {
-    display: none;
+    display: none !important;
   }
 }
 
