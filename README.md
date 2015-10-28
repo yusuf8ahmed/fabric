@@ -69,25 +69,37 @@ Example below. Note: for Sprockets-based compilation, you'll want to replace `ur
 @font-face {
   font-family: 'FuturaBT-Light';
   src: url('/fonts/FuturaBT-Light.eot');
-  src: url('/fonts/FuturaBT-Light.eot?#iefix') format('embedded-opentype'),url('/fonts/FuturaBT-Light.woff2') format('woff2'),url('/fonts/FuturaBT-Light.woff') format('woff'),url('/fonts/FuturaBT-Light.ttf') format('truetype');
+  src: url('/fonts/FuturaBT-Light.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/FuturaBT-Light.woff2') format('woff2'),
+       url('/fonts/FuturaBT-Light.woff') format('woff'),
+       url('/fonts/FuturaBT-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'FuturaBT-Book';
   src: url('/fonts/FuturaBT-Book.eot');
-  src: url('/fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),url('/fonts/FuturaBT-Book.woff2') format('woff2'),url('/fonts/FuturaBT-Book.woff') format('woff'),url('/fonts/FuturaBT-Book.ttf') format('truetype');
+  src: url('/fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/FuturaBT-Book.woff2') format('woff2'),
+       url('/fonts/FuturaBT-Book.woff') format('woff'),
+       url('/fonts/FuturaBT-Book.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'FuturaBT-Heavy';
   src: url('/fonts/FuturaBT-Heavy.eot');
-  src: url('/fonts/FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),url('/fonts/FuturaBT-Heavy.woff2') format('woff2'),url('/fonts/FuturaBT-Heavy.woff') format('woff'),url('/fonts/FuturaBT-Heavy.ttf') format('truetype');
+  src: url('/fonts/FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/FuturaBT-Heavy.woff2') format('woff2'),
+       url('/fonts/FuturaBT-Heavy.woff') format('woff'),
+       url('/fonts/FuturaBT-Heavy.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'CaslonGraD';
   src: url('/fonts/CaslonGraD.eot');
-  src: url('/fonts/CaslonGraD.eot?#iefix') format('embedded-opentype'),url('/fonts/CaslonGraD.woff2') format('woff2'),url('/fonts/CaslonGraD.woff') format('woff'),url('/fonts/CaslonGraD.ttf') format('truetype');
+  src: url('/fonts/CaslonGraD.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/CaslonGraD.woff2') format('woff2'),
+       url('/fonts/CaslonGraD.woff') format('woff'),
+       url('/fonts/CaslonGraD.ttf') format('truetype');
 }
 ```
 
