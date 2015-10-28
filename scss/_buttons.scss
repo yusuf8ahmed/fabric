@@ -1,16 +1,18 @@
 @mixin yellow-button {
-  background: $color-yellow;
+  background-color: $color-yellow;
   color: $color-white;
+  transition: background-color 60ms linear;
 
   &:hover {
     color: $color-white;
-    background-color: $color-yellow-darker;
+    background-color: $color-yellow-hover;
   }
 }
 
 @mixin white-button {
   color: $color-black;
-  background: white;
+  background-color: white;
+  transition: background-color 60ms linear;
 
   &:hover {
     color: $color-black;
@@ -27,20 +29,25 @@
   @include font-sans(16px);
   background-color: gray;
 
-  padding: 13px 13px;
+  padding: 13px 18px;
   line-height: 1;
   border-radius: 40px;
   cursor: pointer;
   display:inline-block;
   border: 0;
+  text-decoration: none;
+  transition: opacity 60ms linear;
 
   // Remove blue border that appears for type=submit
   &:focus {
     outline: 0;
   }
 
+  &:hover {
+    opacity: 0.95;
+  }
+
   @include medium {
-    font-size: 18px;
     padding: 13px 25px;
   }
 }
@@ -54,8 +61,8 @@
   padding: 16px 30px;
 
   @include medium {
-    font-size: 22px;
-    padding: 30px;
+    font-size: 20px;
+    padding: 24px 35px;
   }
 }
 .button.primary-action {

@@ -121,7 +121,7 @@
   }
 
   @include large {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 
@@ -130,7 +130,7 @@
   line-height: 1;
 
   @include medium {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
   }
 }
@@ -140,7 +140,7 @@
   line-height: 1;
 
   @include medium {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -149,7 +149,7 @@
   line-height: 1.5;
 
   @include medium {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 

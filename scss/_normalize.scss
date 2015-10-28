@@ -43,3 +43,10 @@ h1, h2, h3, h4, h5 { margin: 0; padding: 0; }
 blockquote {
   margin: 0;
 }
+
+pre {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  display: inline-block;
+}
