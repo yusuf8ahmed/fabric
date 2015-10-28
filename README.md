@@ -101,6 +101,14 @@ Example below. Note: for Sprockets-based compilation, you'll want to replace `ur
        url('/fonts/CaslonGraD.woff') format('woff'),
        url('/fonts/CaslonGraD.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: "SSSocialCircle";
+  src: url('/fonts/SSSocialCircle.eot');
+  src: url('/fonts/SSSocialCircle.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/SSSocialCircle.woff') format('woff'),
+       url('/fonts/SSSocialCircle.ttf')  format('truetype');
+}
 ```
 
 ## Running locally and making changes
