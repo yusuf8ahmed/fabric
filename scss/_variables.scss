@@ -1,8 +1,8 @@
 $bp-medium: 850px;
 $bp-large: 1000px;
-$bp-site-max-width: 1280px;
+$bp-site-max-width: 1440px;
 
-$site-max-width: 1240px;
+$site-max-width: 1400px;
 
 // TODO - better naming convention for colors. Consider consolidating grays.
 $color-black: #121212;
@@ -10,7 +10,7 @@ $color-white: #ffffff;
 $color-offwhite: #ebebeb;
 $color-red: #ed5a3f;
 $color-yellow: #fab131;
-$color-yellow-darker: darken($color-yellow, 5%);
+$color-yellow-hover: #f7a81d;
 $color-faded-yellow: #fdd898;
 $color-translucent-yellow: #fbbc50;
 $color-green: #7cb7b6;
