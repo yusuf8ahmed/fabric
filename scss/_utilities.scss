@@ -27,6 +27,41 @@
   }
 }
 
+// % Width utilities
+.width-90-sm {
+  width: 90%;
+  @include medium {
+    width: auto;
+  }
+}
+.width-90-md {
+  @include medium {
+    width: 90%;
+  }
+}
+.width-80-sm {
+  width: 80%;
+  @include medium {
+    width: auto;
+  }
+}
+.width-80-md {
+  @include medium {
+    width: 80%;
+  }
+}
+.width-75-sm {
+  width: 75%;
+  @include medium {
+    width: auto;
+  }
+}
+.width-75-md {
+  @include medium {
+    width: 75%;
+  }
+}
+
 /* Base-margin and base-padding */
 .base-margin { margin: $base-unit; }
 .base-margin-top { margin-top: $base-unit; }
