@@ -20,6 +20,25 @@
   }
 }
 
+@mixin pagination-button {
+  @include font-sans-bold(8px);
+  letter-spacing: 4px;
+  background: transparent;
+  color: $color-yellow;
+  text-transform: uppercase;
+  border: 1px solid $color-yellow;
+
+  &:hover {
+    color: $color-yellow-hover;
+    border-color: $color-yellow-hover;
+  }
+
+  @include medium {
+    font-size: 14px;
+    letter-spacing: 6px;
+  }
+}
+
 @mixin bordered-white-button {
   @include white-button;
   border: 1px solid $color-gray-3;
@@ -71,6 +90,10 @@
 
 .button.secondary-action {
   @include bordered-white-button;
+}
+
+.button.pagination-button {
+  @include pagination-button;
 }
 
 .button[disabled] {
