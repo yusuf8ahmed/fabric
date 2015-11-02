@@ -1,0 +1,77 @@
+// TODO: share this CSS
+
+@mixin base-table($padding) {
+  width: 100%;
+
+  th {
+    @include font-sans(20px);
+    text-align: left;
+    padding: $padding;
+  }
+
+  td {
+    @include font-sans(18px);
+    padding: 10px $padding;
+  }
+}
+
+@mixin table-transparent($padding) {
+  @include base-table($padding);
+
+  // Make the table take up more horizontal space.
+  margin-left: -$padding;
+  margin-right: -$padding;
+}
+
+table.table-transparent {
+  @include table-transparent(16px);
+}
+
+table.table-transparent.size-lg {
+  @include medium {
+    @include table-transparent(20px);
+
+    td {
+      @include font-sans(21px);
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+table.table-opaque {
+  @include base-table(16px);
+
+  td {
+    border-style: solid;
+    border-color: #fff;
+    border-width: 2px 0;
+    background-color: $color-light-gray;
+  }
+}
+
+thead th.status-column,
+tbody td.status-column {
+  width: 8px;
+  padding: 0;
+
+  &.success {
+    background-color: $color-green;
+  }
+  &.info {
+    background-color: $color-gray;
+  }
+  &.danger {
+    background-color: $color-red;
+  }
+}
+
+.table-link {
+  display: block;
+  border: 1px dashed $color-gray-40;
+  padding: 10px 20px;
+  margin-top: 12px;
+  &:hover {
+    background-color: $color-light-gray;
+  }
+}

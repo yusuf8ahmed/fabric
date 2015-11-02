@@ -21,11 +21,20 @@ $color-gray-3: #ddd;
 $color-light-gray: #f2f2f2;
 $color-light-beige: #faf7f5;
 $color-gray-4: rgba(0, 0, 0, 0.3);
+$color-gray-15: #E8E8E8;
+$color-gray-20: #E1E1E1;
+$color-gray-35: #B7B7B7;
+$color-gray-40: #a7a7a7;
+$color-gray-60: #7F7F7F;
+$color-gray-65: #737373;
+$color-gray-80: #453d3f;
 
 $color-border: $color-offwhite;
 
 $color-white-rgba: rgba(255,255,255,1.0);
-$color-black-semitransparent: rgba(0,0,0,0.15);
-$color-black-semitransparent-darker: rgba(0,0,0,0.2);
+
+$color-red-transparent: rgba($color-red, 0.2);
+$color-green-transparent: rgba($color-green, 0.2);
+$color-gray-transparent: rgba($color-gray, 0.2);
 
 $base-unit: 10px;
