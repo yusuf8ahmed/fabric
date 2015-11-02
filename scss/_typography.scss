@@ -162,6 +162,27 @@
   }
 }
 
+@mixin text-metadata {
+  @include font-sans-bold(11px);
+  color: $color-gray-4;
+  line-height: 18px;
+  letter-spacing: 4px;
+
+  @include medium {
+    letter-spacing: 6px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin text-metadata-md {
+  @include text-metadata;
+
+  @include medium {
+    font-size: 15px;
+  }
+}
+
 @mixin blockquote {
   @include font-sans-bold(20px);
   line-height: 26px;
@@ -198,3 +219,11 @@ blockquote { @include blockquote; }
 
 .p1 { @include p1; }
 .p2 { @include p2; }
+
+.text-metadata {
+  @include text-metadata;
+
+  &.size-md {
+    @include text-metadata-md;
+  }
+}
