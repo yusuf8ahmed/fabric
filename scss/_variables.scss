@@ -4,7 +4,8 @@ $bp-site-max-width: 1440px;
 
 $site-max-width: 1400px;
 
-// TODO - better naming convention for colors. Consider consolidating grays.
+// TODO - better naming convention for colors.
+// Consolidate grays
 $color-black: #121212;
 $color-white: #ffffff;
 $color-offwhite: #ebebeb;
@@ -19,6 +20,7 @@ $color-gray-2: #969493;
 $color-gray-3: #ddd;
 $color-light-gray: #f2f2f2;
 $color-light-beige: #faf7f5;
+$color-gray-4: rgba(0, 0, 0, 0.3);
 
 $color-border: $color-offwhite;
 
