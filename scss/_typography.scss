@@ -29,8 +29,8 @@
   line-height: 31px;
 
   @include medium {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 
@@ -39,8 +39,8 @@
   line-height: 22px;
 
   @include medium {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 27px;
+    line-height: 33px;
   }
 }
 
@@ -49,8 +49,8 @@
   line-height: 19px;
 
   @include medium {
-    font-size: 25px;
-    line-height: 27px;
+    font-size: 23px;
+    line-height: 25px;
   }
 }
 
@@ -59,8 +59,8 @@
   line-height: 17px;
 
   @include medium {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
@@ -69,8 +69,8 @@
   line-height: 35px;
 
   @include medium {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 54px;
+    line-height: 54px;
   }
 }
 
@@ -79,8 +79,8 @@
   line-height: 31px;
 
   @include medium {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 
@@ -89,26 +89,28 @@
   line-height: 22px;
 
   @include medium {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 27px;
+    line-height: 33px;
   }
 }
 
 @mixin h4-sans-normal {
   @include font-sans(18px);
-  line-height: 1;
+  line-height: 19px;
 
   @include medium {
-    font-size: 25px;
+    font-size: 23px;
+    line-height: 25px;
   }
 }
 
 @mixin h5-sans-normal {
   @include font-sans(16px);
-  line-height: 1;
+  line-height: 17px;
 
   @include medium {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
