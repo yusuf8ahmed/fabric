@@ -19,7 +19,7 @@ input {
 }
 a {
   color: $color-yellow;
-  text-decoration: none;
+  text-decoration: underline;
   &:hover {
     color: darken($color-yellow, 10%);
   }
