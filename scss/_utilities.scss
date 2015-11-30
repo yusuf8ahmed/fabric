@@ -21,6 +21,12 @@
     display: block !important;
   }
 }
+.show-md.inline-block {
+  @include medium {
+    display: inline-block !important;
+  }
+}
+
 .hide-md {
   @include medium {
     display: none !important;
