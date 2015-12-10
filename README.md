@@ -130,11 +130,10 @@ Then, you may have to open a new Terminal window or run `source ~/.bash_profile`
 
 ### Running locally
 
-You can boot up a Jekyll server with the following command:
-
-    jekyll server
-
-Then go to [http://localhost:4000](http://localhost:4000) to view the documentation locally.
+1. Make sure dependencies are installed as described in "First-time setup"
+2. Run `grunt watch` to have the CSS recompiled when any file in `scss` is changed
+3. Boot up a Jekyll server with `bundle exec jekyll server`
+4. Open [http://localhost:4000](http://localhost:4000) to view the documentation locally
 
 ### Publishing changes
 
