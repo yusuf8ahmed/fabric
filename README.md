@@ -120,7 +120,7 @@ Example below. Note: for Sprockets-based compilation, you'll want to replace `ur
 
 To get this setup working locally, you must first have Node.JS and Ruby installed.
 
-Next, install dependencies with the following two commands:
+Next, install dependencies with the following commands:
 
     bundle install
     npm install
@@ -149,4 +149,4 @@ Changes should be live in around 30 seconds.
 
 ## Credits
 
-Boilerplate for this repository was heavily reused from GitHub's own CSS toolkit: https://github.com/primer/primer
+Boilerplate for this repository was heavily reused from [GitHub's CSS toolkit](https://github.com/primer/primer).
