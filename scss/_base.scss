@@ -15,7 +15,8 @@ html, body {
 }
 body,
 input {
-  @include font-sans(16px);
+  font-size: 16px;
+  @include font-sans;
 }
 a {
   color: $color-yellow;

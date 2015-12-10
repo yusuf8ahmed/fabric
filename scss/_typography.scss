@@ -1,22 +1,22 @@
-@mixin font-sans($font-size:inherit) {
-  font: $font-size 'FuturaBT-Book', sans-serif;
+@mixin font-sans {
+  font-family: 'FuturaBT-Book', sans-serif;
   font-weight: 300;
 }
 
-@mixin font-sans-bold($font-size:inherit) {
-  font: $font-size 'FuturaBT-Heavy', sans-serif;
+@mixin font-sans-bold {
+  font-family: 'FuturaBT-Heavy', sans-serif;
   font-weight: 100;
 }
 
-@mixin font-serif($font-size:inherit) {
+@mixin font-serif {
   font-family: 'CaslonGraD', serif;
-  font-size: $font-size;
   font-weight: 100;
 }
 
 @mixin h1-sans {
-  @include font-sans-bold(30px);
+  font-size: 30px;
   line-height: 35px;
+  @include font-sans-bold;
 
   @include medium {
     font-size: 54px;
@@ -25,8 +25,9 @@
 }
 
 @mixin h2-sans {
-  @include font-sans-bold(27px);
+  font-size: 27px;
   line-height: 31px;
+  @include font-sans-bold;
 
   @include medium {
     font-size: 36px;
@@ -35,8 +36,9 @@
 }
 
 @mixin h3-sans {
-  @include font-sans-bold(20px);
+  font-size: 20px;
   line-height: 22px;
+  @include font-sans-bold;
 
   @include medium {
     font-size: 27px;
@@ -45,8 +47,9 @@
 }
 
 @mixin h4-sans {
-  @include font-sans-bold(18px);
+  font-size: 18px;
   line-height: 19px;
+  @include font-sans-bold;
 
   @include medium {
     font-size: 23px;
@@ -55,8 +58,9 @@
 }
 
 @mixin h5-sans {
-  @include font-sans-bold(16px);
+  font-size: 16px;
   line-height: 17px;
+  @include font-sans-bold;
 
   @include medium {
     font-size: 18px;
@@ -65,8 +69,9 @@
 }
 
 @mixin h1-sans-normal {
-  @include font-sans(30px);
+  font-size: 30px;
   line-height: 35px;
+  @include font-sans;
 
   @include medium {
     font-size: 54px;
@@ -75,8 +80,9 @@
 }
 
 @mixin h2-sans-normal {
-  @include font-sans(27px);
+  font-size: 27px;
   line-height: 31px;
+  @include font-sans;
 
   @include medium {
     font-size: 36px;
@@ -85,8 +91,9 @@
 }
 
 @mixin h3-sans-normal {
-  @include font-sans(20px);
+  font-size: 20px;
   line-height: 22px;
+  @include font-sans;
 
   @include medium {
     font-size: 27px;
@@ -95,8 +102,9 @@
 }
 
 @mixin h4-sans-normal {
-  @include font-sans(18px);
+  font-size: 18px;
   line-height: 19px;
+  @include font-sans;
 
   @include medium {
     font-size: 23px;
@@ -105,8 +113,9 @@
 }
 
 @mixin h5-sans-normal {
-  @include font-sans(16px);
+  font-size: 16px;
   line-height: 17px;
+  @include font-sans;
 
   @include medium {
     font-size: 18px;
@@ -115,8 +124,9 @@
 }
 
 @mixin h1-serif {
-  @include font-serif(50px);
+  font-size: 50px;
   line-height: 1;
+  @include font-serif;
 
   @include medium {
     font-size: 70px;
@@ -128,8 +138,9 @@
 }
 
 @mixin h2-serif {
-  @include font-serif(30px);
+  font-size: 30px;
   line-height: 1;
+  @include font-serif;
 
   @include medium {
     font-size: 50px;
@@ -138,8 +149,9 @@
 }
 
 @mixin h3-serif {
-  @include font-serif(30px);
+  font-size: 30px;
   line-height: 1;
+  @include font-serif;
 
   @include medium {
     font-size: 36px;
@@ -147,8 +159,9 @@
 }
 
 @mixin p1 {
-  @include font-sans(16px);
+  font-size: 16px;
   line-height: 1.5;
+  @include font-sans;
 
   @include medium {
     font-size: 20px;
@@ -156,8 +169,9 @@
 }
 
 @mixin p2 {
-  @include font-sans(16px);
+  font-size: 16px;
   line-height: 1.5;
+  @include font-sans;
 
   @include medium {
     font-size: 18px;
@@ -165,10 +179,11 @@
 }
 
 @mixin text-metadata {
-  @include font-sans-bold(11px);
   color: $color-gray-4;
+  font-size: 11px;
   line-height: 18px;
   letter-spacing: 4px;
+  @include font-sans-bold;
 
   @include medium {
     letter-spacing: 6px;
@@ -186,9 +201,10 @@
 }
 
 @mixin blockquote {
-  @include font-sans-bold(20px);
-  line-height: 26px;
   color: $color-green;
+  font-size: 20px;
+  line-height: 26px;
+  @include font-sans-bold;
 
   @include medium {
    font-size: 40px;

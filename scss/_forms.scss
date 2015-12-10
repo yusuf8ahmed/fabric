@@ -1,5 +1,6 @@
 .form-input-text {
-  @include font-sans(16px);
+  font-size: 16px;
+  @include font-sans;
   display: block;
   width: 100%;
   color: #000;
@@ -31,7 +32,8 @@
 }
 
 .form-input-text.size-sm {
-  @include font-sans(16px);
+  font-size: 16px;
+  @include font-sans;
   padding: 8px 12px;
 
   @include medium {
