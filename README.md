@@ -21,7 +21,7 @@ We recomend using [bower](http://bower.io/) for frontend package management. Fir
 
 Optionally specify a `.bowerrc` config file to control the directory where the assets get pulled into:
 
-```
+```json
 {
   "directory": "vendor/assets/bower_components"
 }
