@@ -29,13 +29,13 @@ Optionally specify a `.bowerrc` config file to control the directory where the a
 
 Then, to install the latest version of Fabric, run:
 
-```
+```bash
 $ bower install --save git@github.com:wealthsimple/fabric.git
 ```
 
 To update the package once installed:
 
-```
+```bash
 $ bower update wealthsimple-fabric
 ```
 
@@ -122,9 +122,11 @@ To get this setup working locally, you must first have Node.JS and Ruby installe
 
 Next, install dependencies with the following commands:
 
-    bundle install
-    npm install
-    sudo npm install -g grunt-cli
+```bash
+bundle install
+npm install
+sudo npm install -g grunt-cli
+```
 
 Then, you may have to open a new Terminal window or run `source ~/.bash_profile` to have access to the new `grunt` and `jekyll` binaries.
 
@@ -139,11 +141,15 @@ Then, you may have to open a new Terminal window or run `source ~/.bash_profile`
 
 The public documentation is hosted on GitHub pages. To push new changes, first compile the CSS:
 
-    grunt
+```bash
+$ grunt
+```
 
 Commit all changes, then push the changes to `gh-pages` branch with:
 
-    grunt publish
+```bash
+$ grunt publish
+```
 
 Changes should be live in around 30 seconds.
 
