@@ -21,7 +21,7 @@ We recomend using [bower](http://bower.io/) for frontend package management. Fir
 
 Optionally specify a `.bowerrc` config file to control the directory where the assets get pulled into:
 
-```
+```json
 {
   "directory": "vendor/assets/bower_components"
 }
@@ -29,13 +29,13 @@ Optionally specify a `.bowerrc` config file to control the directory where the a
 
 Then, to install the latest version of Fabric, run:
 
-```
+```sh
 $ bower install --save git@github.com:wealthsimple/fabric.git
 ```
 
 To update the package once installed:
 
-```
+```sh
 $ bower update wealthsimple-fabric
 ```
 
@@ -120,34 +120,39 @@ Example below. Note: for Sprockets-based compilation, you'll want to replace `ur
 
 To get this setup working locally, you must first have Node.JS and Ruby installed.
 
-Next, install dependencies with the following two commands:
+Next, install dependencies with the following commands:
 
-    bundle install
-    npm install
-    sudo npm install -g grunt-cli
+```sh
+bundle install
+npm install
+sudo npm install -g grunt-cli
+```
 
 Then, you may have to open a new Terminal window or run `source ~/.bash_profile` to have access to the new `grunt` and `jekyll` binaries.
 
 ### Running locally
 
-You can boot up a Jekyll server with the following command:
-
-    jekyll server
-
-Then go to [http://localhost:4000](http://localhost:4000) to view the documentation locally.
+1. Make sure dependencies are installed as described in "First-time setup"
+2. Run `grunt watch` to have the CSS recompiled when any file in `scss` is changed
+3. Boot up a Jekyll server with `bundle exec jekyll server`
+4. Open [http://localhost:4000](http://localhost:4000) to view the documentation locally
 
 ### Publishing changes
 
 The public documentation is hosted on GitHub pages. To push new changes, first compile the CSS:
 
-    grunt
+```sh
+$ grunt
+```
 
 Commit all changes, then push the changes to `gh-pages` branch with:
 
-    grunt publish
+```sh
+$ grunt publish
+```
 
 Changes should be live in around 30 seconds.
 
 ## Credits
 
-Boilerplate for this repository was heavily reused from GitHub's own CSS toolkit: https://github.com/primer/primer
+Boilerplate for this repository was heavily reused from [GitHub's CSS toolkit](https://github.com/primer/primer).
