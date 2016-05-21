@@ -70,7 +70,22 @@ Medium is the default size, but you can apply the `.size-sm` class to make it sm
 
 ## Selects
 
-TODO
+{% example html %}
+<form>
+  <select class="form-control">
+    <option disabled selected default>Select a prefecture</option>
+    <option>Gifu</option>
+    <option>Kyoto</option>
+    <option>Tokyo</option>
+  </select>
+  <select class="form-control size-sm">
+    <option disabled selected default>Select a language</option>
+    <option>JavaScript</option>
+    <option>CoffeeScript</option>
+    <option>TypeScript</option>
+  </select>
+</form>
+{% endexample %}
 
 ## Checkboxes and radios
 
