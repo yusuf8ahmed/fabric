@@ -125,7 +125,7 @@ Next, install dependencies with the following commands:
 ```sh
 bundle install
 npm install
-sudo npm install -g grunt-cli
+npm install -g grunt-cli
 ```
 
 Then, you may have to open a new Terminal window or run `source ~/.bash_profile` to have access to the new `grunt` and `jekyll` binaries.
