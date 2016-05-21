@@ -384,6 +384,10 @@ $margin: 16px;
     margin-bottom: $margin;
   }
 
+  pre {
+    display: block;
+  }
+
   hr {
     height: 4px;
     padding: 0;
