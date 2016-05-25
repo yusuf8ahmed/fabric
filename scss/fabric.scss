@@ -5,10 +5,11 @@
 
 // Global requirements
 @import "variables";
-@import "mixins";
+@import "base-mixins";
 
 // Basecoat
 @import "normalize";
+@import "typography-mixins";
 @import "typography";
 @import "base";
 @import "grid";
