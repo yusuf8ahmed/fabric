@@ -30,7 +30,7 @@ Optionally specify a `.bowerrc` config file to control the directory where the a
 Then, to install the latest version of Fabric, run:
 
 ```sh
-$ bower install --save git@github.com:wealthsimple/fabric.git
+$ bower install --save https://github.com/wealthsimple/fabric.git
 ```
 
 To update the package once installed:
