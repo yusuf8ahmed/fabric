@@ -44,14 +44,14 @@ $grid-col-padding: 15px;
 }
 
 @for $i from 1 through $grid-cols {
-  .row-sm .col-#{$i} {
+  .row-sm > .col-#{$i} {
     margin-left: 4px;
     width: (100% / $grid-cols) * $i;
     &:first-child, &.first-child { margin-left: 0; }
   }
 
   @include medium {
-    .row-md .col-#{$i} {
+    .row-md > .col-#{$i} {
       margin-left: 40px;
       width: (100% / $grid-cols) * $i;
       &:first-child, &.first-child { margin-left: 0; }
@@ -59,7 +59,7 @@ $grid-col-padding: 15px;
   }
 
   @include large {
-    .row-lg .col-#{$i} {
+    .row-lg > .col-#{$i} {
       margin-left: 40px;
       width: (100% / $grid-cols) * $i;
       &:first-child, &.first-child { margin-left: 0; }
