@@ -202,14 +202,14 @@ body {
 
 .docs-menu {
   border-radius: 3px;
-  border: 1px solid $color-offwhite;
+  border: 1px solid $color-gray-20;
   margin-bottom: 1.5rem;
   font-size: 15px;
 
   a {
-    color: $color-gray;
+    color: $color-dark-beige;
     &:hover {
-      color: darken($color-gray, 15%);
+      color: darken($color-dark-beige, 15%);
     }
   }
 
@@ -217,7 +217,7 @@ body {
     position: relative;
     display: block;
     padding: 8px 10px;
-    border-bottom: 1px solid $color-light-gray;
+    border-bottom: 1px solid $color-gray-10;
   }
 
   .menu-item.selected {
@@ -370,9 +370,9 @@ body {
 .swatch-faded-yellow { background-color: $color-faded-yellow; }
 .swatch-translucent-yellow { background-color: $color-translucent-yellow; }
 
-.swatch-light-gray { background-color: $color-light-gray; }
-.swatch-gray { background-color: $color-gray; }
-.swatch-offwhite { background-color: $color-offwhite; }
+.swatch-light-gray { background-color: $color-gray-10; }
+.swatch-gray { background-color: $color-dark-beige; }
+.swatch-offwhite { background-color: $color-gray-20; }
 .swatch-light-beige { background-color: $color-light-beige; }
 
 .button-example {
