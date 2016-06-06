@@ -16,7 +16,7 @@
 
   &:hover {
     color: $color-black;
-    background-color: $color-light-gray;
+    background-color: $color-gray-10;
   }
 }
 
@@ -42,7 +42,7 @@
 
 @mixin bordered-white-button {
   @include white-button;
-  border: 1px solid $color-gray-3;
+  border: 1px solid $color-gray-35;
 }
 
 .button {

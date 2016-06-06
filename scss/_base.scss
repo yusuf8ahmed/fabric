@@ -22,7 +22,7 @@ a {
   color: $color-yellow;
   text-decoration: underline;
   &:hover {
-    color: darken($color-yellow, 10%);
+    color: $color-yellow-hover;
   }
 }
 p {
