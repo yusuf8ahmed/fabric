@@ -39,10 +39,10 @@ In practice, your columns will look like the example below.
 {% example html %}
 <div class="container">
   <div class="row-md">
-    <div class="col-2">
+    <div class="col-1">
       .col-1
     </div>
-    <div class="col-10">
+    <div class="col-11">
       .col-11
     </div>
   </div>
