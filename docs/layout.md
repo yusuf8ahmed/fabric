@@ -40,10 +40,10 @@ In practice, your columns will look like the example below.
 <div class="container">
   <div class="row-md">
     <div class="col-2">
-      .col-1
+      .col-2
     </div>
     <div class="col-10">
-      .col-11
+      .col-10
     </div>
   </div>
 
