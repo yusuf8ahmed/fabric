@@ -7,11 +7,11 @@
 // Import Fabric itself
 //
 
-@import "../scss/fabric";
 @import "css/anchor";
 @import "css/syntax";
 @import "css/github_flavored_markdown";
 @import "css/fonts";
+@import "../scss/fabric";
 
 
 //
@@ -38,7 +38,6 @@ body {
 .markdown-body {
   overflow: visible;
 }
-
 
 //
 // Site header
@@ -158,12 +157,6 @@ body {
 //
 
 .docs-layout > .markdown-body {
-  ul, ol, li {
-    list-style: square;
-  }
-  li {
-    line-height: 1.5;
-  }
   > h1 {
     @include h3-serif;
   }

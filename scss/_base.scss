@@ -41,3 +41,19 @@ img {
   max-width: 100%;
   border: 0;
 }
+li {
+  margin-left: 30px;
+  line-height: 1.4;
+}
+ul > li {
+  list-style: disc outside;
+}
+ol > li {
+  list-style: decimal outside;
+}
+ul, ol {
+  margin-bottom: 25px;
+}
+.list-unstyled {
+  @include unstyle-lists;
+}

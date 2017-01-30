@@ -46,3 +46,43 @@ Links have a default color and hover styling:
 Here is what <a href="http://www.wealthsimple.com">an example link</a> looks like.
 
 {% endexample %}
+
+## Lists
+
+### Ordered
+
+{% example html %}
+
+<ol>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ol>
+
+{% endexample %}
+
+### Unordered
+
+{% example html %}
+
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+
+{% endexample %}
+
+### Unstyled
+
+This class can be used to remove all default list styling (in navigation bars etc.)
+
+{% example html %}
+
+<ol class="list-unstyled">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ol>
+
+{% endexample %}
