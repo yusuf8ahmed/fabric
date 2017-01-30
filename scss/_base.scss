@@ -26,7 +26,15 @@ a {
   }
 }
 p {
+  line-height: 1.4;
   margin: 0 0 1em 0;
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: $color-black;
+  background-color: $color-gray-10;
+  border-radius: 4px;
 }
 img {
   width: 100%;

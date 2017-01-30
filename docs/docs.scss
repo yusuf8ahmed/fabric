@@ -145,7 +145,6 @@ body {
   p {
     padding-right: .5rem;
     color: #555;
-    line-height: 1.5;
   }
 
   h2 {
@@ -153,7 +152,6 @@ body {
     font-weight: normal;
   }
 }
-
 
 //
 // Layout
@@ -172,9 +170,6 @@ body {
 
   > h2 {
     @include h4-sans;
-  }
-  p {
-    line-height: 1.5;
   }
 }
 
@@ -397,6 +392,7 @@ body {
 .swatch-white { background-color: $color-white; }
 
 .swatch-light-beige { background-color: $color-light-beige; }
+.swatch-brown-5 { background-color: $color-brown-5; }
 .swatch-dark-beige { background-color: $color-dark-beige; }
 
 .button-example {

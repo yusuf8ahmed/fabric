@@ -31,6 +31,7 @@ The look and feel of our company and product relies on using a handful of specif
 ### Shades of beige
 
 <div class="swatch swatch-dark-beige"></div>
+<div class="swatch swatch-brown-5"></div>
 <div class="swatch swatch-light-beige"></div>
 
 ### Shades of gray
