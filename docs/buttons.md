@@ -10,7 +10,7 @@ Buttons are used for **actions**, like in forms, while textual hyperlinks are us
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Default buttons
+## Default Buttons
 
 Use the `.button` for form actions and primary page actions. These are used extensively around the site.
 
@@ -41,12 +41,15 @@ Buttons come in two colors. `.primary-action` is yellow, and `.secondary-action`
 <button class="button secondary-action" type="button">.button.secondary-action</button>
 {% endexample %}
 
-In rare cases where the container's background color is not white, you can manually override the color in SCSS by using `@include white-button` for the primary action.
+In rare cases where the container's background color is not white, you can manually override the color in SCSS by using `@include solid-white-button` for the primary action and `@include bordered-white-button` for the secondary action.
 
-## Disabled state
+## Disabled State
 
-Unimplemented (TODO).
+{% example html %}
+<button class="button primary-action" type="button" disabled>Disabled</button>
+<button class="button secondary-action" type="button" disabled>Disabled</button>
+{% endexample %}
 
-## Block buttons
+## Block Buttons
 
 Unimplemented (TODO). Are these needed?
