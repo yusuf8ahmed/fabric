@@ -111,14 +111,11 @@ Cards are used to display modular content. A `.card-container` is used to wrap t
 
 ### Sections
 
-Sections are used to define separate areas within a single card. A single section may be used to add padding. Sections can have headings too.
+Sections are used to define separate areas within a single card. A lone section may be used to add padding to a card. Sections can have headings too (`.section-header`).
 
 {% example html %}
 <div class="card-container example">
   <div class="card">
-    <div class="section section-header">
-      .section .section-header
-    </div>
     <div class="section">
       .section
     </div>
@@ -163,7 +160,17 @@ You can change the sections default padding by adding the following classes `.no
 
 ### Demo
 
- Putting it all together. The default background color for a card is white, but you can change this by overriding the `background-color` property in the `.card` class. There is also a built in class `.no-background-color` that creates a nearly transparent card. We have also built out a header that works well inside of the `.card-container`.
+ Putting it all together. There is also a built in class `.no-background-color` that creates a nearly transparent card. We have also built out a header that works well inside of the `.card-container`.
+ 
+ The default background color for a card is white, but you can change this by overriding the `background-color` property in the `.card` class. 
+ 
+ {% highlight scss %}
+ .card {
+   &.green-background {
+     background-color: $color-green;
+   }
+ }
+ {% endhighlight %}
 
 {% example html %}
 <div class="card-container example">
