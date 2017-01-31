@@ -80,6 +80,19 @@ Wrap `<blockquote>` around any HTML as the quote.
 </blockquote>
 {% endexample %}
 
+## Uppercase
+
+There are uppercase mixins and classes that can be included in different rules.
+
+{% example html %}
+<div class="uppercase-sans-bold">
+  .uppercase-sans-bold
+</div>
+<div class="uppercase-text">
+  .uppercase-text
+</div>
+{% endexample %}
+
 ## Content
 
 Text may be styled using the `.content` class. There are four available font-sizes for `.content`:  `.size-xs`, `.size-sm`, `.size-md` and `.size-lg`. This is particularly useful when styling text within [cards](../layout/#cards).
@@ -124,6 +137,8 @@ Numbers may have a `.number-title` label, `.number-value` is used to denote valu
 
 ## Colors
 
+There are mixins provided to easily color text. Simply add `@include text-green` (and so on) to your rule.
+
 {% example html %}
 <div class="text-green">
   You can have green text,
@@ -135,7 +150,10 @@ Numbers may have a `.number-title` label, `.number-value` is used to denote valu
   yellow text,
 </div>
 <div class="text-gray">
-  or gray text.
+  gray text,
+</div>
+<div class="text-gray-hover">
+  or gray text on hover.
 </div>
 {% endexample %}
 

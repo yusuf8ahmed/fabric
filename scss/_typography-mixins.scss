@@ -34,6 +34,12 @@
   color: $color-gray-50;
 }
 
+@mixin text-gray-hover {
+  &:hover {
+    @include text-gray;
+  }
+}
+
 @mixin h1-sans {
   font-size: 30px;
   line-height: 35px;
@@ -269,17 +275,6 @@
     letter-spacing: 4px;
     font-size: 11px;
   }
-}
-
-@mixin uppercase-text-hover {
-  &:hover {
-    @include text-gray;
-  }
-}
-
-// Hack to make number kerning look better for Futura fonts
-@mixin numeric {
-  letter-spacing: -0.05em;
 }
 
 @mixin section-header {

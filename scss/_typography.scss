@@ -35,7 +35,6 @@ strong { @include font-sans-bold; }
 
 .type-number { @include font-number; }
 
-.numeric { @include numeric; }
 .number-title {
   @include section-header;
   padding-bottom: 2px;
@@ -77,3 +76,7 @@ strong { @include font-sans-bold; }
 .text-red { @include  text-red; }
 .text-yellow { @include  text-yellow; }
 .text-gray { @include text-gray; }
+.text-gray-hover { @include text-gray-hover; }
+
+.uppercase-text { @include uppercase-text; }
+.uppercase-sans-bold { @include uppercase-sans-bold; }
