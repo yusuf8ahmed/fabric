@@ -1,9 +1,9 @@
 .card-container {
   @extend .container-padded;
   .header {
-    height: $card-contanier-header-height;
+    height: $card-container-header-height;
     .title {
-      line-height: $card-contanier-header-height;
+      line-height: $card-container-header-height;
       font-size: $card-title-font-size;
     }
     .buttons {
