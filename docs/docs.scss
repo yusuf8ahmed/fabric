@@ -20,7 +20,7 @@
 
 // Global type
 html {
-  font-size: 16px;
+  font-size: $base-font-size;
 }
 
 body {
@@ -202,7 +202,7 @@ body {
   .menu-item {
     position: relative;
     display: block;
-    padding: 8px 10px;
+    padding: 8px $base-unit;
     border-bottom: 1px solid $color-gray-10;
   }
 
@@ -269,19 +269,31 @@ body {
   }
 
   // Grid
-  .container {
+  .container.example {
     width: 100%;
     padding-left: $grid-col-padding;
     padding-right: $grid-col-padding;
+    .row-md + .row-md {
+      margin-top: $base-unit;
+    }
+    .row-md > div {
+      @include green-background;
+      padding: $grid-col-padding;
+      font-family: monospace;
+      border: 1px solid lighten($color-green, 10%);
+    }
   }
-  .row-md + .row-md {
-    margin-top: 10px;
-  }
-  .row-md > div {
-    padding: $grid-col-padding;
-    font-family: monospace;
-    background-color: lighten($color-green, 30%);
-    border: 1px solid lighten($color-green, 10%);
+
+  // Cards
+  .card-container.example {
+    width: 100%;
+    padding-left: $grid-col-padding;
+    padding-right: $grid-col-padding;
+    .card {
+      &.green-background {
+        @include green-background;
+      }
+    }
   }
 
   // Override Markdown styles to restore values from `_type.scss`
@@ -316,7 +328,7 @@ body {
 
   // Flex table
   .flex-table-item > .btn {
-    margin-left: 10px;
+    margin-left: $base-unit;
   }
 }
 
@@ -334,10 +346,13 @@ body {
  > li:first-child {
     display: none;
   }
+  ul {
+    padding: 0;
+  }
 }
 
 //
-// Branding colors
+// Colors
 //
 
 .swatch {

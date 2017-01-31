@@ -22,6 +22,22 @@ Center your page's contents with a `.container`.
 
 The container applies `width: 1240px;` and uses horizontal `margin`s to center it.
 
+### Additional Containers
+
+Besides the standard `.container`, you can also use:
+
+- `.container-fluid` for a fullwidth container
+- `.container-padded` for a `.container` that has padding on either side
+- `.container-yellow` and `.container-gray` for colored containers
+
+{% example html %}
+<div class="container-padded container-yellow">
+  <p>
+    .container-padded .container-yellow
+  </p>
+</div>
+{% endexample %}
+
 ## Grid
 
 ### How it works
@@ -37,7 +53,7 @@ The grid is pretty standard — you create rows with `.row-md` or `.row-lg` and 
 In practice, your columns will look like the example below.
 
 {% example html %}
-<div class="container">
+<div class="container example">
   <div class="row-md">
     <div class="col-2">
       .col-2
@@ -67,18 +83,126 @@ In practice, your columns will look like the example below.
 </div>
 {% endexample %}
 
-### Containers
+## Cards
 
-Besides the standard `.container`, you can also use:
-
-- `.container-fluid` for a fullwidth container
-- `.container-padded` for a `.container` that has padding on either side
-- `.container-yellow` and `.container-gray` for colored containers
+Cards are used to display modular content. A `.card-container` is used to wrap the content and individual cards can be stacked inside of columns (within a `.card-row-md`).
 
 {% example html %}
-<div class="container-padded container-yellow">
-  <p>
-    .container-padded .container-yellow
-  </p>
+<div class="card-container example">
+  <div class="card-row-md">
+    <div class="col-4">
+      <div class="card">
+        .card
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        .card
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        .card
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+### Sections
+
+Sections are used to define separate areas within a single card. A single section may be used to add padding. Sections can have headings too.
+
+{% example html %}
+<div class="card-container example">
+  <div class="card">
+    <div class="section section-header">
+      .section .section-header
+    </div>
+    <div class="section">
+      .section
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+#### Actionable Sections
+To denote an interactive section add the `.actionable` class or use `a` tags instead of a `div`.
+
+{% example html %}
+<div class="card-container example">
+  <div class="card">
+    <div class="section actionable">
+      .section .actionable
+    </div>
+    <a class="section">
+      .section (anchor)
+    </a>
+  </div>
+</div>
+{% endexample %}
+
+#### Padding Options
+You can change the sections default padding by adding the following classes `.no-padding`, `.padding-sm`, or `.padding-lg`.
+
+{% example html %}
+<div class="card-container example">
+  <div class="card">
+    <div class="section no-padding">
+      .section .no-padding
+    </div>
+    <div class="section padding-sm">
+      .section .padding-sm
+    </div>
+    <div class="section padding-lg">
+      .section .padding-lg
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+### Demo
+
+ Putting it all together. The default background color for a card is white, but you can change this by overriding the `background-color` property in the `.card` class. There is also a built in class `.no-background-color` that creates a nearly transparent card. We have also built out a header that works well inside of the `.card-container`.
+
+{% example html %}
+<div class="card-container example">
+  <div class="header row-md">
+    <div class="col-6">
+      <div class="title">Hello World</div>
+    </div>
+    <div class="col-6">
+      <div class="buttons">
+        <button class="button secondary-action">Action</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-row-md">
+    <div class="col-4">
+      <div class="card">
+        <div class="section section-header">
+          .section .section-header
+        </div>
+        <div class="section actionable">
+          .section .actionable
+        </div>
+        <div class="section actionable">
+          .section .actionable
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="card green-background">
+        <div class="section">
+          .card .green-background
+        </div>
+      </div>
+      <div class="card no-background-color">
+        <div class="section">
+          .card .no-background-color
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endexample %}

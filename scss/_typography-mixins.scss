@@ -58,7 +58,7 @@
 }
 
 @mixin h5-sans {
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 17px;
   @include font-sans-bold;
 
@@ -113,7 +113,7 @@
 }
 
 @mixin h5-sans-normal {
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 17px;
   @include font-sans;
 
@@ -159,7 +159,7 @@
 }
 
 @mixin p1 {
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 1.5;
   @include font-sans;
 
@@ -169,7 +169,7 @@
 }
 
 @mixin p2 {
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 1.5;
   @include font-sans;
 
@@ -187,7 +187,7 @@
 
   @include medium {
     letter-spacing: 6px;
-    font-size: 14px;
+    font-size: $secondary-font-size;
     line-height: 20px;
   }
 }

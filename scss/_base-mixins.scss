@@ -59,3 +59,7 @@
     list-style: none;
   }
 }
+
+@mixin green-background {
+  background-color: $color-green-transparent;
+}

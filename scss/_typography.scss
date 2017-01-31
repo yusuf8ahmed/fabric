@@ -4,6 +4,7 @@ h3 { @include h3-sans; }
 h4 { @include h4-sans; }
 h5 { @include h5-sans; }
 blockquote { @include blockquote; }
+strong { @include font-sans-bold; }
 
 .h1-sans { @include h1-sans; }
 .h2-sans { @include h2-sans; }

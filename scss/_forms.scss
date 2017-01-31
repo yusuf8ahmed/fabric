@@ -1,5 +1,5 @@
 .form-input-text {
-  font-size: 16px;
+  font-size: $base-font-size;
   @include font-sans;
   display: block;
   width: 100%;
@@ -7,7 +7,7 @@
   background: $color-white;
   border: 1px solid $color-gray-35;
   padding: 13px 15px;
-  margin-bottom: 10px;
+  margin-bottom: $base-unit;
 
   &:focus {
     outline: 0;
@@ -32,13 +32,13 @@
 }
 
 .form-input-text.size-sm {
-  font-size: 16px;
+  font-size: $base-font-size;
   @include font-sans;
   padding: 8px 12px;
 
   @include medium {
     font-size: 18px;
-    padding: 10px 15px;
+    padding: $base-unit 15px;
   }
 }
 
@@ -46,7 +46,7 @@
   text-align: center;
   color: $color-dark-beige;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: $base-unit;
 
   @include medium {
     text-align: left;
@@ -77,8 +77,8 @@ select.form-control {
   display: block;
   width: 100%;
   height: 60px;
-  padding: 10px 12px;
-  font-size: 16px;
+  padding: $base-unit 12px;
+  font-size: $base-font-size;
   line-height: 1.4;
   color: $color-gray-80;
   background-color: #fff;
@@ -91,7 +91,7 @@ select.form-control {
 
 .size-sm select.form-control,
 select.form-control.size-sm {
-  font-size: 14px;
+  font-size: $secondary-font-size;
   padding: 5px 12px;
   height: 44px;
 }
