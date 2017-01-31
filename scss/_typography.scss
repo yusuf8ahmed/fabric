@@ -73,6 +73,7 @@ strong { @include font-sans-bold; }
 .inline-header-md {  @include inline-header-md;  }
 .fine-print {  @include fine-print;  }
 
-.text-green { color: $color-green; }
-.text-red { color: $color-red; }
-.text-gray { color: $color-gray-60; }
+.text-green { @include text-green; }
+.text-red { @include  text-red; }
+.text-yellow { @include  text-yellow; }
+.text-gray { @include text-gray; }

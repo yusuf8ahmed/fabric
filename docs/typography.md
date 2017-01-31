@@ -122,4 +122,21 @@ Numbers may have a `.number-title` label, `.number-value` is used to denote valu
 </div>
 {% endexample %}
 
+## Colors
+
+{% example html %}
+<div class="text-green">
+  You can have green text,
+</div>
+<div class="text-red">
+  red text,
+</div>
+<div class="text-yellow">
+  yellow text,
+</div>
+<div class="text-gray">
+  or gray text.
+</div>
+{% endexample %}
+
 ## Social icons

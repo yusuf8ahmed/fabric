@@ -18,6 +18,22 @@
   font-weight: 300;
 }
 
+@mixin text-green {
+  color: $color-green;
+}
+
+@mixin text-red {
+  color: $color-red;
+}
+
+@mixin text-yellow {
+  color: $color-yellow;
+}
+
+@mixin text-gray {
+  color: $color-gray-50;
+}
+
 @mixin h1-sans {
   font-size: 30px;
   line-height: 35px;
@@ -206,10 +222,10 @@
 }
 
 @mixin blockquote {
-  color: $color-green;
+  @include text-green;
+  @include font-sans-bold;
   font-size: 20px;
   line-height: 26px;
-  @include font-sans-bold;
 
   @include medium {
    font-size: 40px;
@@ -242,7 +258,7 @@
 
 @mixin uppercase-text {
   @include font-sans-bold;
-  color: $color-gray-50;
+  @include text-gray;
   text-decoration: none;
   text-transform: uppercase;
   &.size-md {
@@ -257,7 +273,7 @@
 
 @mixin uppercase-text-hover {
   &:hover {
-    color: $color-gray-60;
+    @include text-gray;
   }
 }
 
@@ -267,6 +283,6 @@
 }
 
 @mixin section-header {
-  color: $color-gray-50;
+  @include text-gray;
   font-size: $secondary-font-size;
 }

@@ -19,7 +19,7 @@ input {
   @include font-sans;
 }
 a {
-  color: $color-yellow;
+  @include text-yellow;
   text-decoration: underline;
   &:hover {
     color: $color-yellow-hover;
