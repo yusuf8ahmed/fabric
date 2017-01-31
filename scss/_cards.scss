@@ -77,8 +77,7 @@
 
     &.section-header,
     .section-header {
-      color: $color-gray-50;
-      font-size: $secondary-font-size;
+      @include section-header;
     }
   }
 

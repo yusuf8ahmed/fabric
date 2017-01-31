@@ -32,3 +32,47 @@ strong { @include font-sans-bold; }
     @include text-metadata-md;
   }
 }
+
+.type-number { @include font-number; }
+
+.numeric { @include numeric; }
+.number-title {
+  @include section-header;
+  padding-bottom: 2px;
+}
+.number-value {
+  @include font-number;
+  &.size-sm {
+    margin-top: 2px;
+  }
+  &.size-md {
+    margin-top: 3px;
+  }
+  &.size-lg {
+    margin-top: 6px;
+  }
+}
+.number-value, .content {
+  color: $color-black;
+  &.size-xs {
+    font-size: $base-font-size;
+  }
+  &.size-sm {
+    font-size: 22px;
+  }
+  &.size-md {
+    letter-spacing: -1px;
+    font-size: 28px;
+  }
+  &.size-lg {
+    letter-spacing: -2px;
+    font-size: 40px;
+  }
+}
+
+.inline-header-md {  @include inline-header-md;  }
+.fine-print {  @include fine-print;  }
+
+.text-green { color: $color-green; }
+.text-red { color: $color-red; }
+.text-gray { color: $color-gray-60; }

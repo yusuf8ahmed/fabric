@@ -13,6 +13,11 @@
   font-weight: 100;
 }
 
+@mixin font-number {
+  font-family: 'Akkurat-Regular', sans-serif;
+  font-weight: 300;
+}
+
 @mixin h1-sans {
   font-size: 30px;
   line-height: 35px;
@@ -210,4 +215,58 @@
    font-size: 40px;
    line-height: 52px;
   }
+}
+
+@mixin inline-header-md {
+  @include medium {
+    margin: 0;
+  }
+}
+
+@mixin fine-print {
+  font-size: 13px;
+  line-height: 1.77;
+}
+
+@mixin uppercase-sans-bold {
+  @include h5-sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include medium {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@mixin uppercase-text {
+  @include font-sans-bold;
+  color: $color-gray-50;
+  text-decoration: none;
+  text-transform: uppercase;
+  &.size-md {
+    letter-spacing: 6px;
+    font-size: 13px;
+  }
+  &.size-sm {
+    letter-spacing: 4px;
+    font-size: 11px;
+  }
+}
+
+@mixin uppercase-text-hover {
+  &:hover {
+    color: $color-gray-60;
+  }
+}
+
+// Hack to make number kerning look better for Futura fonts
+@mixin numeric {
+  letter-spacing: -0.05em;
+}
+
+@mixin section-header {
+  color: $color-gray-50;
+  font-size: $secondary-font-size;
 }
