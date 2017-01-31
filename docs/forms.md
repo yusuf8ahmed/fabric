@@ -87,14 +87,79 @@ Medium is the default size, but you can apply the `.size-sm` class to make it sm
 </form>
 {% endexample %}
 
-## Checkboxes and radios
+## Checkboxes and Radios
 
 TODO - use iCheck plugin
 
-## Form groups
+## Form Groups
 
-TODO
+### Input Groups
 
-## Form validation
+{% example html %}
+<form>
+  <div class="input-group">
+    <input class="form-input-text size-sm" type="text" placeholder="Input">
+    <button class="button primary-action">Button</button>
+  </div>
+</form>
+{% endexample %}
 
-TODO
+### Adjacent Inputs
+
+{% example html %}
+<div class="adjacent-inputs-md">
+  <input placeholder="First name"
+         class="form-input-text"
+         type="text">
+  </input>
+  <input placeholder="Last name"
+         class="form-input-text"
+         type="text">
+  </input>
+</div>
+{% endexample %}
+
+### Inline Labels
+
+{% example html %}
+<div class="form-inline">
+  <div class="row-md">
+    <label class="col-2 control-label">
+      Label
+    </label>
+    <div class="col-10">
+      <input placeholder="Input (default)"
+             class="form-input-text"
+             type="text">
+      </input>
+    </div>
+  </div>
+</div>
+
+<div class="form-inline size-sm">
+  <div class="row-md">
+    <label class="col-2 control-label">
+      Label
+    </label>
+    <div class="col-10">
+      <input placeholder="Input (.size-sm)"
+             class="form-input-text size-sm"
+             type="text">
+      </input>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+## Form Validation
+
+We have provided simple error styles for form elements and help messages.  The intent is that your application logic will add the `.has-error` class to form elements if there are validation errors as well as hide/show the `.help-block` when appropriate.
+
+{% example html %}
+<form>
+  <div class="has-error">
+    <input class="form-input-text" type="text" placeholder="Something went wrong">
+    <div class="help-block">Your error message here.</div>
+  </div>
+</form>
+{% endexample %}

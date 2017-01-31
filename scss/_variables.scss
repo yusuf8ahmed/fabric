@@ -8,9 +8,12 @@ $base-unit: 10px;
 
 $base-font-size: 16px;
 $secondary-font-size: 14px;
+$error-font-size: 13px;
 
 $padding-horizontal: 32px;
 $padding-vertical: 24px;
+
+$margin-vertical: 15px;
 
 $color-gray-5: #fafafa;
 $color-gray-6: #f9f8f7;
@@ -36,7 +39,7 @@ $color-white: #ffffff;
 $color-black: $color-gray-100;
 
 $color-red: #ed5a3f;
-$color-crusta: #f27c5e; //orangeish-red aka "tomato"
+$color-crusta: #f27c5e;
 $color-red-transparent: rgba($color-red, 0.2);
 
 $color-yellow: #fab131;
@@ -61,7 +64,7 @@ $color-black-semitransparent: rgba(0,0,0,0.15);
 $color-black-semitransparent-darker: rgba(0,0,0,0.2);
 $color-black-semitransparent-darkest: rgba(0, 0, 0, 0.3);
 
-$color-border: $color-gray-20;
+$color-border: $color-gray-35;
 
 $card-container-header-height: 100px;
 $card-border-radius: 3px;
