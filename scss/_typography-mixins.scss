@@ -13,6 +13,33 @@
   font-weight: 100;
 }
 
+@mixin font-number {
+  font-family: 'Akkurat-Regular', sans-serif;
+  font-weight: 300;
+}
+
+@mixin text-green {
+  color: $color-green;
+}
+
+@mixin text-red {
+  color: $color-red;
+}
+
+@mixin text-yellow {
+  color: $color-yellow;
+}
+
+@mixin text-gray {
+  color: $color-gray-50;
+}
+
+@mixin text-gray-hover {
+  &:hover {
+    @include text-gray;
+  }
+}
+
 @mixin h1-sans {
   font-size: 30px;
   line-height: 35px;
@@ -58,7 +85,7 @@
 }
 
 @mixin h5-sans {
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 17px;
   @include font-sans-bold;
 
@@ -113,7 +140,7 @@
 }
 
 @mixin h5-sans-normal {
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 17px;
   @include font-sans;
 
@@ -159,7 +186,7 @@
 }
 
 @mixin p1 {
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 1.5;
   @include font-sans;
 
@@ -169,7 +196,7 @@
 }
 
 @mixin p2 {
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 1.5;
   @include font-sans;
 
@@ -187,7 +214,7 @@
 
   @include medium {
     letter-spacing: 6px;
-    font-size: 14px;
+    font-size: $secondary-font-size;
     line-height: 20px;
   }
 }
@@ -201,13 +228,56 @@
 }
 
 @mixin blockquote {
-  color: $color-green;
+  @include text-green;
+  @include font-sans-bold;
   font-size: 20px;
   line-height: 26px;
-  @include font-sans-bold;
 
   @include medium {
    font-size: 40px;
    line-height: 52px;
   }
+}
+
+@mixin inline-header-md {
+  @include medium {
+    margin: 0;
+  }
+}
+
+@mixin fine-print {
+  font-size: 13px;
+  line-height: 1.77;
+}
+
+@mixin uppercase-sans-bold {
+  @include h5-sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include medium {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@mixin uppercase-text {
+  @include font-sans-bold;
+  @include text-gray;
+  text-decoration: none;
+  text-transform: uppercase;
+  &.size-md {
+    letter-spacing: 6px;
+    font-size: 13px;
+  }
+  &.size-sm {
+    letter-spacing: 4px;
+    font-size: 11px;
+  }
+}
+
+@mixin section-header {
+  @include text-gray;
+  font-size: $secondary-font-size;
 }

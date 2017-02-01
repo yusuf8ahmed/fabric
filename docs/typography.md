@@ -80,4 +80,81 @@ Wrap `<blockquote>` around any HTML as the quote.
 </blockquote>
 {% endexample %}
 
+## Uppercase
+
+There are uppercase mixins and classes that can be included in different rules.
+
+{% example html %}
+<div class="uppercase-sans-bold">
+  .uppercase-sans-bold
+</div>
+<div class="uppercase-text">
+  .uppercase-text
+</div>
+{% endexample %}
+
+## Content
+
+Text may be styled using the `.content` class. There are four available font-sizes for `.content`:  `.size-xs`, `.size-sm`, `.size-md` and `.size-lg`. This is particularly useful when styling text within [cards](../layout/#cards).
+
+{% example html %}
+<div class="row-md">
+  <div class="col-3">
+    <div class="content size-xs">
+      .content .size-xs
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="content size-sm">
+      .content .size-sm
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="content size-md">
+      .content .size-md
+    </div>
+  </div>
+   <div class="col-3">
+     <div class="content size-lg">
+       .content .size-lg
+     </div>
+  </div>
+</div>
+{% endexample %}
+
+## Numbers
+
+Numbers may have a `.number-title` label, `.number-value` is used to denote values. Similar to `.content`, there are four different sizes available for numbers: `.size-xs`, `.size-sm`, `.size-md` and `.size-lg`. `.number-value` uses a different font (Akkurat-Regular).
+
+{% example html %}
+<div class="number-title">
+  .number-title
+</div>
+<div class="number-value size-md">
+  0.00
+</div>
+{% endexample %}
+
+## Colors
+
+There are mixins provided to easily color text. Simply add `@include text-green` (and so on) to your rule.
+
+{% example html %}
+<div class="text-green">
+  You can have green text,
+</div>
+<div class="text-red">
+  red text,
+</div>
+<div class="text-yellow">
+  yellow text,
+</div>
+<div class="text-gray">
+  gray text,
+</div>
+<div class="text-gray-hover">
+  or gray text on hover.
+</div>
+{% endexample %}
+
 ## Social icons

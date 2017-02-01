@@ -15,21 +15,45 @@ html, body {
 }
 body,
 input {
-  font-size: 16px;
+  font-size: $base-font-size;
   @include font-sans;
 }
 a {
-  color: $color-yellow;
+  @include text-yellow;
   text-decoration: underline;
   &:hover {
     color: $color-yellow-hover;
   }
 }
 p {
+  line-height: 1.4;
   margin: 0 0 1em 0;
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: $color-black;
+  background-color: $color-gray-10;
+  border-radius: 4px;
 }
 img {
   width: 100%;
   max-width: 100%;
   border: 0;
+}
+li {
+  margin-left: 30px;
+  line-height: 1.4;
+}
+ul > li {
+  list-style: disc outside;
+}
+ol > li {
+  list-style: decimal outside;
+}
+ul, ol {
+  margin-bottom: 25px;
+}
+.list-unstyled {
+  @include unstyle-lists;
 }

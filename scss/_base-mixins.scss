@@ -13,6 +13,12 @@
   }
 }
 
+@mixin xlarge {
+  @media (min-width: #{$bp-xlarge}) {
+    @content;
+  }
+}
+
 @mixin site-max-width {
   @media (min-width: #{$bp-site-max-width}) {
     @content;
@@ -44,4 +50,32 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin unstyle-lists {
+  ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+@mixin green-background {
+  background-color: $color-green-transparent;
+}
+
+@mixin unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
 }

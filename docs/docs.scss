@@ -7,12 +7,11 @@
 // Import Fabric itself
 //
 
-@import "../scss/fabric";
 @import "css/anchor";
 @import "css/syntax";
 @import "css/github_flavored_markdown";
 @import "css/fonts";
-
+@import "../scss/fabric";
 
 //
 // Overrides
@@ -20,7 +19,7 @@
 
 // Global type
 html {
-  font-size: 16px;
+  font-size: $base-font-size;
 }
 
 body {
@@ -38,7 +37,6 @@ body {
 .markdown-body {
   overflow: visible;
 }
-
 
 //
 // Site header
@@ -100,7 +98,6 @@ body {
   }
 }
 
-
 //
 // Homepage jumbotron
 //
@@ -121,7 +118,7 @@ body {
   }
 
   .primary-action {
-    @include white-button;
+    @include solid-white-button;
   }
 
   @media (min-width: 34em) {
@@ -145,7 +142,6 @@ body {
   p {
     padding-right: .5rem;
     color: #555;
-    line-height: 1.5;
   }
 
   h2 {
@@ -154,27 +150,17 @@ body {
   }
 }
 
-
 //
 // Layout
 //
 
 .docs-layout > .markdown-body {
-  ul, ol, li {
-    list-style: square;
-  }
-  li {
-    line-height: 1.5;
-  }
   > h1 {
     @include h3-serif;
   }
 
   > h2 {
     @include h4-sans;
-  }
-  p {
-    line-height: 1.5;
   }
 }
 
@@ -194,7 +180,6 @@ body {
     color: #333;
   }
 }
-
 
 //
 // Side menu
@@ -216,7 +201,7 @@ body {
   .menu-item {
     position: relative;
     display: block;
-    padding: 8px 10px;
+    padding: 8px $base-unit;
     border-bottom: 1px solid $color-gray-10;
   }
 
@@ -283,20 +268,35 @@ body {
   }
 
   // Grid
-  .container {
+  .container.example {
     width: 100%;
     padding-left: $grid-col-padding;
     padding-right: $grid-col-padding;
+    .row-md + .row-md {
+      margin-top: $base-unit;
+    }
+    .row-md > div {
+      @include green-background;
+      padding: $grid-col-padding;
+      font-family: monospace;
+      border: 1px solid lighten($color-green, 10%);
+    }
   }
-  .row-md + .row-md {
-    margin-top: 10px;
+
+  // Cards
+  .card-container.example {
+    width: 100%;
+    padding-left: $grid-col-padding;
+    padding-right: $grid-col-padding;
+    .card {
+      &.green-background {
+        @include green-background;
+      }
+    }
   }
-  .row-md > div {
-    padding: $grid-col-padding;
-    font-family: monospace;
-    background-color: lighten($color-green, 30%);
-    border: 1px solid lighten($color-green, 10%);
-  }
+
+
+  // Forms
 
   // Override Markdown styles to restore values from `_type.scss`
   ul,
@@ -330,7 +330,7 @@ body {
 
   // Flex table
   .flex-table-item > .btn {
-    margin-left: 10px;
+    margin-left: $base-unit;
   }
 }
 
@@ -338,7 +338,6 @@ body {
   @extend .p1;
   line-height: 1.2;
 }
-
 
 //
 // Markdown generated ToC
@@ -349,11 +348,13 @@ body {
  > li:first-child {
     display: none;
   }
+  ul {
+    padding: 0;
+  }
 }
 
-
 //
-// Branding colors
+// Colors
 //
 
 .swatch {
@@ -364,23 +365,40 @@ body {
 }
 
 .swatch-green { background-color: $color-green; }
+.swatch-green-80 { background-color: $color-green-80; }
+.swatch-green-transparent { background-color: $color-green-transparent; }
+
 .swatch-red { background-color: $color-red; }
 .swatch-crusta { background-color: $color-crusta; }
+.swatch-red-transparent { background-color: $color-red-transparent; }
 
 .swatch-yellow { background-color: $color-yellow; }
 .swatch-faded-yellow { background-color: $color-faded-yellow; }
 .swatch-translucent-yellow { background-color: $color-translucent-yellow; }
 
 .swatch-black { background-color: $color-black; }
+.swatch-gray-99 { background-color: $color-gray-99; }
+.swatch-gray-98 { background-color: $color-gray-98; }
+.swatch-gray-95 { background-color: $color-gray-95; }
+.swatch-gray-90 { background-color: $color-gray-90; }
 .swatch-gray-80 { background-color: $color-gray-80; }
+.swatch-gray-65 { background-color: $color-gray-65; }
 .swatch-gray-60 { background-color: $color-gray-60; }
+.swatch-gray-52 { background-color: $color-gray-52; }
+.swatch-gray-50 { background-color: $color-gray-50; }
 .swatch-gray-40 { background-color: $color-gray-40; }
 .swatch-gray-35 { background-color: $color-gray-35; }
+.swatch-gray-30 { background-color: $color-gray-30; }
+.swatch-gray-25 { background-color: $color-gray-25; }
 .swatch-gray-20 { background-color: $color-gray-20; }
+.swatch-gray-15 { background-color: $color-gray-15; }
 .swatch-gray-10 { background-color: $color-gray-10; }
+.swatch-gray-6 { background-color: $color-gray-6; }
+.swatch-gray-5 { background-color: $color-gray-5; }
 .swatch-white { background-color: $color-white; }
 
 .swatch-light-beige { background-color: $color-light-beige; }
+.swatch-brown-5 { background-color: $color-brown-5; }
 .swatch-dark-beige { background-color: $color-dark-beige; }
 
 .button-example {
