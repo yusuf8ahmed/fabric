@@ -70,13 +70,13 @@
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#default-buttons" id="markdown-toc-default-buttons">Default buttons</a></li>
+  <li><a href="#default-buttons" id="markdown-toc-default-buttons">Default Buttons</a></li>
   <li><a href="#colors" id="markdown-toc-colors">Colors</a></li>
-  <li><a href="#disabled-state" id="markdown-toc-disabled-state">Disabled state</a></li>
-  <li><a href="#block-buttons" id="markdown-toc-block-buttons">Block buttons</a></li>
+  <li><a href="#disabled-state" id="markdown-toc-disabled-state">Disabled State</a></li>
+  <li><a href="#block-buttons" id="markdown-toc-block-buttons">Block Buttons</a></li>
 </ul>
 
-<h2 id="default-buttons">Default buttons</h2>
+<h2 id="default-buttons">Default Buttons</h2>
 
 <p>Use the <code>.button</code> for form actions and primary page actions. These are used extensively around the site.</p>
 
@@ -110,13 +110,16 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button primary-action"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>.button.primary-action<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button secondary-action"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>.button.secondary-action<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<p>In rare cases where the container’s background color is not white, you can manually override the color in SCSS by using <code>@include white-button</code> for the primary action.</p>
+<p>In rare cases where the container’s background color is not white, you can manually override the color in SCSS by using <code>@include solid-white-button</code> for the primary action and <code>@include bordered-white-button</code> for the secondary action.</p>
 
-<h2 id="disabled-state">Disabled state</h2>
+<h2 id="disabled-state">Disabled State</h2>
 
-<p>Unimplemented (TODO).</p>
+<div class="docs-example clearfix"><button class="button primary-action" type="button" disabled="">Disabled</button>
+<button class="button secondary-action" type="button" disabled="">Disabled</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button primary-action"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button secondary-action"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h2 id="block-buttons">Block buttons</h2>
+<h2 id="block-buttons">Block Buttons</h2>
 
 <p>Unimplemented (TODO). Are these needed?</p>
 
@@ -126,7 +129,7 @@
 
 
       <footer class="footer">
-        Copyright Wealthsimple 2016.<br>
+        Copyright Wealthsimple 2017.<br>
         Created and maintained by the CSS team at Wealthsimple.
       </footer>
     </div>

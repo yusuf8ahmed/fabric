@@ -70,11 +70,22 @@
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#container" id="markdown-toc-container">Container</a></li>
+  <li><a href="#container" id="markdown-toc-container">Container</a>    <ul>
+      <li><a href="#additional-containers" id="markdown-toc-additional-containers">Additional Containers</a></li>
+    </ul>
+  </li>
   <li><a href="#grid" id="markdown-toc-grid">Grid</a>    <ul>
       <li><a href="#how-it-works" id="markdown-toc-how-it-works">How it works</a></li>
       <li><a href="#demo" id="markdown-toc-demo">Demo</a></li>
-      <li><a href="#containers" id="markdown-toc-containers">Containers</a></li>
+    </ul>
+  </li>
+  <li><a href="#cards" id="markdown-toc-cards">Cards</a>    <ul>
+      <li><a href="#sections" id="markdown-toc-sections">Sections</a>        <ul>
+          <li><a href="#actionable-sections" id="markdown-toc-actionable-sections">Actionable Sections</a></li>
+          <li><a href="#padding-options" id="markdown-toc-padding-options">Padding Options</a></li>
+        </ul>
+      </li>
+      <li><a href="#demo-1" id="markdown-toc-demo-1">Demo</a></li>
     </ul>
   </li>
 </ul>
@@ -88,6 +99,27 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <p>The container applies <code>width: 1240px;</code> and uses horizontal <code>margin</code>s to center it.</p>
+
+<h3 id="additional-containers">Additional Containers</h3>
+
+<p>Besides the standard <code>.container</code>, you can also use:</p>
+
+<ul>
+  <li><code>.container-fluid</code> for a fullwidth container</li>
+  <li><code>.container-padded</code> for a <code>.container</code> that has padding on either side</li>
+  <li><code>.container-yellow</code> and <code>.container-gray</code> for colored containers</li>
+</ul>
+
+<div class="docs-example clearfix"><div class="container-padded container-yellow">
+  <p>
+    .container-padded .container-yellow
+  </p>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-padded container-yellow"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    .container-padded .container-yellow
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="grid">Grid</h2>
 
@@ -105,13 +137,13 @@
 
 <p>In practice, your columns will look like the example below.</p>
 
-<div class="docs-example clearfix"><div class="container">
+<div class="docs-example clearfix"><div class="container example">
   <div class="row-md">
     <div class="col-2">
-      .col-1
+      .col-2
     </div>
     <div class="col-10">
-      .col-11
+      .col-10
     </div>
   </div>
 
@@ -133,13 +165,13 @@
     </div>
   </div>
 </div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container example"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-md"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
-      .col-1
+      .col-2
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
-      .col-11
+      .col-10
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
@@ -162,25 +194,211 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h3 id="containers">Containers</h3>
+<h2 id="cards">Cards</h2>
 
-<p>Besides the standard <code>.container</code>, you can also use:</p>
+<p>Cards are used to display modular content. A <code>.card-container</code> is used to wrap the content and individual cards can be stacked inside of columns (within a <code>.card-row-md</code>).</p>
 
-<ul>
-  <li><code>.container-fluid</code> for a fullwidth container</li>
-  <li><code>.container-padded</code> for a <code>.container</code> that has padding on either side</li>
-  <li><code>.container-yellow</code> and <code>.container-gray</code> for colored containers</li>
-</ul>
-
-<div class="docs-example clearfix"><div class="container-padded container-yellow">
-  <p>
-    .container-padded .container-yellow
-  </p>
+<div class="docs-example clearfix"><div class="card-container example">
+  <div class="card-row-md">
+    <div class="col-4">
+      <div class="card">
+        .card
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        .card
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        .card
+      </div>
+    </div>
+  </div>
 </div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-padded container-yellow"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p&gt;</span>
-    .container-padded .container-yellow
-  <span class="nt">&lt;/p&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-row-md"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        .card
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        .card
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        .card
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="sections">Sections</h3>
+
+<p>Sections are used to define separate areas within a single card. A lone section may be used to add padding to a card. Sections can have headings too (<code>.section-header</code>).</p>
+
+<div class="docs-example clearfix"><div class="card-container example">
+  <div class="card">
+    <div class="section">
+      .section
+    </div>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+      .section
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h4 id="actionable-sections">Actionable Sections</h4>
+<p>To denote an interactive section add the <code>.actionable</code> class or use <code>a</code> tags instead of a <code>div</code>.</p>
+
+<div class="docs-example clearfix"><div class="card-container example">
+  <div class="card">
+    <div class="section actionable">
+      .section .actionable
+    </div>
+    <a class="section">
+      .section (anchor)
+    </a>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section actionable"</span><span class="nt">&gt;</span>
+      .section .actionable
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+      .section (anchor)
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h4 id="padding-options">Padding Options</h4>
+<p>You can change the sections default padding by adding the following classes <code>.no-padding</code>, <code>.padding-sm</code>, or <code>.padding-lg</code>.</p>
+
+<div class="docs-example clearfix"><div class="card-container example">
+  <div class="card">
+    <div class="section no-padding">
+      .section .no-padding
+    </div>
+    <div class="section padding-sm">
+      .section .padding-sm
+    </div>
+    <div class="section padding-lg">
+      .section .padding-lg
+    </div>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section no-padding"</span><span class="nt">&gt;</span>
+      .section .no-padding
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section padding-sm"</span><span class="nt">&gt;</span>
+      .section .padding-sm
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section padding-lg"</span><span class="nt">&gt;</span>
+      .section .padding-lg
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="demo-1">Demo</h3>
+
+<p>Putting it all together. There is also a built in class <code>.no-background-color</code> that creates a nearly transparent card. We have also built out a header that works well inside of the <code>.card-container</code>.</p>
+
+<p>The default background color for a card is white, but you can change this by overriding the <code>background-color</code> property in the <code>.card</code> class.</p>
+
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.card</span> <span class="p">{</span>
+   <span class="k">&amp;</span><span class="nc">.green-background</span> <span class="p">{</span>
+     <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color-green</span><span class="p">;</span>
+   <span class="p">}</span>
+ <span class="p">}</span></code></pre></div>
+
+<div class="docs-example clearfix"><div class="card-container example">
+  <div class="header row-md">
+    <div class="col-6">
+      <div class="title">Hello World</div>
+    </div>
+    <div class="col-6">
+      <div class="buttons">
+        <button class="button secondary-action">Action</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-row-md">
+    <div class="col-4">
+      <div class="card">
+        <div class="section section-header">
+          .section .section-header
+        </div>
+        <div class="section actionable">
+          .section .actionable
+        </div>
+        <div class="section actionable">
+          .section .actionable
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="card green-background">
+        <div class="section">
+          .card .green-background
+        </div>
+      </div>
+      <div class="card no-background-color">
+        <div class="section">
+          .card .no-background-color
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header row-md"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Hello World<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button secondary-action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-row-md"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section section-header"</span><span class="nt">&gt;</span>
+          .section .section-header
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section actionable"</span><span class="nt">&gt;</span>
+          .section .actionable
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section actionable"</span><span class="nt">&gt;</span>
+          .section .actionable
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card green-background"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+          .card .green-background
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card no-background-color"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+          .card .no-background-color
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
@@ -190,7 +408,7 @@
 
 
       <footer class="footer">
-        Copyright Wealthsimple 2016.<br>
+        Copyright Wealthsimple 2017.<br>
         Created and maintained by the CSS team at Wealthsimple.
       </footer>
     </div>

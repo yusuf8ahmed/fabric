@@ -75,6 +75,10 @@
   <li><a href="#lead" id="markdown-toc-lead">Lead</a></li>
   <li><a href="#inline-text-elements" id="markdown-toc-inline-text-elements">Inline text elements</a></li>
   <li><a href="#blockquotes" id="markdown-toc-blockquotes">Blockquotes</a></li>
+  <li><a href="#uppercase" id="markdown-toc-uppercase">Uppercase</a></li>
+  <li><a href="#content" id="markdown-toc-content">Content</a></li>
+  <li><a href="#numbers" id="markdown-toc-numbers">Numbers</a></li>
+  <li><a href="#colors" id="markdown-toc-colors">Colors</a></li>
   <li><a href="#social-icons" id="markdown-toc-social-icons">Social icons</a></li>
 </ul>
 
@@ -171,6 +175,124 @@
   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.”
 <span class="nt">&lt;/blockquote&gt;</span></code></pre></div>
 
+<h2 id="uppercase">Uppercase</h2>
+
+<p>There are uppercase mixins and classes that can be included in different rules.</p>
+
+<div class="docs-example clearfix"><div class="uppercase-sans-bold">
+  .uppercase-sans-bold
+</div>
+<div class="uppercase-text">
+  .uppercase-text
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"uppercase-sans-bold"</span><span class="nt">&gt;</span>
+  .uppercase-sans-bold
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"uppercase-text"</span><span class="nt">&gt;</span>
+  .uppercase-text
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="content">Content</h2>
+
+<p>Text may be styled using the <code>.content</code> class. There are four available font-sizes for <code>.content</code>:  <code>.size-xs</code>, <code>.size-sm</code>, <code>.size-md</code> and <code>.size-lg</code>. This is particularly useful when styling text within <a href="../layout/#cards">cards</a>.</p>
+
+<div class="docs-example clearfix"><div class="row-md">
+  <div class="col-3">
+    <div class="content size-xs">
+      .content .size-xs
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="content size-sm">
+      .content .size-sm
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="content size-md">
+      .content .size-md
+    </div>
+  </div>
+   <div class="col-3">
+     <div class="content size-lg">
+       .content .size-lg
+     </div>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-md"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content size-xs"</span><span class="nt">&gt;</span>
+      .content .size-xs
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content size-sm"</span><span class="nt">&gt;</span>
+      .content .size-sm
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content size-md"</span><span class="nt">&gt;</span>
+      .content .size-md
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content size-lg"</span><span class="nt">&gt;</span>
+       .content .size-lg
+     <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="numbers">Numbers</h2>
+
+<p>Numbers may have a <code>.number-title</code> label, <code>.number-value</code> is used to denote values. Similar to <code>.content</code>, there are four different sizes available for numbers: <code>.size-xs</code>, <code>.size-sm</code>, <code>.size-md</code> and <code>.size-lg</code>. <code>.number-value</code> uses a different font (Akkurat-Regular).</p>
+
+<div class="docs-example clearfix"><div class="number-title">
+  .number-title
+</div>
+<div class="number-value size-md">
+  0.00
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"number-title"</span><span class="nt">&gt;</span>
+  .number-title
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"number-value size-md"</span><span class="nt">&gt;</span>
+  0.00
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="colors">Colors</h2>
+
+<p>There are mixins provided to easily color text. Simply add <code>@include text-green</code> (and so on) to your rule.</p>
+
+<div class="docs-example clearfix"><div class="text-green">
+  You can have green text,
+</div>
+<div class="text-red">
+  red text,
+</div>
+<div class="text-yellow">
+  yellow text,
+</div>
+<div class="text-gray">
+  gray text,
+</div>
+<div class="text-gray-hover">
+  or gray text on hover.
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-green"</span><span class="nt">&gt;</span>
+  You can have green text,
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-red"</span><span class="nt">&gt;</span>
+  red text,
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-yellow"</span><span class="nt">&gt;</span>
+  yellow text,
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-gray"</span><span class="nt">&gt;</span>
+  gray text,
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-gray-hover"</span><span class="nt">&gt;</span>
+  or gray text on hover.
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
 <h2 id="social-icons">Social icons</h2>
 
     </div>
@@ -179,7 +301,7 @@
 
 
       <footer class="footer">
-        Copyright Wealthsimple 2016.<br>
+        Copyright Wealthsimple 2017.<br>
         Created and maintained by the CSS team at Wealthsimple.
       </footer>
     </div>
