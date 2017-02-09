@@ -6,6 +6,7 @@
   display: block;
   font-size: $base-font-size;
   margin-bottom: $margin-vertical;
+  margin-top: 0;
   padding: 13px 15px;
   width: 100%;
 
@@ -103,8 +104,14 @@ select.form-control {
 
 .size-sm select.form-control,
 select.form-control.size-sm {
-  padding: $base-unit 30px $base-unit 15px;
-  height: 44px;
+  font-size: $base-font-size;
+  padding: 8px 12px;
+  height: 40px;
+  @include medium {
+    font-size: 18px;
+    padding: $base-unit 30px $base-unit 15px;
+    height: 44px;
+  }
 }
 
 select::-ms-expand {
