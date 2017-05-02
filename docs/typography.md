@@ -158,3 +158,9 @@ There are mixins provided to easily color text. Simply add `@include text-green`
 {% endexample %}
 
 ## Social icons
+
+## Icons
+{% example html %}
+<div class="ws-icon-info">
+</div>
+{% endexample %}
