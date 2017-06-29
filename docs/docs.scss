@@ -359,47 +359,249 @@ body {
 
 .swatch {
   display: inline-block;
+  vertical-align: bottom;
   width: 6rem;
   height: 6rem;
+  padding: $base-unit;
   border-radius: .25rem;
+  color: $color-white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: right;
+  text-transform: uppercase;
+  font-size: $secondary-font-size;
+  @include font-sans-bold;
+  white-space: pre;
+
+  // margin-right: -0.3rem; // hack to make the colours touch for better visual inspaction
+
+  &.highlighted {
+    border: 2px solid $color-black;
+  }
 }
 
-.swatch-green { background-color: $color-green; }
-.swatch-green-80 { background-color: $color-green-80; }
-.swatch-green-transparent { background-color: $color-green-transparent; }
+.swatch-green {
+  background-color: $color-green;
+  &::before {
+    content: "#{$color-green}\A";
+  }
+}
+.swatch-green-80 {
+  background-color: $color-green-80;
+  &::before {
+    content: "#{$color-green-80}\A";
+  }
+}
+.swatch-green-transparent {
+  background-color: $color-green-transparent;
+  &::before {
+    content: "#{$color-green-transparent}\A";
+  }
+}
 
-.swatch-red { background-color: $color-red; }
-.swatch-crusta { background-color: $color-crusta; }
-.swatch-red-transparent { background-color: $color-red-transparent; }
+.swatch-red {
+  background-color: $color-red;
+  &::before {
+    content: "#{$color-red}\A";
+  }
+}
 
-.swatch-yellow { background-color: $color-yellow; }
-.swatch-faded-yellow { background-color: $color-faded-yellow; }
-.swatch-translucent-yellow { background-color: $color-translucent-yellow; }
+.swatch-crusta {
+  background-color: $color-crusta;
+  &::before {
+    content: "#{$color-crusta}\A";
+  }
+}
 
-.swatch-black { background-color: $color-black; }
-.swatch-gray-99 { background-color: $color-gray-99; }
-.swatch-gray-98 { background-color: $color-gray-98; }
-.swatch-gray-95 { background-color: $color-gray-95; }
-.swatch-gray-90 { background-color: $color-gray-90; }
-.swatch-gray-80 { background-color: $color-gray-80; }
-.swatch-gray-65 { background-color: $color-gray-65; }
-.swatch-gray-60 { background-color: $color-gray-60; }
-.swatch-gray-52 { background-color: $color-gray-52; }
-.swatch-gray-50 { background-color: $color-gray-50; }
-.swatch-gray-40 { background-color: $color-gray-40; }
-.swatch-gray-35 { background-color: $color-gray-35; }
-.swatch-gray-30 { background-color: $color-gray-30; }
-.swatch-gray-25 { background-color: $color-gray-25; }
-.swatch-gray-20 { background-color: $color-gray-20; }
-.swatch-gray-15 { background-color: $color-gray-15; }
-.swatch-gray-10 { background-color: $color-gray-10; }
-.swatch-gray-6 { background-color: $color-gray-6; }
-.swatch-gray-5 { background-color: $color-gray-5; }
-.swatch-white { background-color: $color-white; }
+.swatch-red-transparent {
+  background-color: $color-red-transparent;
+  &::before {
+    content: "#{$color-red-transparent}\A";
+  }
+}
 
-.swatch-light-beige { background-color: $color-light-beige; }
-.swatch-brown-5 { background-color: $color-brown-5; }
-.swatch-dark-beige { background-color: $color-dark-beige; }
+.swatch-yellow {
+  background-color: $color-yellow;
+  &::before {
+    content: "#{$color-yellow}\A";
+  }
+}
+
+.swatch-faded-yellow {
+  background-color: $color-faded-yellow;
+  &::before {
+    content: "#{$color-faded-yellow}\A";
+  }
+}
+
+.swatch-translucent-yellow {
+  background-color: $color-translucent-yellow;
+  &::before {
+    content: "#{$color-translucent-yellow}\A";
+  }
+}
+
+.swatch-light-beige {
+  background-color: $color-light-beige;
+  &::before {
+    content: "#{$color-light-beige}\A";
+  }
+}
+
+.swatch-brown-5 {
+  background-color: $color-brown-5;
+  &::before {
+    content: "#{$color-brown-5}\A";
+  }
+}
+
+.swatch-dark-beige {
+  background-color: $color-dark-beige;
+  &::before {
+    content: "#{$color-dark-beige}\A";
+  }
+}
+
+.swatch-black {
+  background-color: $color-black;
+  &::before {
+    content: "#{$color-black}\A";
+  }
+}
+
+.swatch-gray-99 {
+  background-color: $color-gray-99;
+  &::before {
+    content: "#{$color-gray-99}\A";
+  }
+}
+
+.swatch-gray-98 {
+  background-color: $color-gray-98;
+  &::before {
+    content: "#{$color-gray-98}\A";
+  }
+}
+
+.swatch-gray-95 {
+  background-color: $color-gray-95;
+  &::before {
+    content: "#{$color-gray-95}\A";
+  }
+}
+
+.swatch-gray-90 {
+  background-color: $color-gray-90;
+  &::before {
+    content: "#{$color-gray-90}\A";
+  }
+}
+
+.swatch-gray-80 {
+  background-color: $color-gray-80;
+  &::before {
+    content: "#{$color-gray-80}\A";
+  }
+}
+
+.swatch-gray-65 {
+  background-color: $color-gray-65;
+  &::before {
+    content: "#{$color-gray-65}\A";
+  }
+}
+
+.swatch-gray-60 {
+  background-color: $color-gray-60;
+  &::before {
+    content: "#{$color-gray-60}\A";
+  }
+}
+
+.swatch-gray-52 {
+  background-color: $color-gray-52;
+  &::before {
+    content: "#{$color-gray-52}\A";
+  }
+}
+
+.swatch-gray-50 {
+  background-color: $color-gray-50;
+  &::before {
+    content: "#{$color-gray-50}\A";
+  }
+}
+
+.swatch-gray-40 {
+  background-color: $color-gray-40;
+  &::before {
+    content: "#{$color-gray-40}\A";
+  }
+}
+
+.swatch-gray-35 {
+  background-color: $color-gray-35;
+  &::before {
+    content: "#{$color-gray-35}\A";
+  }
+}
+
+.swatch-gray-30 {
+  background-color: $color-gray-30;
+  &::before {
+    content: "#{$color-gray-30}\A";
+  }
+}
+
+.swatch-gray-25 {
+  background-color: $color-gray-25;
+  &::before {
+    content: "#{$color-gray-25}\A";
+  }
+}
+
+.swatch-gray-20 {
+  background-color: $color-gray-20;
+  &::before {
+    content: "#{$color-gray-20}\A";
+  }
+}
+
+.swatch-gray-15 {
+  background-color: $color-gray-15;
+  &::before {
+    content: "#{$color-gray-15}\A";
+  }
+}
+
+.swatch-gray-10 {
+  background-color: $color-gray-10;
+  &::before {
+    content: "#{$color-gray-10}\A";
+  }
+}
+
+.swatch-gray-6 {
+  background-color: $color-gray-6;
+  &::before {
+    content: "#{$color-gray-6}\A";
+  }
+}
+
+.swatch-gray-5 {
+  background-color: $color-gray-5;
+  &::before {
+    content: "#{$color-gray-5}\A";
+  }
+}
+
+.swatch-white {
+  background-color: $color-white;
+  &::before {
+    content: "#{$color-white}\A";
+  }
+}
+
+
 
 .button-example {
   background-color: $color-green;

@@ -5,54 +5,50 @@ title: Colors
 
 The look and feel of our company and product relies on using a handful of specific colors that help convey meaning and purpose.
 
-### Branding
+### Brand colours
 
-<div class="swatch swatch-green"></div>
-<div class="swatch swatch-red"></div>
-<div class="swatch swatch-yellow"></div>
+<div class="swatch swatch-yellow highlighted">26</div>
+<div class="swatch swatch-faded-yellow highlighted">2</div>
+<!-- <div class="swatch swatch-translucent-yellow">0</div> -->
 
-### Shades of green
-<div class="swatch swatch-green-80"></div>
-<div class="swatch swatch-green"></div>
-<div class="swatch swatch-green-transparent"></div>
+<div class="swatch swatch-red highlighted">10</div>
+<div class="swatch swatch-crusta highlighted">0</div>
 
-### Shades of red
+<div class="swatch swatch-green-80 highlighted">6</div>
+<div class="swatch swatch-green highlighted">18</div>
 
-<div class="swatch swatch-red"></div>
-<div class="swatch swatch-crusta"></div>
-<div class="swatch swatch-red-transparent"></div>
+<div class="swatch swatch-dark-beige highlighted">1</div>
+<br/>
+<div class="swatch swatch-red-transparent">1</div>
+<div class="swatch swatch-green-transparent">0</div>
+<br/>
 
-### Shades of yellow
+### Shades of gray (& cream)
 
-<div class="swatch swatch-yellow"></div>
-<div class="swatch swatch-translucent-yellow"></div>
-<div class="swatch swatch-faded-yellow"></div>
+<div class="swatch swatch-black">47</div>
+<div class="swatch swatch-gray-98">3</div>
+<div class="swatch swatch-gray-95">1</div>
+<div class="swatch swatch-gray-90">13</div>
+<br/>
+<div class="swatch swatch-gray-80">16</div>
+<div class="swatch swatch-gray-65">9</div>
+<div class="swatch swatch-gray-60">37</div>
+<div class="swatch swatch-gray-30 highlighted">4</div>
+<div class="swatch swatch-gray-50">10</div>
+<br/>
+<div class="swatch swatch-gray-40">14</div>
+<div class="swatch swatch-gray-35">13</div>
 
-### Shades of beige
-
-<div class="swatch swatch-dark-beige"></div>
-<div class="swatch swatch-brown-5"></div>
-<div class="swatch swatch-light-beige"></div>
-
-### Shades of gray
-
-<div class="swatch swatch-black"></div>
-<div class="swatch swatch-gray-99"></div>
-<div class="swatch swatch-gray-98"></div>
-<div class="swatch swatch-gray-95"></div>
-<div class="swatch swatch-gray-90"></div>
-<div class="swatch swatch-gray-80"></div>
-<div class="swatch swatch-gray-65"></div>
-<div class="swatch swatch-gray-60"></div>
-<div class="swatch swatch-gray-52"></div>
-<div class="swatch swatch-gray-50"></div>
-<div class="swatch swatch-gray-40"></div>
-<div class="swatch swatch-gray-35"></div>
-<div class="swatch swatch-gray-30"></div>
-<div class="swatch swatch-gray-25"></div>
-<div class="swatch swatch-gray-20"></div>
-<div class="swatch swatch-gray-15"></div>
-<div class="swatch swatch-gray-10"></div>
-<div class="swatch swatch-gray-6"></div>
-<div class="swatch swatch-gray-5"></div>
-<div class="swatch swatch-white"></div>
+<div class="swatch swatch-gray-25">3</div>
+<div class="swatch swatch-gray-20">24</div>
+<div class="swatch swatch-gray-15">4</div>
+<div class="swatch swatch-gray-10">9</div>
+<br/>
+<div class="swatch swatch-brown-5">1</div>
+<div class="swatch swatch-gray-6">9</div>
+<div class="swatch swatch-light-beige highlighted">0</div>
+<div class="swatch swatch-gray-5">1</div>
+<br/>
+<div class="swatch swatch-white highlighted"></div>
+<!-- <div class="swatch swatch-gray-99"></div> -->
+<!-- <div class="swatch swatch-gray-52"></div> -->
