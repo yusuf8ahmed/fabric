@@ -26,9 +26,8 @@ The look and feel of our company and product relies on using a handful of specif
 ### Shades of gray (& cream)
 
 <div class="swatch swatch-black">47</div>
-<div class="swatch swatch-near-black highlighted">0</div>
 <div class="swatch swatch-gray-99">0</div>
-<div class="swatch swatch-gray-98">3</div>
+<div class="swatch swatch-gray-98 highlighted">3</div>
 <div class="swatch swatch-gray-95">1</div>
 <br/>
 <div class="swatch swatch-gray-90">13</div>
@@ -54,4 +53,4 @@ The look and feel of our company and product relies on using a handful of specif
 <div class="swatch swatch-light-beige highlighted">0</div>
 <div class="swatch swatch-gray-5">1</div>
 <br/>
-<div class="swatch swatch-white highlighted"></div>
+<div class="swatch swatch-white highlighted">54</div>
