@@ -1,12 +1,24 @@
 /* Media query mixins */
 /* ------------------------ */
 
+@mixin xsmall-only {
+  @media (max-width: #{$bp-small}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (min-width: #{$bp-small}) {
+    @content;
+  }
+}
 
 @mixin medium {
   @media (min-width: #{$bp-medium}) {
     @content;
   }
 }
+
 @mixin large {
   @media (min-width: #{$bp-large}) {
     @content;

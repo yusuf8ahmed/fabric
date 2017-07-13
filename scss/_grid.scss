@@ -44,10 +44,18 @@ $grid-col-padding: 15px;
 }
 
 @for $i from 1 through $grid-cols {
-  .row-sm > .col-#{$i} {
+  .row-xs > .col-#{$i} {
     margin-left: 4px;
     width: (100% / $grid-cols) * $i;
     &:first-child, &.first-child { margin-left: 0; }
+  }
+
+  @include small {
+    .row-sm > .col-#{$i} {
+      margin-left: 4px;
+      width: (100% / $grid-cols) * $i;
+      &:first-child, &.first-child { margin-left: 0; }
+    }
   }
 
   @include medium {
@@ -69,8 +77,12 @@ $grid-col-padding: 15px;
   .no-gutters .col-#{$i} { margin-left: 0; }
 }
 
-.row-sm {
+.row-xs {
   display: flex;
+}
+
+.row-sm {
+  @include small { display: flex; }
 }
 
 .row-md {
