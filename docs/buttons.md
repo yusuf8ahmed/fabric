@@ -21,9 +21,10 @@ When using a `<button>` element, **always specify a `type`**. When using a `<a>`
 <a class="button primary-action" href="#" role="button">Link button</a>
 {% endexample %}
 
-You can find them in three sizes: the default `.button`, `.size-md`, and  `.size-lg`.
+You can find them in four sizes: `.size-sm`, the default `.button`, `.size-md`, and `.size-lg`.
 
 {% example html %}
+<button class="button primary-action size-sm" type="button">.button .size-sm</button>
 <button class="button primary-action" type="button">.button</button>
 <button class="button primary-action size-md" type="button">.button .size-md</button>
 <button class="button primary-action size-lg" type="button">.button .size-lg</button>
