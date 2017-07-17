@@ -6,11 +6,27 @@ Fabric is the CSS toolkit that powers Wealthsimple's front-end design. It's purp
 
 ## Install
 
-There are two options for installing Fabric on your own project.
+There are three options for installing Fabric on your own project.
 
-### Option 1. Install with Bower
+### Option 1. Install with npm or yarn
 
-We recomend using [bower](http://bower.io/) for frontend package management. First, create a `bower.json` in your project root directory if you dont have one yet:
+If you are using a `import`- or `require`- aware javascript bundler like [webpack](http://webpack.js.org), we recommend installing using `npm` or `yarn`:
+
+```sh
+npm install --save @wealthsimple/fabric
+```
+
+or
+
+```sh
+yarn add @wealthsimple/fabric
+```
+
+### Option 2. Install with Bower
+
+If your project setup isn't capable of processing npm-based modules, we also publish to [bower](http://bower.io/).
+
+First, create a `bower.json` in your project root directory if you dont have one yet:
 
 ```json
 {
