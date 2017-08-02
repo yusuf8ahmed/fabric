@@ -1,0 +1,7 @@
+docs
+node_modules
+_config.yml
+.editorconfig
+.hound.yml
+.gitignore
+gruntfile.js
