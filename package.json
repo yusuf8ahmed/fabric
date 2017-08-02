@@ -1,9 +1,8 @@
 {
   "name": "@wealthsimple/fabric",
-  "version": "3.1.0",
+  "version": "3.1.2",
   "homepage": "http://fabric.wealthsimple.com",
   "author": "Wealthsimple",
-  "scss": "./scss/fabric.scss",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,10 +13,11 @@
     "url": "https://github.com/wealthsimple/fabric/issues"
   },
   "main": "css/fabric.css",
+  "scss": "./scss/fabric.scss",
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer-core": "~5.2.1",
     "grunt-jekyll": "^0.4.2",
     "grunt-autoprefixer": "^2.2.0",
