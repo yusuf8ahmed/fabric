@@ -22,6 +22,7 @@ Form elements in Fabric currently have no basic layout specified (this is by des
 <form>
   <input type="text" class="form-input-text" placeholder="Name">
   <input type="email" class="form-input-text" placeholder="Email address">
+  <input type="number" class="form-input-text" placeholder="Age">
 
   <p>
     <label>
