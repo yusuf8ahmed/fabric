@@ -169,6 +169,16 @@ $ grunt publish
 
 Changes should be live in around 30 seconds.
 
+
+For npm you need to manually publish. Go to your terminal, rebase latest master, and run:
+
+```sh
+$ npm login
+$ npm publish
+```
+
+You will need to be added to our organization to publish the package.
+
 ## Credits
 
 Boilerplate for this repository was heavily reused from [GitHub's CSS toolkit](https://github.com/primer/primer).
