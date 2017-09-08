@@ -169,6 +169,14 @@ $ grunt publish
 
 Changes should be live in around 30 seconds.
 
+
+To publish the package to NPM run the following commands. You will need to be added to our organization to publish the package.
+
+```sh
+$ npm login
+$ npm publish
+```
+
 ## Credits
 
 Boilerplate for this repository was heavily reused from [GitHub's CSS toolkit](https://github.com/primer/primer).
