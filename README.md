@@ -170,12 +170,14 @@ $ grunt publish
 Changes should be live in around 30 seconds.
 
 
-To publish the package to NPM run the following commands. You will need to be added to our organization to publish the package.
+For npm you need to manually publish. Go to your terminal, rebase latest master, and run:
 
 ```sh
 $ npm login
 $ npm publish
 ```
+
+You will need to be added to our organization to publish the package.
 
 ## Credits
 
