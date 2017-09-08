@@ -170,6 +170,13 @@ $ grunt publish
 Changes should be live in around 30 seconds.
 
 
+#### Creating a new release
+
+* Go to the ['releases'](https://github.com/wealthsimple/fabric/releases) tab in github.
+* Hit the 'draft new release button'. Use the master branch only please. This does two things:
+  * it prompts you to enter some info about what's in the new release. Be descriptive! This serves as our changelog, and your colleagues will thank you. Screenshots of new controls/features are handy too.
+  * It creates the git tag that bower will use.
+
 For npm you need to manually publish. Go to your terminal, rebase latest master, and run:
 
 ```sh
