@@ -161,6 +161,12 @@ The public documentation is hosted on GitHub pages. To push new changes, first c
 $ grunt
 ```
 
+Build the latest website by running (it will create `_site` directory):
+
+```sh
+$ bundle exec jekyll server
+```
+
 Commit all changes, then push the changes to `gh-pages` branch with:
 
 ```sh
