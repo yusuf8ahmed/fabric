@@ -22,6 +22,10 @@
   color: $color-green;
 }
 
+@mixin text-green-dark {
+  color: $color-green-80;
+}
+
 @mixin text-red {
   color: $color-red;
 }

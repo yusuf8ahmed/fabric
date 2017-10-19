@@ -143,6 +143,9 @@ There are mixins provided to easily color text. Simply add `@include text-green`
 <div class="text-green">
   You can have green text,
 </div>
+<div class="text-green-dark">
+  dark green text,
+</div>
 <div class="text-red">
   red text,
 </div>

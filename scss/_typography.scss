@@ -73,6 +73,7 @@ strong { @include font-sans-bold; }
 .fine-print {  @include fine-print;  }
 
 .text-green { @include text-green; }
+.text-green-dark { @include text-green-dark }
 .text-red { @include  text-red; }
 .text-yellow { @include  text-yellow; }
 .text-gray { @include text-gray; }
