@@ -13,7 +13,8 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/fabric.css': 'scss/fabric.scss'
+          'css/fabric.css': 'scss/fabric.scss',
+          'css/fonts.css': 'scss/fonts.scss'
         }
       }
     },
