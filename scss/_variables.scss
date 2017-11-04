@@ -1,3 +1,7 @@
+ /*
+  * SCSS Variables
+  */
+
 $bp-small: 585px;
 $bp-medium: 850px;
 $bp-large: 1000px;
@@ -73,3 +77,85 @@ $card-container-header-height: 100px;
 $card-border-radius: 3px;
 $card-title-font-size: 22px;
 $card-section-border-width: 6px;
+
+/*
+ * CSS Variables
+ */
+
+:root {
+  --bp-small: $bp-small;
+  --bp-medium: $bp-medium;
+  --bp-large: $bp-large;
+  --bp-xlarge: $bp-xlarge;
+  --bp-site-max-width: $bp-site-max-width;
+  --site-max-width: $site-max-width;
+
+  --base-icon-size: $base-icon-size;
+
+  --base-unit: $base-unit;
+
+  --base-font-size: $base-font-size;
+  --secondary-font-size: $secondary-font-size;
+  --error-font-size: $error-font-size;
+
+  --padding-horizontal: $padding-horizontal;
+  --padding-vertical: $padding-vertical;
+
+  --margin-vertical: $margin-vertical;
+
+  --color-gray-5: $color-gray-5;
+  --color-gray-6: $color-gray-6;
+  --color-gray-10: $color-gray-10;
+  --color-gray-15: $color-gray-15;
+  --color-gray-20: $color-gray-20;
+  --color-gray-25: $color-gray-25;
+  --color-gray-30: $color-gray-30;
+  --color-gray-35: $color-gray-35;
+  --color-gray-40: $color-gray-40;
+  --color-gray-50: $color-gray-50;
+  --color-gray-52: $color-gray-52;
+  --color-gray-60: $color-gray-60;
+  --color-gray-65: $color-gray-65;
+  --color-gray-80: $color-gray-80;
+  --color-gray-90: $color-gray-90;
+  --color-gray-95: $color-gray-95;
+  --color-gray-98: $color-gray-98;
+  --color-gray-99: $color-gray-99;
+  --color-gray-100: $color-gray-100;
+
+  --color-white: $color-white;
+  --color-black: $color-black;
+
+  --color-red: $color-red;
+  --color-crusta: $color-crusta;
+  --color-red-transparent: $color-red-transparent;
+
+  --color-yellow: $color-yellow;
+  --color-yellow-60: $color-yellow-60;
+  --color-yellow-hover: $color-yellow-hover;
+  --color-faded-yellow: $color-faded-yellow;
+  --color-translucent-yellow: $color-translucent-yellow;
+
+  --color-green: $color-green;
+  --color-green-80: $color-green-80;
+  --color-green-transparent: $color-green-transparent;
+
+  --color-dark-beige: $color-dark-beige;
+  --color-light-beige: $color-light-beige;
+
+  --color-brown-5: $color-brown-5;
+  --color-brown-25: $color-brown-25;
+
+  --color-white-rgba: $color-white-rgba;
+  --color-white-semitransparent: $color-white-semitransparent;
+  --color-black-semitransparent: $color-black-semitransparent;
+  --color-black-semitransparent-darker: $color-black-semitransparent-darker;
+  --color-black-semitransparent-darkest: $color-black-semitransparent-darkest;
+
+  --color-border: $color-border;
+
+  --card-container-header-height: $card-container-header-height;
+  --card-border-radius: $card-border-radius;
+  --card-title-font-size: $card-title-font-size;
+  --card-section-border-width: $card-section-border-width;
+}
