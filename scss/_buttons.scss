@@ -121,9 +121,10 @@
   @include pagination-button;
 }
 
-.button[disabled] {
+.button[disabled], .button.disabled {
   opacity: 0.65;
   cursor: default;
+  pointer-events: none;
 }
 
 .button[disabled].primary-action {
