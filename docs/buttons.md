@@ -49,6 +49,8 @@ In rare cases where the container's background color is not white, you can manua
 {% example html %}
 <button class="button primary-action" type="button" disabled>Disabled</button>
 <button class="button secondary-action" type="button" disabled>Disabled</button>
+<a class="button disabled primary-action" href="https://wealthsimple.com/">Disabled link</a>
+<a class="button disabled secondary-action" href="https://wealthsimple.com/">Disabled link</a>
 {% endexample %}
 
 ## Block Buttons
