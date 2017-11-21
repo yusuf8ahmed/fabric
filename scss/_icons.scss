@@ -1,6 +1,13 @@
 .ws-icon-info {
   width: $base-icon-size;
   height: $base-icon-size;
-  background: url('../images/info.svg') no-repeat;
+  background: url($ws-icon-info) no-repeat;
   background-size: $base-icon-size $base-icon-size;
+}
+
+.ws-icon-three-dot-spinner {
+  width: $base-icon-size-large;
+  height: $base-icon-size-large;
+  background: url($ws-icon-three-dot-spinner) no-repeat;
+  background-size: $base-icon-size-large $base-icon-size-large;
 }
