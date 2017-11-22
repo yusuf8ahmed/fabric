@@ -75,7 +75,8 @@
 
 select.form-control {
   @include font-sans;
-  background: url($ws-icon-arrow-down) no-repeat right 10px center white;
+  @include ws-icon-arrow-down($color-gray-60);
+  background-position: right 10px center;
   background-size: 10px 10px; // needed for IE
   border: 1px solid $color-border;
   border-radius: 0;

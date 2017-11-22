@@ -405,3 +405,7 @@ body {
   background-color: $color-green;
   padding: 25px;
 }
+
+.info-red-example {
+  @include ws-icon-info($color-red);
+}

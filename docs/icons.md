@@ -10,6 +10,16 @@ Fabric includes icons.
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
+## Coloring
+
+Icons can be colored by passing a hex value to the icon mixin. The base classes are in gray.
+
+Example SCSS class: `.info-red-example { @include ws-icon-info($color-red); }`
+
+{% example html %}
+<svg class="info-red-example"></svg>
+{% endexample %}
+
 ## arrow-down
 
 {% example html %}
@@ -26,10 +36,4 @@ Fabric includes icons.
 
 {% example html %}
 <svg class="ws-icon-three-dot-spinner"></svg>
-{% endexample %}
-
-## three-dot-spinner-gray
-
-{% example html %}
-<svg class="ws-icon-three-dot-spinner-gray"></svg>
 {% endexample %}
