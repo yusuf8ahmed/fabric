@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Icons &middot; Fabric</title>
+
+    <link rel="stylesheet" href="/docs.css">
+  </head>
+  <body>
+
+    <header class="masthead">
+      <div class="container">
+        <a href="/" class="masthead-logo">
+          Fabric
+        </a>
+
+        <nav class="masthead-nav">
+          <a  href="/scaffolding">Docs</a>
+          <a href="https://github.com/wealthsimple/fabric" target="_blank">GitHub</a>
+          <a href="https://github.com/wealthsimple/fabric/blob/master/README.md#install" target="_blank">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <div class="container">
+      <div class="row-md docs-layout">
+  <div class="col-3">
+    <nav class="menu docs-menu">
+  <a class="menu-item " href="/scaffolding/">
+    Scaffolding
+  </a>
+  <a class="menu-item " href="/layout/">
+    Layout
+  </a>
+  <a class="menu-item " href="/typography/">
+    Typography
+  </a>
+  <a class="menu-item " href="/buttons/">
+    Buttons
+  </a>
+  <a class="menu-item " href="/forms/">
+    Forms
+  </a>
+  <a class="menu-item " href="/utilities/">
+    Utilities
+  </a>
+  <a class="menu-item " href="/icons/">
+    Icons
+  </a>
+</nav>
+
+<nav class="menu docs-menu">
+  <a class="menu-item " href="/guidelines/">
+    Code guidelines
+  </a>
+  <a class="menu-item " href="/colors/">
+    Colors
+  </a>
+</nav>
+
+  </div>
+  <div class="col-9 markdown-body">
+    <h1 class="page-title">Icons</h1>
+    <div class="markdown-body">
+      <p>Fabric includes icons.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#coloring" id="markdown-toc-coloring">Coloring</a></li>
+  <li><a href="#arrow-down" id="markdown-toc-arrow-down">arrow-down</a></li>
+  <li><a href="#info" id="markdown-toc-info">info</a></li>
+  <li><a href="#three-dot-spinner" id="markdown-toc-three-dot-spinner">three-dot-spinner</a></li>
+</ul>
+
+<h2 id="coloring">Coloring</h2>
+
+<p>Icons can be colored by passing a hex value to the icon mixin. The base classes are in gray.</p>
+
+<p>Example SCSS class: <code>.info-red-example { @include ws-icon-info($color-red); }</code></p>
+
+<div class="docs-example clearfix"><svg class="info-red-example"></svg></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"info-red-example"</span><span class="nt">&gt;&lt;/svg&gt;</span></code></pre></div>
+
+<h2 id="arrow-down">arrow-down</h2>
+
+<div class="docs-example clearfix"><svg class="ws-icon-arrow-down"></svg></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"ws-icon-arrow-down"</span><span class="nt">&gt;&lt;/svg&gt;</span></code></pre></div>
+
+<h2 id="info">info</h2>
+
+<div class="docs-example clearfix"><svg class="ws-icon-info"></svg></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"ws-icon-info"</span><span class="nt">&gt;&lt;/svg&gt;</span></code></pre></div>
+
+<h2 id="three-dot-spinner">three-dot-spinner</h2>
+
+<div class="docs-example clearfix"><svg class="ws-icon-three-dot-spinner"></svg></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"ws-icon-three-dot-spinner"</span><span class="nt">&gt;&lt;/svg&gt;</span></code></pre></div>
+
+
+    </div>
+  </div>
+</div>
+
+
+      <footer class="footer">
+        Copyright Wealthsimple 2017.<br>
+        Created and maintained by the CSS team at Wealthsimple.
+      </footer>
+    </div>
+
+    <script src="/js/anchor.min.js"></script>
+    <script>
+      var selector = '.markdown-body h2, .markdown-body h3';
+      anchors.options = {
+        placement: 'left',
+        class: 'anchor-link'
+      };
+      anchors.add(selector);
+    </script>
+  </body>
+</html>
