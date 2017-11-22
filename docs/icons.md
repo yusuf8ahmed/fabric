@@ -10,14 +10,26 @@ Fabric includes icons.
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Three dot spinner
+## arrow-down
 
 {% example html %}
-<div class="ws-icon-three-dot-spinner"></div>
+<svg class="ws-icon-arrow-down"></svg>
 {% endexample %}
 
-## Info
+## info
 
 {% example html %}
-<div class="ws-icon-info"></div>
+<svg class="ws-icon-info"></svg>
+{% endexample %}
+
+## three-dot-spinner
+
+{% example html %}
+<svg class="ws-icon-three-dot-spinner"></svg>
+{% endexample %}
+
+## three-dot-spinner-gray
+
+{% example html %}
+<svg class="ws-icon-three-dot-spinner-gray"></svg>
 {% endexample %}

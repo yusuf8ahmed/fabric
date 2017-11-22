@@ -75,7 +75,7 @@
 
 select.form-control {
   @include font-sans;
-  background: url('../images/arrow-down.svg') no-repeat right 10px center white; // TODO ensure images is included in bower package
+  background: url($ws-icon-arrow-down) no-repeat right 10px center white;
   background-size: 10px 10px; // needed for IE
   border: 1px solid $color-border;
   border-radius: 0;

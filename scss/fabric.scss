@@ -6,6 +6,7 @@
 // Global requirements
 @import "variables";
 @import "base-mixins";
+@import "svgs";
 
 // Basecoat
 @import "normalize";
@@ -18,7 +19,6 @@
 @import "cards";
 
 // Utility classes and icons
-@import "data-uris";
 @import "icons";
 @import "ss-social-circle";
 @import "utilities";
