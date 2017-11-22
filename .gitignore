@@ -1,5 +1,6 @@
 .bundle/config
 bin/
+.DS_STORE
 vendor/
 .sass-cache/
 vendor/
