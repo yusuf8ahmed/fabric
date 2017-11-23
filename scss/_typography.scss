@@ -72,6 +72,7 @@ strong { @include font-sans-bold; }
 .inline-header-md {  @include inline-header-md;  }
 .fine-print {  @include fine-print;  }
 
+.text-white { @include text-white; }
 .text-green { @include text-green; }
 .text-green-dark { @include text-green-dark }
 .text-red { @include  text-red; }

@@ -56,3 +56,24 @@ The look and feel of our company and product relies on using a handful of specif
 <div class="swatch swatch-gray-6"></div>
 <div class="swatch swatch-gray-5"></div>
 <div class="swatch swatch-white"></div>
+
+### White labeling
+
+Some utility classes for assisting in white labeling and theming efforts have been made available.
+
+#### Text colours
+
+You can use the following classes for white label-friendly text:
+
+- <span class="text-color-primary">**text-color-primary**</span>
+- <span class="text-color-secondary">**text-color-secondary**</span>
+- <span class="text-color-tertiary">**text-color-tertiary**</span>
+
+#### Background colours
+
+You can use the following classes for white label-friendly backgrounds:
+
+<div class="button text-white background-color-primary">.background-color-primary</div>
+<div class="button text-white background-color-secondary">.background-color-secondary</div>
+<div class="button text-white background-color-tertiary">.background-color-tertiary</div>
+

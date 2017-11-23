@@ -18,6 +18,10 @@
   font-weight: 300;
 }
 
+@mixin text-white {
+  color: $color-white;
+}
+
 @mixin text-green {
   color: $color-green;
 }

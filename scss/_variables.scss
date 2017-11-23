@@ -73,6 +73,12 @@ $color-black-semitransparent-darkest: rgba(0, 0, 0, 0.3);
 
 $color-border: $color-gray-35;
 
+// White labeling defaults
+$color-brand-primary: $color-yellow !default;
+$color-brand-secondary: $color-green !default;
+$color-brand-tertiary: $color-red !default;
+
+
 $card-container-header-height: 100px;
 $card-border-radius: 3px;
 $card-title-font-size: 22px;

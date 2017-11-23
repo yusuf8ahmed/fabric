@@ -99,3 +99,59 @@
   .base-padding-left-x#{$i} { padding-left: $base-multiplied; }
   .base-padding-right-x#{$i} { padding-right: $base-multiplied; }
 }
+
+
+/* =============================
+   Theme utilities
+   ============================= */
+
+// Background colours
+@mixin background-color-primary {
+  background-color: $color-brand-primary;
+}
+
+@mixin background-color-secondary {
+  background-color: $color-brand-secondary;
+}
+
+@mixin background-color-tertiary {
+  background-color: $color-brand-tertiary;
+}
+
+.background-color-primary {
+  @include background-color-primary;
+}
+
+.background-color-secondary {
+  @include background-color-secondary;
+}
+
+.background-color-tertiary {
+  @include background-color-tertiary;
+}
+
+
+// Text colours
+@mixin text-color-primary {
+  color: $color-brand-primary;
+}
+
+@mixin text-color-secondary {
+  color: $color-brand-secondary;
+}
+
+@mixin text-color-tertiary {
+  color: $color-brand-tertiary;
+}
+
+.text-color-primary {
+  @include text-color-primary;
+}
+
+.text-color-secondary {
+  @include text-color-secondary;
+}
+
+.text-color-tertiary {
+  @include text-color-tertiary;
+}
