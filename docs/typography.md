@@ -152,6 +152,9 @@ There are mixins provided to easily color text. Simply add `@include text-green`
 <div class="text-yellow">
   yellow text,
 </div>
+<span class="text-white brand-primary-bg">
+  white text,
+</span>
 <div class="text-gray">
   gray text,
 </div>
