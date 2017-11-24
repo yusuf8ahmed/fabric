@@ -130,6 +130,37 @@
   @include background-color-tertiary;
 }
 
+// Grays
+// If you add/remove these grays, don't forget to do the same in _variables.scss#L26
+$gray-backgrounds: (
+  color-white: $color-white,
+  color-gray-5: $color-gray-5,
+  color-gray-6: $color-gray-6,
+  color-gray-10: $color-gray-10,
+  color-gray-15: $color-gray-15,
+  color-gray-20: $color-gray-20,
+  color-gray-25: $color-gray-25,
+  color-gray-30: $color-gray-30,
+  color-gray-35: $color-gray-35,
+  color-gray-40: $color-gray-40,
+  color-gray-50: $color-gray-50,
+  color-gray-52: $color-gray-52,
+  color-gray-60: $color-gray-60,
+  color-gray-65: $color-gray-65,
+  color-gray-80: $color-gray-80,
+  color-gray-90: $color-gray-90,
+  color-gray-95: $color-gray-95,
+  color-gray-98: $color-gray-98,
+  color-gray-99: $color-gray-99,
+  color-black: $color-black
+);
+
+@each $key, $value in $gray-backgrounds {
+  .background-#{$key} {
+    background-color: $value;
+  }
+}
+
 
 // Text colours
 @mixin text-color-primary {

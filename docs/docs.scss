@@ -362,6 +362,9 @@ body {
   width: 6rem;
   height: 6rem;
   border-radius: .25rem;
+  padding: 8px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .swatch-green { background-color: $color-green; }
@@ -376,26 +379,7 @@ body {
 .swatch-faded-yellow { background-color: $color-faded-yellow; }
 .swatch-translucent-yellow { background-color: $color-translucent-yellow; }
 
-.swatch-black { background-color: $color-black; }
-.swatch-gray-99 { background-color: $color-gray-99; }
-.swatch-gray-98 { background-color: $color-gray-98; }
-.swatch-gray-95 { background-color: $color-gray-95; }
-.swatch-gray-90 { background-color: $color-gray-90; }
-.swatch-gray-80 { background-color: $color-gray-80; }
-.swatch-gray-65 { background-color: $color-gray-65; }
-.swatch-gray-60 { background-color: $color-gray-60; }
-.swatch-gray-52 { background-color: $color-gray-52; }
-.swatch-gray-50 { background-color: $color-gray-50; }
-.swatch-gray-40 { background-color: $color-gray-40; }
-.swatch-gray-35 { background-color: $color-gray-35; }
-.swatch-gray-30 { background-color: $color-gray-30; }
-.swatch-gray-25 { background-color: $color-gray-25; }
-.swatch-gray-20 { background-color: $color-gray-20; }
-.swatch-gray-15 { background-color: $color-gray-15; }
-.swatch-gray-10 { background-color: $color-gray-10; }
-.swatch-gray-6 { background-color: $color-gray-6; }
-.swatch-gray-5 { background-color: $color-gray-5; }
-.swatch-white { background-color: $color-white; }
+// Gray swatches use utility classes at _utilities.scss
 
 .swatch-light-beige { background-color: $color-light-beige; }
 .swatch-brown-5 { background-color: $color-brown-5; }
