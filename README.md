@@ -161,6 +161,8 @@ The public documentation is hosted on GitHub pages. To push new changes, first c
 $ grunt
 ```
 
+Prepare a PR with a new version number that follows [semantic versioning](http://semver.org/) - this is really important!
+
 Build the latest website by running (it will create `_site` directory):
 
 ```sh
