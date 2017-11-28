@@ -1,5 +1,6 @@
 @mixin ws-icon-arrow-down($color) {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' viewBox='0 0 25 16'%3E%3Cstyle%3E .st0%7Bfill:#{$color};%7D %3C/style%3E%3Cpath d='M12.5 15.1L0 2.6 1.8.9l10.7 10.7L23.2.9 25 2.6z' class='st0'/%3E%3C/svg%3E%0A");
+  background-color: $color-white;
   background-repeat: no-repeat;
   background-size: $base-icon-size;
   height: $base-icon-size;
