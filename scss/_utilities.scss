@@ -74,6 +74,14 @@
 .base-margin-bottom { margin-bottom: $base-unit; }
 .base-margin-left { margin-left: $base-unit; }
 .base-margin-right { margin-right: $base-unit; }
+.base-margin-vertical {
+  margin-top: $base-unit;
+  margin-bottom: $base-unit;  
+}
+.base-margin-horizontal {
+  margin-left: $base-unit;
+  margin-right: $base-unit;  
+}
 
 @for $i from 2 through 5 {
   $base-multiplied: $i * $base-unit;
@@ -82,6 +90,14 @@
   .base-margin-bottom-x#{$i} { margin-bottom: $base-multiplied; }
   .base-margin-left-x#{$i} { margin-left: $base-multiplied; }
   .base-margin-right-x#{$i} { margin-right: $base-multiplied; }
+  .base-margin-vertical-x#{$i} {
+    margin-top: $base-multiplied;
+    margin-bottom: $base-multiplied;  
+  }
+  .base-margin-horizontal-x#{$i} {
+    margin-left: $base-multiplied;
+    margin-right: $base-multiplied;  
+  }
 }
 
 .base-padding { padding: $base-unit; }
@@ -90,6 +106,14 @@
 .base-padding-left { padding-left: $base-unit; }
 .base-padding-right { padding-right: $base-unit; }
 .base-padding-sm { padding: 0 $base-unit * 1.8; }
+.base-padding-vertical {
+  padding-top: $base-unit;
+  padding-bottom: $base-unit;  
+}
+.base-padding-horizontal {
+  margin-left: $base-unit;
+  padding-right: $base-unit;  
+}
 
 @for $i from 2 through 5 {
   $base-multiplied: $i * $base-unit;
@@ -98,8 +122,15 @@
   .base-padding-bottom-x#{$i} { padding-bottom: $base-multiplied; }
   .base-padding-left-x#{$i} { padding-left: $base-multiplied; }
   .base-padding-right-x#{$i} { padding-right: $base-multiplied; }
+  .base-padding-vertical-x#{$i} {
+    padding-top: $base-multiplied;
+    padding-bottom: $base-multiplied;  
+  }
+  .base-padding-horizontal-x#{$i} {
+    padding-left: $base-multiplied;
+    padding-right: $base-multiplied;  
+  }
 }
-
 
 /* =============================
    Theme utilities
