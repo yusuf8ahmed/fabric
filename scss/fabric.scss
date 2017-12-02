@@ -10,12 +10,14 @@
 
 // Basecoat
 @import "normalize";
+@import "tables";
 @import "typography-mixins";
 @import "typography";
 @import "base";
 @import "grid";
 @import "buttons";
 @import "forms";
+
 @import "cards";
 
 // Utility classes and icons

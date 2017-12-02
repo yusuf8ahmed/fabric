@@ -378,7 +378,6 @@ $margin: 16px;
   p,
   blockquote,
   ul, ol, dl,
-  table,
   pre {
     margin-top: 0;
     margin-bottom: $margin;
@@ -457,33 +456,6 @@ $margin: 16px;
   dl dd {
     padding: 0 $margin;
     margin-bottom: $margin;
-  }
-
-  // Tables
-  table {
-    display: block;
-    width: 100%;
-    overflow: auto;
-    word-break: normal;
-    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
-
-    th {
-      font-weight: bold;
-    }
-
-    th, td {
-      padding: 6px 13px;
-      border: 1px solid #ddd;
-    }
-
-    tr {
-      background-color: #fff;
-      border-top: 1px solid #ccc;
-
-      &:nth-child(2n) {
-        background-color: #f8f8f8;
-      }
-    }
   }
 
   // Images & Stuff

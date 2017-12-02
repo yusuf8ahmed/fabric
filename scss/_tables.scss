@@ -1,0 +1,25 @@
+$table-cell-padding: 16px;
+
+// .table {}
+
+.table--full {
+  width: 100%;
+}
+
+.table__th {
+  text-align: left;
+  padding: $table-cell-padding;
+  // font-size: $base-font-size + 1;
+
+  // @include medium {
+  //   font-size: $base-font-size + 2;
+  // }
+
+  // @include large {
+  //   font-size: $base-font-size + 3;
+  // }
+}
+
+.table__td {
+  padding: $table-cell-padding;
+}
