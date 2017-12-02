@@ -1,6 +1,8 @@
 $table-cell-padding: 16px;
 
-// .table {}
+.table {
+  margin: $table-cell-padding 0;
+}
 
 .table--full {
   width: 100%;
