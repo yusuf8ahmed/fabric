@@ -7,6 +7,12 @@
   }
 }
 
+@mixin small-only {
+  @media (max-width: #{$bp-medium}) {
+    @content;
+  }
+}
+
 @mixin small {
   @media (min-width: #{$bp-small}) {
     @content;
