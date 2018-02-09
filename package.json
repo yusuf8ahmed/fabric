@@ -1,6 +1,6 @@
 {
-  "name": "wealthsimple-fabric",
-  "version": "0.0.1",
+  "name": "@wealthsimple/fabric",
+  "version": "2.0.1",
   "homepage": "http://fabric.wealthsimple.com",
   "author": "Wealthsimple",
   "scss": "./scss/fabric.scss",
@@ -30,7 +30,8 @@
     "grunt-postcss": "~0.5.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "grunt"
   },
   "keywords": [
     "wealthsimple",
