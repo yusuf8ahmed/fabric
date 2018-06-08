@@ -55,7 +55,7 @@ To update the package once installed:
 $ bower update wealthsimple-fabric
 ```
 
-### Option 2. Install Minified CSS
+### Option 3. Install Minified CSS
 
 The concatenated and minified CSS is available in https://github.com/wealthsimple/fabric/blob/master/css/fabric.css
 
