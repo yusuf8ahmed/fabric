@@ -3,9 +3,10 @@
   font-weight: 300;
 }
 
+/* TODO: Deprecate this mixin @abejfehr */
 @mixin font-sans-bold {
-  font-family: 'FuturaBT-Heavy', sans-serif;
-  font-weight: 100;
+  font-family: 'FuturaBT-Book', sans-serif;
+  font-weight: 700;
 }
 
 @mixin font-serif {
@@ -51,7 +52,7 @@
 @mixin h1-sans {
   font-size: 30px;
   line-height: 35px;
-  @include font-sans-bold;
+  font-weight: bold;
 
   @include medium {
     font-size: 54px;
@@ -62,7 +63,7 @@
 @mixin h2-sans {
   font-size: 27px;
   line-height: 31px;
-  @include font-sans-bold;
+  font-weight: bold;
 
   @include medium {
     font-size: 36px;
@@ -73,7 +74,7 @@
 @mixin h3-sans {
   font-size: 20px;
   line-height: 22px;
-  @include font-sans-bold;
+  font-weight: bold;
 
   @include medium {
     font-size: 27px;
@@ -84,7 +85,7 @@
 @mixin h4-sans {
   font-size: 18px;
   line-height: 19px;
-  @include font-sans-bold;
+  font-weight: bold;
 
   @include medium {
     font-size: 23px;
@@ -95,7 +96,7 @@
 @mixin h5-sans {
   font-size: $base-font-size;
   line-height: 17px;
-  @include font-sans-bold;
+  font-weight: bold;
 
   @include medium {
     font-size: 18px;
@@ -218,7 +219,7 @@
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 4px;
-  @include font-sans-bold;
+  font-weight: bold;
 
   @include medium {
     letter-spacing: 6px;
@@ -237,7 +238,7 @@
 
 @mixin blockquote {
   @include text-green;
-  @include font-sans-bold;
+  font-weight: bold;
   font-size: 20px;
   line-height: 26px;
 
@@ -271,8 +272,8 @@
 }
 
 @mixin uppercase-text {
-  @include font-sans-bold;
   @include text-gray;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   &.size-md {
