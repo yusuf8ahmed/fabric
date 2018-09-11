@@ -1,11 +1,11 @@
 @mixin font-sans {
-  font-family: 'FuturaBT-Book', sans-serif;
-  font-weight: 300;
+  font-family: 'FuturaBT', sans-serif;
+  font-weight: 400;
 }
 
 /* TODO: Deprecate this mixin @abejfehr */
 @mixin font-sans-bold {
-  font-family: 'FuturaBT-Book', sans-serif;
+  font-family: 'FuturaBT', sans-serif;
   font-weight: 700;
 }
 

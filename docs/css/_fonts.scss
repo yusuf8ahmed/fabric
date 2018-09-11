@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'FuturaBT-Book';
+  font-family: 'FuturaBT';
   font-weight: 400;
   src: url('/fonts/FuturaBT-Book.eot');
   src: url('/fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),url('/fonts/FuturaBT-Book.woff2') format('woff2'),url('/fonts/FuturaBT-Book.woff') format('woff'),url('/fonts/FuturaBT-Book.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'FuturaBT-Book';
+  font-family: 'FuturaBT';
   font-weight: 700;
   src: url('/fonts/FuturaBT-Heavy.eot');
   src: url('/fonts/FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),url('/fonts/FuturaBT-Heavy.woff2') format('woff2'),url('/fonts/FuturaBT-Heavy.woff') format('woff'),url('/fonts/FuturaBT-Heavy.ttf') format('truetype');
@@ -24,4 +24,12 @@
   src: url('https://d1p4wrw087wab3.cloudfront.net/fonts/Akkurat-Regular.eot?#iefix') format('embedded-opentype'),
   url('https://d1p4wrw087wab3.cloudfront.net/fonts/Akkurat-Regular.woff2') format('woff2'),
   url('https://d1p4wrw087wab3.cloudfront.net/fonts/Akkurat-Regular.woff') format('woff');
+}
+
+/* TODO: Deprecate this @abejfehr */
+@font-face {
+  font-family: 'FuturaBT-Book';
+  font-weight: 400;
+  src: url('/fonts/FuturaBT-Book.eot');
+  src: url('/fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),url('/fonts/FuturaBT-Book.woff2') format('woff2'),url('/fonts/FuturaBT-Book.woff') format('woff'),url('/fonts/FuturaBT-Book.ttf') format('truetype');
 }
