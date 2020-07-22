@@ -16,7 +16,7 @@
   }
 
   @include medium {
-    font-size: 18px;
+    font-size: 20px;
     padding: 18px 20px;
   }
 }
@@ -37,7 +37,7 @@
   padding: 8px 12px;
 
   @include medium {
-    font-size: 18px;
+    font-size: 20px;
     padding: $base-unit 15px;
   }
 }
@@ -87,18 +87,19 @@ select.form-control {
   line-height: 1.4;
   margin-bottom: $margin-vertical;
   padding: $base-unit 30px $base-unit 20px;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   width: 100%;
   -webkit-appearance: none;
-  -moz-appearance:    none;
+  -moz-appearance: none;
 
   option {
     background-color: $color-white;
     -webkit-appearance: none;
-    -moz-appearance:    none;
+    -moz-appearance: none;
   }
 
-  &.unselected, &:disabled {
+  &.unselected,
+  &:disabled {
     @include text-gray;
   }
 }
@@ -107,9 +108,9 @@ select.form-control {
 select.form-control.size-sm {
   font-size: $base-font-size;
   padding: 8px 12px;
-  height: 40px;
+  height: 42px;
   @include medium {
-    font-size: 18px;
+    font-size: 16px;
     padding: $base-unit 30px $base-unit 15px;
     height: 44px;
   }
@@ -120,7 +121,8 @@ select::-ms-expand {
 }
 
 .input-group {
-  input, button {
+  input,
+  button {
     display: inline-block;
     margin-right: $base-unit;
   }

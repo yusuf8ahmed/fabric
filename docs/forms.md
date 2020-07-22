@@ -11,14 +11,15 @@ Style individual form controls and utilize common layouts.
 
 ## Contents
 
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+- Will be replaced with the ToC, excluding the "Contents" header
+  {:toc}
 
 ## Example form
 
 Form elements in Fabric currently have no basic layout specified (this is by design). You'll need to use `<fieldset>`s, `<div>`s, or other elements and styles to rearrange them.
 
 {% example html %}
+
 <form>
   <input type="text" class="form-input-text" placeholder="Name">
   <input type="email" class="form-input-text" placeholder="Email address">
@@ -50,6 +51,7 @@ Form elements in Fabric currently have no basic layout specified (this is by des
 The default text inputs has a white background, but you can append the `.color-beige` class to make it beige.
 
 {% example html %}
+
 <form>
   <input class="form-input-text" type="text" placeholder=".form-input-text (default)">
   <input class="form-input-text color-beige" type="text" placeholder=".form-input-text .color-beige">
@@ -63,6 +65,7 @@ There are two input sizes: medium and small. (TODO: consider adding more sizes a
 Medium is the default size, but you can apply the `.size-sm` class to make it small.
 
 {% example html %}
+
 <form>
   <input class="form-input-text" type="text" placeholder="medium (default)">
   <input class="form-input-text size-sm" type="text" placeholder=".size-sm">
@@ -72,6 +75,7 @@ Medium is the default size, but you can apply the `.size-sm` class to make it sm
 ## Selects
 
 {% example html %}
+
 <form>
   <select class="form-control">
     <option disabled selected default>Select a prefecture</option>
@@ -97,6 +101,7 @@ TODO - use iCheck plugin
 ### Input Groups
 
 {% example html %}
+
 <form>
   <div class="input-group">
     <input class="form-input-text size-sm" type="text" placeholder="Input">
@@ -108,21 +113,21 @@ TODO - use iCheck plugin
 ### Adjacent Inputs
 
 {% example html %}
+
 <div class="adjacent-inputs-md">
   <input placeholder="First name"
          class="form-input-text"
-         type="text">
-  </input>
+         type="text" />
   <input placeholder="Last name"
          class="form-input-text"
-         type="text">
-  </input>
+         type="text" />
 </div>
 {% endexample %}
 
 ### Inline Labels
 
 {% example html %}
+
 <div class="form-inline">
   <div class="row-md">
     <label class="col-2 control-label">
@@ -131,8 +136,7 @@ TODO - use iCheck plugin
     <div class="col-10">
       <input placeholder="Input (default)"
              class="form-input-text"
-             type="text">
-      </input>
+             type="text" />
     </div>
   </div>
 </div>
@@ -145,8 +149,7 @@ TODO - use iCheck plugin
     <div class="col-10">
       <input placeholder="Input (.size-sm)"
              class="form-input-text size-sm"
-             type="text">
-      </input>
+             type="text" />
     </div>
   </div>
 </div>
@@ -154,9 +157,10 @@ TODO - use iCheck plugin
 
 ## Form Validation
 
-We have provided simple error styles for form elements and help messages.  The intent is that your application logic will add the `.has-error` class to form elements if there are validation errors as well as hide/show the `.help-block` when appropriate.
+We have provided simple error styles for form elements and help messages. The intent is that your application logic will add the `.has-error` class to form elements if there are validation errors as well as hide/show the `.help-block` when appropriate.
 
 {% example html %}
+
 <form>
   <div class="has-error">
     <input class="form-input-text" type="text" placeholder="Something went wrong">

@@ -82,48 +82,23 @@ Since font installation may vary based on the asset compilation framework you're
 Example below. Note: for Sprockets-based compilation, you'll want to replace `url` with `font-url`.
 
 ```scss
+// Regular
 @font-face {
-  font-family: 'FuturaBT-Light';
-  src: url('/fonts/FuturaBT-Light.eot');
-  src: url('/fonts/FuturaBT-Light.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/FuturaBT-Light.woff2') format('woff2'),
-       url('/fonts/FuturaBT-Light.woff') format('woff'),
-       url('/fonts/FuturaBT-Light.ttf') format('truetype');
+  font-family: "FuturaPT";
+  src: url("/fonts/FuturaPT-Book.eot");
+  src: url("/fonts/FuturaPT-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/FuturaPT-Book.woff2")
+      format("woff2"), url("/fonts/FuturaPT-Book.woff") format("woff"), url("/fonts/FuturaPT-Book.ttf")
+      format("truetype");
 }
 
+// Bold
 @font-face {
-  font-family: 'FuturaBT-Book';
-  src: url('/fonts/FuturaBT-Book.eot');
-  src: url('/fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/FuturaBT-Book.woff2') format('woff2'),
-       url('/fonts/FuturaBT-Book.woff') format('woff'),
-       url('/fonts/FuturaBT-Book.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'FuturaBT-Heavy';
-  src: url('/fonts/FuturaBT-Heavy.eot');
-  src: url('/fonts/FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/FuturaBT-Heavy.woff2') format('woff2'),
-       url('/fonts/FuturaBT-Heavy.woff') format('woff'),
-       url('/fonts/FuturaBT-Heavy.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'CaslonGraD';
-  src: url('/fonts/CaslonGraD.eot');
-  src: url('/fonts/CaslonGraD.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/CaslonGraD.woff2') format('woff2'),
-       url('/fonts/CaslonGraD.woff') format('woff'),
-       url('/fonts/CaslonGraD.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "SSSocialCircle";
-  src: url('/fonts/SSSocialCircle.eot');
-  src: url('/fonts/SSSocialCircle.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/SSSocialCircle.woff') format('woff'),
-       url('/fonts/SSSocialCircle.ttf')  format('truetype');
+  font-family: "FuturaPT";
+  src: url("/fonts/FuturaPT-Heavy.eot");
+  src: url("/fonts/FuturaPT-Heavy.eot?#iefix") format("embedded-opentype"), url("/fonts/FuturaPT-Heavy.woff2")
+      format("woff2"), url("/fonts/FuturaPT-Heavy.woff") format("woff"), url("/fonts/FuturaPT-Heavy.ttf")
+      format("truetype");
+  font-weight: 700;
 }
 ```
 
@@ -177,13 +152,12 @@ $ grunt publish
 
 Changes should be live in around 30 seconds.
 
-
 #### Creating a new release
 
-* Go to the ['releases'](https://github.com/wealthsimple/fabric/releases) tab in github.
-* Hit the 'draft new release button'. Use the master branch only please. This does two things:
-  * it prompts you to enter some info about what's in the new release. Be descriptive! This serves as our changelog, and your colleagues will thank you. Screenshots of new controls/features are handy too.
-  * It creates the git tag that bower will use.
+- Go to the ['releases'](https://github.com/wealthsimple/fabric/releases) tab in github.
+- Hit the 'draft new release button'. Use the master branch only please. This does two things:
+  - it prompts you to enter some info about what's in the new release. Be descriptive! This serves as our changelog, and your colleagues will thank you. Screenshots of new controls/features are handy too.
+  - It creates the git tag that bower will use.
 
 For npm you need to manually publish. Go to your terminal, rebase latest master, and run:
 

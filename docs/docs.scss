@@ -44,14 +44,14 @@ body {
 
 .masthead {
   @include clearfix;
-  padding-top:    1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
   background-color: $color-yellow;
 
   a {
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, 0.7);
 
     &:hover {
       color: #fff;
@@ -89,12 +89,12 @@ body {
 
   @media (max-width: 34em) {
     padding-top: 1rem;
-    border-top: .075rem solid rgba(255, 255, 255, 0.25);
+    border-top: 0.075rem solid rgba(255, 255, 255, 0.25);
   }
 
   @media (min-width: 34em) {
     float: right;
-    margin-top: .45rem;
+    margin-top: 0.45rem;
   }
 }
 
@@ -114,7 +114,6 @@ body {
 
   h1 {
     font-size: 2.5em;
-    font-weight: normal;
   }
 
   .primary-action {
@@ -130,7 +129,6 @@ body {
 }
 
 .about-that {
-
   @media (max-width: 760px) {
     .column {
       float: none;
@@ -140,13 +138,12 @@ body {
   }
 
   p {
-    padding-right: .5rem;
+    padding-right: 0.5rem;
     color: #555;
   }
 
   h2 {
     @include h4-sans;
-    font-weight: normal;
   }
 }
 
@@ -156,7 +153,7 @@ body {
 
 .docs-layout > .markdown-body {
   > h1 {
-    @include h3-serif;
+    @include h3-sans;
   }
 
   > h2 {
@@ -189,7 +186,7 @@ body {
   border-radius: 3px;
   border: 1px solid $color-gray-20;
   margin-bottom: 1.5rem;
-  font-size: 15px;
+  font-size: 16px;
 
   a {
     color: $color-dark-beige;
@@ -219,7 +216,6 @@ body {
     }
   }
 
-
   .menu-item:first-child {
     border-top: 0;
     border-top-right-radius: 2px;
@@ -237,7 +233,6 @@ body {
   }
 }
 
-
 //
 // Examples
 //
@@ -246,12 +241,12 @@ body {
   position: relative;
   padding: 15px;
   border: 1px solid #e5e5e5;
-  border-radius: .25rem .25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
 
   + .highlight {
     margin-top: -1px;
     border: 1px solid #e5e5e5;
-    border-radius: 0 0 .25rem .25rem;
+    border-radius: 0 0 0.25rem 0.25rem;
   }
 
   > p:last-child,
@@ -294,7 +289,6 @@ body {
       }
     }
   }
-
 
   // Forms
 
@@ -345,7 +339,7 @@ body {
 
 // Hide the first child li because it's always going to be "Contents".
 #markdown-toc {
- > li:first-child {
+  > li:first-child {
     display: none;
   }
   ul {
@@ -361,29 +355,53 @@ body {
   display: inline-block;
   width: 6rem;
   height: 6rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   padding: 8px;
   margin-bottom: 5px;
   box-sizing: border-box;
 }
 
-.swatch-green { background-color: $color-green; }
-.swatch-green-80 { background-color: $color-green-80; }
-.swatch-green-transparent { background-color: $color-green-transparent; }
+.swatch-green {
+  background-color: $color-green;
+}
+.swatch-green-80 {
+  background-color: $color-green-80;
+}
+.swatch-green-transparent {
+  background-color: $color-green-transparent;
+}
 
-.swatch-red { background-color: $color-red; }
-.swatch-crusta { background-color: $color-crusta; }
-.swatch-red-transparent { background-color: $color-red-transparent; }
+.swatch-red {
+  background-color: $color-red;
+}
+.swatch-crusta {
+  background-color: $color-crusta;
+}
+.swatch-red-transparent {
+  background-color: $color-red-transparent;
+}
 
-.swatch-yellow { background-color: $color-yellow; }
-.swatch-faded-yellow { background-color: $color-faded-yellow; }
-.swatch-translucent-yellow { background-color: $color-translucent-yellow; }
+.swatch-yellow {
+  background-color: $color-yellow;
+}
+.swatch-faded-yellow {
+  background-color: $color-faded-yellow;
+}
+.swatch-translucent-yellow {
+  background-color: $color-translucent-yellow;
+}
 
 // Gray swatches use utility classes at _utilities.scss
 
-.swatch-light-beige { background-color: $color-light-beige; }
-.swatch-brown-5 { background-color: $color-brown-5; }
-.swatch-dark-beige { background-color: $color-dark-beige; }
+.swatch-light-beige {
+  background-color: $color-light-beige;
+}
+.swatch-brown-5 {
+  background-color: $color-brown-5;
+}
+.swatch-dark-beige {
+  background-color: $color-dark-beige;
+}
 
 .button-example {
   background-color: $color-green;

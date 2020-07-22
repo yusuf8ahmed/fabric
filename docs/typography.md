@@ -7,8 +7,8 @@ Headings, paragraphs, blockquotes, and more have some global resets.
 
 ## Contents
 
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+- Will be replaced with the ToC, excluding the "Contents" header
+  {:toc}
 
 ## Headers
 
@@ -18,9 +18,9 @@ Optionally use CSS classes to customize the header:
 
 - `.h1-sans` through `.h5-sans` use the sans-serif with bold font-weight.
 - `.h1-sans-normal` through `.h5-sans-normal` use the sans-serif with normal font-weight.
-- `.h1-serif` through `.h3-serif` use the serif with light font-weight.
 
 {% example html %}
+
 <h1>h1 Header (bold)</h1>
 <h2>h2 Header (bold)</h2>
 <h3>h3 Header (bold)</h3>
@@ -32,15 +32,12 @@ Optionally use CSS classes to customize the header:
 <h3 class="h3-sans-normal">h3 Header (normal)</h3>
 <h4 class="h4-sans-normal">h4 Header (normal)</h4>
 <h5 class="h5-sans-normal">h5 Header (normal)</h5>
-
-<h1 class="h1-serif">h1 Header (serif)</h1>
-<h2 class="h2-serif">h2 Header (serif)</h2>
-<h3 class="h3-serif">h3 Header (serif)</h3>
 {% endexample %}
 
 ## Body text
 
 {% example html %}
+
 <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
 {% endexample %}
@@ -50,6 +47,7 @@ Optionally use CSS classes to customize the header:
 Make a paragraph stand out by adding `.p1` or `.p2`.
 
 {% example html %}
+
 <p class="p1">
   Nullam quis risus eget urna mollis ornare vel eu leo.
 </p>
@@ -64,6 +62,7 @@ Make a paragraph stand out by adding `.p1` or `.p2`.
 Styling for common inline HTML5 elements.
 
 {% example html %}
+
 <p><u>This line of text will render as underlined</u></p>
 <p><small>This line of text is meant to be treated as fine print.</small></p>
 <p><strong>This line rendered as bold text.</strong></p>
@@ -75,6 +74,7 @@ Styling for common inline HTML5 elements.
 Wrap `<blockquote>` around any HTML as the quote.
 
 {% example html %}
+
 <blockquote>
   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.”
 </blockquote>
@@ -85,6 +85,7 @@ Wrap `<blockquote>` around any HTML as the quote.
 There are uppercase mixins and classes that can be included in different rules.
 
 {% example html %}
+
 <div class="uppercase-sans-bold">
   .uppercase-sans-bold
 </div>
@@ -95,9 +96,10 @@ There are uppercase mixins and classes that can be included in different rules.
 
 ## Content
 
-Text may be styled using the `.content` class. There are four available font-sizes for `.content`:  `.size-xs`, `.size-sm`, `.size-md` and `.size-lg`. This is particularly useful when styling text within [cards](../layout/#cards).
+Text may be styled using the `.content` class. There are four available font-sizes for `.content`: `.size-xs`, `.size-sm`, `.size-md` and `.size-lg`. This is particularly useful when styling text within [cards](../layout/#cards).
 
 {% example html %}
+
 <div class="row-md">
   <div class="col-3">
     <div class="content size-xs">
@@ -124,9 +126,10 @@ Text may be styled using the `.content` class. There are four available font-siz
 
 ## Numbers
 
-Numbers may have a `.number-title` label, `.number-value` is used to denote values. Similar to `.content`, there are four different sizes available for numbers: `.size-xs`, `.size-sm`, `.size-md` and `.size-lg`. `.number-value` uses a different font (Akkurat-Regular).
+Numbers may have a `.number-title` label, `.number-value` is used to denote values. Similar to `.content`, there are four different sizes available for numbers: `.size-xs`, `.size-sm`, `.size-md` and `.size-lg`.
 
 {% example html %}
+
 <div class="number-title">
   .number-title
 </div>
@@ -140,6 +143,7 @@ Numbers may have a `.number-title` label, `.number-value` is used to denote valu
 There are mixins provided to easily color text. Simply add `@include text-green` (and so on) to your rule.
 
 {% example html %}
+
 <div class="text-green">
   You can have green text,
 </div>
@@ -166,7 +170,9 @@ There are mixins provided to easily color text. Simply add `@include text-green`
 ## Social icons
 
 ## Icons
+
 {% example html %}
+
 <div class="ws-icon-info">
 </div>
 {% endexample %}
