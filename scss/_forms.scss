@@ -110,9 +110,9 @@ select.form-control.size-sm {
   padding: 8px 12px;
   height: 42px;
   @include medium {
-    font-size: 16px;
-    padding: $base-unit 30px $base-unit 15px;
-    height: 44px;
+    font-size: 20px;
+    padding: 9px 30px $base-unit 15px;
+    height: 48px;
   }
 }
 
