@@ -18,7 +18,7 @@
         </a>
 
         <nav class="masthead-nav">
-          <a  href="/scaffolding/">Docs</a>
+          <a class="active" href="/scaffolding/">Docs</a>
           <a href="https://github.com/wealthsimple/fabric" target="_blank">GitHub</a>
           <a href="https://github.com/wealthsimple/fabric/blob/master/README.md#install" target="_blank">Install</a>
         </nav>
@@ -71,31 +71,19 @@
 
 <h2 id="contents">Contents</h2>
 
-<ul id="markdown-toc">
-  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#headers" id="markdown-toc-headers">Headers</a></li>
-  <li><a href="#body-text" id="markdown-toc-body-text">Body text</a></li>
-  <li><a href="#lead" id="markdown-toc-lead">Lead</a></li>
-  <li><a href="#inline-text-elements" id="markdown-toc-inline-text-elements">Inline text elements</a></li>
-  <li><a href="#blockquotes" id="markdown-toc-blockquotes">Blockquotes</a></li>
-  <li><a href="#uppercase" id="markdown-toc-uppercase">Uppercase</a></li>
-  <li><a href="#content" id="markdown-toc-content">Content</a></li>
-  <li><a href="#numbers" id="markdown-toc-numbers">Numbers</a></li>
-  <li><a href="#colors" id="markdown-toc-colors">Colors</a></li>
-  <li><a href="#social-icons" id="markdown-toc-social-icons">Social icons</a></li>
-  <li><a href="#icons" id="markdown-toc-icons">Icons</a></li>
+<ul>
+  <li>Will be replaced with the ToC, excluding the “Contents” header</li>
 </ul>
 
 <h2 id="headers">Headers</h2>
 
-<p>The default <code>&lt;h1&gt;</code> through <code>&lt;h5&gt;</code> tags are bold sans-serif headers.</p>
+<p>The default <code class="highlighter-rouge">&lt;h1&gt;</code> through <code class="highlighter-rouge">&lt;h5&gt;</code> tags are bold sans-serif headers.</p>
 
 <p>Optionally use CSS classes to customize the header:</p>
 
 <ul>
-  <li><code>.h1-sans</code> through <code>.h5-sans</code> use the sans-serif with bold font-weight.</li>
-  <li><code>.h1-sans-normal</code> through <code>.h5-sans-normal</code> use the sans-serif with normal font-weight.</li>
-  <li><code>.h1-serif</code> through <code>.h3-serif</code> use the serif with light font-weight.</li>
+  <li><code class="highlighter-rouge">.h1-sans</code> through <code class="highlighter-rouge">.h5-sans</code> use the sans-serif with bold font-weight.</li>
+  <li><code class="highlighter-rouge">.h1-sans-normal</code> through <code class="highlighter-rouge">.h5-sans-normal</code> use the sans-serif with normal font-weight.</li>
 </ul>
 
 <div class="docs-example clearfix"><h1>h1 Header (bold)</h1>
@@ -108,11 +96,7 @@
 <h2 class="h2-sans-normal">h2 Header (normal)</h2>
 <h3 class="h3-sans-normal">h3 Header (normal)</h3>
 <h4 class="h4-sans-normal">h4 Header (normal)</h4>
-<h5 class="h5-sans-normal">h5 Header (normal)</h5>
-
-<h1 class="h1-serif">h1 Header (serif)</h1>
-<h2 class="h2-serif">h2 Header (serif)</h2>
-<h3 class="h3-serif">h3 Header (serif)</h3></div>
+<h5 class="h5-sans-normal">h5 Header (normal)</h5></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Header (bold)<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;h2&gt;</span>h2 Header (bold)<span class="nt">&lt;/h2&gt;</span>
 <span class="nt">&lt;h3&gt;</span>h3 Header (bold)<span class="nt">&lt;/h3&gt;</span>
@@ -123,11 +107,7 @@
 <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h2-sans-normal"</span><span class="nt">&gt;</span>h2 Header (normal)<span class="nt">&lt;/h2&gt;</span>
 <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h3-sans-normal"</span><span class="nt">&gt;</span>h3 Header (normal)<span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h4-sans-normal"</span><span class="nt">&gt;</span>h4 Header (normal)<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5-sans-normal"</span><span class="nt">&gt;</span>h5 Header (normal)<span class="nt">&lt;/h5&gt;</span>
-
-<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h1-serif"</span><span class="nt">&gt;</span>h1 Header (serif)<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h2-serif"</span><span class="nt">&gt;</span>h2 Header (serif)<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h3-serif"</span><span class="nt">&gt;</span>h3 Header (serif)<span class="nt">&lt;/h3&gt;</span></code></pre></div>
+<span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5-sans-normal"</span><span class="nt">&gt;</span>h5 Header (normal)<span class="nt">&lt;/h5&gt;</span></code></pre></div>
 
 <h2 id="body-text">Body text</h2>
 
@@ -138,7 +118,7 @@
 
 <h2 id="lead">Lead</h2>
 
-<p>Make a paragraph stand out by adding <code>.p1</code> or <code>.p2</code>.</p>
+<p>Make a paragraph stand out by adding <code class="highlighter-rouge">.p1</code> or <code class="highlighter-rouge">.p2</code>.</p>
 
 <div class="docs-example clearfix"><p class="p1">
   Nullam quis risus eget urna mollis ornare vel eu leo.
@@ -170,7 +150,7 @@
 
 <h2 id="blockquotes">Blockquotes</h2>
 
-<p>Wrap <code>&lt;blockquote&gt;</code> around any HTML as the quote.</p>
+<p>Wrap <code class="highlighter-rouge">&lt;blockquote&gt;</code> around any HTML as the quote.</p>
 
 <div class="docs-example clearfix"><blockquote>
   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.”
@@ -198,7 +178,7 @@
 
 <h2 id="content">Content</h2>
 
-<p>Text may be styled using the <code>.content</code> class. There are four available font-sizes for <code>.content</code>:  <code>.size-xs</code>, <code>.size-sm</code>, <code>.size-md</code> and <code>.size-lg</code>. This is particularly useful when styling text within <a href="../layout/#cards">cards</a>.</p>
+<p>Text may be styled using the <code class="highlighter-rouge">.content</code> class. There are four available font-sizes for <code class="highlighter-rouge">.content</code>: <code class="highlighter-rouge">.size-xs</code>, <code class="highlighter-rouge">.size-sm</code>, <code class="highlighter-rouge">.size-md</code> and <code class="highlighter-rouge">.size-lg</code>. This is particularly useful when styling text within <a href="../layout/#cards">cards</a>.</p>
 
 <div class="docs-example clearfix"><div class="row-md">
   <div class="col-3">
@@ -247,7 +227,7 @@
 
 <h2 id="numbers">Numbers</h2>
 
-<p>Numbers may have a <code>.number-title</code> label, <code>.number-value</code> is used to denote values. Similar to <code>.content</code>, there are four different sizes available for numbers: <code>.size-xs</code>, <code>.size-sm</code>, <code>.size-md</code> and <code>.size-lg</code>. <code>.number-value</code> uses a different font (Akkurat-Regular).</p>
+<p>Numbers may have a <code class="highlighter-rouge">.number-title</code> label, <code class="highlighter-rouge">.number-value</code> is used to denote values. Similar to <code class="highlighter-rouge">.content</code>, there are four different sizes available for numbers: <code class="highlighter-rouge">.size-xs</code>, <code class="highlighter-rouge">.size-sm</code>, <code class="highlighter-rouge">.size-md</code> and <code class="highlighter-rouge">.size-lg</code>.</p>
 
 <div class="docs-example clearfix"><div class="number-title">
   .number-title
@@ -264,7 +244,7 @@
 
 <h2 id="colors">Colors</h2>
 
-<p>There are mixins provided to easily color text. Simply add <code>@include text-green</code> (and so on) to your rule.</p>
+<p>There are mixins provided to easily color text. Simply add <code class="highlighter-rouge">@include text-green</code> (and so on) to your rule.</p>
 
 <div class="docs-example clearfix"><div class="text-green">
   You can have green text,
@@ -325,7 +305,7 @@
 
 
       <footer class="footer">
-        Copyright Wealthsimple 2018.<br>
+        Copyright Wealthsimple 2020.<br>
         Created and maintained by the CSS team at Wealthsimple.
       </footer>
     </div>

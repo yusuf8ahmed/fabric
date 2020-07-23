@@ -18,7 +18,7 @@
         </a>
 
         <nav class="masthead-nav">
-          <a  href="/scaffolding/">Docs</a>
+          <a class="active" href="/scaffolding/">Docs</a>
           <a href="https://github.com/wealthsimple/fabric" target="_blank">GitHub</a>
           <a href="https://github.com/wealthsimple/fabric/blob/master/README.md#install" target="_blank">Install</a>
         </nav>
@@ -81,16 +81,16 @@
 
 <h2 id="default-buttons">Default Buttons</h2>
 
-<p>Use the <code>.button</code> for form actions and primary page actions. These are used extensively around the site.</p>
+<p>Use the <code class="highlighter-rouge">.button</code> for form actions and primary page actions. These are used extensively around the site.</p>
 
-<p>When using a <code>&lt;button&gt;</code> element, <strong>always specify a <code>type</code></strong>. When using a <code>&lt;a&gt;</code> element, <strong>always add <code>role="button"</code> for accessibility</strong>.</p>
+<p>When using a <code class="highlighter-rouge">&lt;button&gt;</code> element, <strong>always specify a <code class="highlighter-rouge">type</code></strong>. When using a <code class="highlighter-rouge">&lt;a&gt;</code> element, <strong>always add <code class="highlighter-rouge">role="button"</code> for accessibility</strong>.</p>
 
 <div class="docs-example clearfix"><button class="button primary-action" type="button">Button button</button>
 <a class="button primary-action" href="#" role="button">Link button</a></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button primary-action"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button primary-action"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
-<p>You can find them in four sizes: <code>.size-xs</code>, the default <code>.button</code>, <code>.size-md</code>, and <code>.size-lg</code>.</p>
+<p>You can find them in four sizes: <code class="highlighter-rouge">.size-xs</code>, the default <code class="highlighter-rouge">.button</code>, <code class="highlighter-rouge">.size-md</code>, and <code class="highlighter-rouge">.size-lg</code>.</p>
 
 <div class="docs-example clearfix"><button class="button primary-action size-xs" type="button">.button .size-xs</button>
 <button class="button primary-action" type="button">.button</button>
@@ -103,11 +103,11 @@
 
 <h2 id="colors">Colors</h2>
 
-<p>Buttons come in two colors. <code>.primary-action</code> is yellow, and <code>.secondary-action</code> is white.</p>
+<p>Buttons come in two colors. <code class="highlighter-rouge">.primary-action</code> is yellow, and <code class="highlighter-rouge">.secondary-action</code> is white.</p>
 
 <ul>
-  <li><code>.primary-action</code> should be used for actions such form submission and “Next”.</li>
-  <li><code>.secondary-action</code> should be used for actions such as “Cancel” and “Back”.</li>
+  <li><code class="highlighter-rouge">.primary-action</code> should be used for actions such form submission and “Next”.</li>
+  <li><code class="highlighter-rouge">.secondary-action</code> should be used for actions such as “Cancel” and “Back”.</li>
 </ul>
 
 <div class="docs-example clearfix"><button class="button primary-action" type="button">.button.primary-action</button>
@@ -115,7 +115,7 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button primary-action"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>.button.primary-action<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button secondary-action"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>.button.secondary-action<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<p>In rare cases where the container’s background color is not white, you can manually override the color in SCSS by using <code>@include solid-white-button</code> for the primary action and <code>@include bordered-white-button</code> for the secondary action.</p>
+<p>In rare cases where the container’s background color is not white, you can manually override the color in SCSS by using <code class="highlighter-rouge">@include solid-white-button</code> for the primary action and <code class="highlighter-rouge">@include bordered-white-button</code> for the secondary action.</p>
 
 <h2 id="disabled-state">Disabled State</h2>
 
@@ -138,7 +138,7 @@
 
 
       <footer class="footer">
-        Copyright Wealthsimple 2018.<br>
+        Copyright Wealthsimple 2020.<br>
         Created and maintained by the CSS team at Wealthsimple.
       </footer>
     </div>
