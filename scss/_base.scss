@@ -22,7 +22,7 @@ a {
   @include text-yellow;
   text-decoration: underline;
   &:hover {
-    color: $color-yellow-hover;
+    color: darken($brand-primary-fg, 20%);
   }
 }
 p {

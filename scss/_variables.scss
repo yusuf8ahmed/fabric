@@ -43,6 +43,21 @@ $color-gray-98: #181818;
 $color-gray-99: #121212;
 $color-gray-100: #000000;
 
+$greyscale-black: #403e3d;
+$greyscale-dark: #73706e;
+$greyscale-medium: #bfbdbb;
+$greyscale-light: #e6e4e3;
+
+// Brand colours - primary
+$brand-primary-base: #fab131;
+$brand-primary-fg: $greyscale-black;
+$brand-primary-bg: #f9f8f7;
+
+// Brand colours - secondary
+$brand-secondary-base: #7cb7b6;
+$brand-secondary-fg: #377674;
+$brand-secondary-bg: #e5f1f1;
+
 $color-white: #ffffff;
 $color-black: $color-gray-100;
 

@@ -1,22 +1,38 @@
+$color-gradient-yellow: #fbc361;
+
 @mixin solid-yellow-button {
-  background-color: $color-yellow;
-  color: $color-white;
+  color: $greyscale-black;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    $color-gradient-yellow;
+  background-blend-mode: soft-light, normal;
+  border-width: 0;
+
   &:hover {
-    background-color: darken($color-yellow, 5%);
+    background-color: lighten($color-gradient-yellow, 10%);
   }
+
   &:active {
-    background-color: darken($color-yellow, 10%);
+    background: $color-gradient-yellow;
   }
 }
 
-@mixin bordered-yellow-button {
-  color: $color-yellow;
+@mixin bordered-button {
+  color: $greyscale-dark;
   background: transparent;
-  border-color: $color-yellow;
-  &:hover,
+  border: 1px solid $greyscale-light;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $greyscale-medium;
+  }
+
   &:active {
-    color: darken($color-yellow, 8%);
-    border-color: darken($color-yellow, 8%);
+    color: $greyscale-dark;
+    border-color: $greyscale-dark;
   }
 }
 
@@ -43,17 +59,17 @@
 }
 
 @mixin pagination-button {
-  color: $color-yellow;
+  color: $brand-primary-fg;
   font-size: 10px;
   letter-spacing: 4px;
   background: transparent;
   text-transform: uppercase;
-  border: 1px solid $color-yellow;
+  border: 1px solid $brand-primary-fg;
   @include font-sans-bold;
 
   &:hover {
-    border-color: $color-yellow-hover;
-    color: $color-yellow-hover;
+    border-color: darken($brand-primary-fg, 20%);
+    color: darken($brand-primary-fg, 20%);
   }
 
   @include medium {
@@ -64,15 +80,14 @@
 
 .button {
   @include font-sans-bold;
-  font-size: 13px;
+  font-size: 16px;
   background-color: gray;
   padding: 0 20px;
   height: 40px;
-  line-height: 40px;
   border-radius: 24px;
   cursor: pointer;
-  display: inline-block;
-  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   overflow: hidden;
   transition: all 60ms linear;
@@ -80,18 +95,21 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   outline: none;
+
+  &:focus:not(:active):not(:visited) {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 5px 0px,
+      $greyscale-black 0px 0px 0px 2px inset;
+  }
 }
 
 .button.size-xs {
   height: 28px;
-  line-height: 25px;
   transition: none;
 }
 
 .button.size-md {
   font-size: $base-font-size;
   height: 48px;
-  line-height: 48px;
   padding: 0 22px;
 }
 
@@ -99,13 +117,11 @@
   font-size: 20px;
   height: 48px;
   border-radius: 100px;
-  line-height: 48px;
   padding: 0 35px;
 
   @include medium {
     font-size: 27px;
     height: 60px;
-    line-height: 60px;
     padding: 0 50px;
   }
 }
@@ -115,29 +131,48 @@
 }
 
 .button.secondary-action {
-  @include bordered-yellow-button;
+  @include bordered-button;
 }
 
 .button.pagination-button {
   @include pagination-button;
 }
 
-.button[disabled],
-.button.disabled {
-  opacity: 0.65;
+// Make the button not hoverable/activable if it's
+// disabled. '.button[disabled]' selects disabled buttons.
+// '.button.disabled' selects disabled links.
+.button[disabled].primary-action,
+.button.disabled.primary-action {
+  background: $greyscale-medium;
+  color: $greyscale-black;
   cursor: default;
   pointer-events: none;
-}
 
-.button[disabled].primary-action {
   &:hover {
-    background-color: $color-yellow;
+    background: inherit;
+  }
+
+  &:active {
+    background: inherit;
   }
 }
 
-.button[disabled].secondary-action {
+// Make the button not hoverable/activable if it's
+// disabled. '.button[disabled]' selects disabled buttons.
+// '.button.disabled' selects disabled links.
+.button[disabled].secondary-action,
+.button.disabled.secondary-action {
+  border-color: $greyscale-light;
+  color: $greyscale-medium;
+  cursor: default;
+  pointer-events: none;
+
   &:hover {
-    border-color: $color-yellow;
-    color: $color-yellow;
+    border-color: inherit;
+  }
+
+  &:active {
+    color: inherit;
+    border-color: inherit;
   }
 }
