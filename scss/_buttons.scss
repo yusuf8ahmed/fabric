@@ -4,8 +4,8 @@ $color-gradient-yellow: #fbc361;
   color: $greyscale-black;
   background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
     ),
     $color-gradient-yellow;
   background-blend-mode: soft-light, normal;
