@@ -61,6 +61,10 @@ The concatenated and minified CSS is available in https://github.com/wealthsimpl
 
 Note: this is **not recommended**, as you won't have access to any of the SCSS variables or mixins.
 
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wealthsimple/fabric/css/fabric.css" />
+```
+
 ## Usage
 
 Once installed with bower, simply `@import` either the master SCSS file, or the individual files as you need them.
